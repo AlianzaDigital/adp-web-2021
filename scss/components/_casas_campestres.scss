@@ -1,0 +1,945 @@
+/** CASAS CAMPESTRES **/
+/* MAIN XS */
+.main-xs{
+  background: $color01;
+  padding: 15px 0px;
+}
+
+.logo-header-xs{
+  width: 120px;
+}
+/*SECTION 01 XS*/
+.section-xs-01{
+  padding: 0px 0px 20px 0px;
+  background: $gradient02;
+  box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+}
+  
+.tx-section-xs-01-01{
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+  color: $color01;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-05;
+  @media screen and (max-width: $window-size-05) {
+    font-size: $tx-size-05;
+  }
+}
+
+/*SECTION 02 XS*/
+.section-xs-02 {
+  padding: 25px 0px;
+}
+  
+.tx-section-xs-02-01{
+  text-align: center;
+  color: $negro;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-05;
+  span{
+    font-family: $Arsenal-Regular;
+  }
+}
+.tx-section-xs-02-02{
+  margin: 25px 0px 0px 0px;
+  text-align: center;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  span{
+    // font-family: $Arsenal-Bold;
+    font-family: $Helvetica-Regular;
+  }
+}
+.tx-section-xs-02-03{
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+}
+  
+  
+.tx-section-xs-02-04{
+  float: right;
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06 - .2;
+  margin:15px 15px 0px 0px;
+  span{
+    font-family: $Helvetica-Regular;
+    a{
+      font-size: $tx-size-06 ;
+      text-decoration: underline;
+      &:hover{
+        color:$color01;
+      }
+    }
+  }
+}
+
+/*SECTION 03 XS*/
+.section-xs-03{
+  padding: 30px 0px 0px 0px;
+} 
+  
+.tx-section-xs-03-01{
+  text-align: center;
+  color: $color01;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-05;
+}
+  
+.recorrido-virtual-xs{
+  margin: 20px 0px 0px 0px;
+  // border-top: 5px solid $color02;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+}
+  
+.tx-section-xs-03-02{
+  margin: 30px 0px;
+  text-align: center;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  line-height: 1.5;
+  span{
+    // font-family: $Arsenal-Bold;
+    font-family: $Helvetica-Regular;
+  }
+}
+
+/*SECTION 04 XS*/
+.section-xs-04{
+  padding: 30px 0px 0px 0px;
+} 
+  
+.tx-section-xs-04-01{
+  margin: 30px 0px 15px 0px;
+  text-align: center;
+  color: $color01;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-05;
+  // border-top: 5px solid transparent;
+  // border-image-source: $gradient02; 
+  // border-image-slice: 1;
+}
+
+#tabCasasMobile{
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+}
+
+.tab-modal-casa-xs{
+  // border-top: 5px solid $color02;
+  // border-top: 5px solid transparent;
+  // border-image-source: $gradient02; 
+  // border-image-slice: 1;
+  background: $color01;
+  padding-top: 5px;
+}
+
+.tab-modal-casa-xs.nav-item{
+  width: 33.33333%;
+  text-align: center;
+}
+.tab-modal-casa-xs-02.nav-item{
+  width: 50%;
+  text-align: center;
+}
+
+
+.nav-link.mobile{
+  // font-family: $Helvetica-Thin;
+  font-family: $Arsenal-Regular;
+  font-size: $tx-size-06;
+  color:$blanco;
+  background: $color01;
+  border: none;
+  cursor: pointer;
+  border-top: 5px solid transparent !important;
+  // border-top: 5px solid transparent;
+  // border-image-source: $gradient02; 
+  // border-image-slice: 1;
+  padding: 10px 2px;
+  &:focus{
+    color:$blanco;
+  }
+  &:hover{
+    color:$blanco;
+  }
+  @media screen and (max-width: $window-size-05) {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-bottom: none !important;
+  }
+}
+
+.nav-link.centro.mobile{
+  border-left:1px solid rgba(255,255,255,.4);
+  border-right:1px solid rgba(255,255,255,.4);
+}
+
+.nav-link.centro.v-web{
+  border-left:1px solid rgba(255,255,255,.4);
+  border-right:1px solid rgba(255,255,255,.4);
+}
+
+.nav-link.mobile.active{
+  font-family: $Arsenal-Bold;
+  color:$color01 !important;
+  background: $blanco;
+  border: none;
+  @media screen and (max-width: $window-size-04) {
+    border-bottom: none !important;
+  }
+}
+
+.nav-link.mobile-02{
+  font-family: $Helvetica-Thin;
+  // font-family: $Arsenal-Regular;
+  font-size: $tx-size-06;
+  color:$color01;
+  background: $color05;
+  border: none;
+  cursor: pointer;
+  border-top: 5px solid transparent !important;
+  padding: 10px 2px;
+  border-radius: 0;
+  &:focus{
+    color:$color01;
+  }
+  &:hover{
+    color:$color01;
+  }
+  @media screen and (max-width: $window-size-05) {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-bottom: none !important;
+  }
+}
+.nav-link.mobile-02.active{
+  color:$color01 !important;
+  background: $blanco;
+  // border-top: 5px solid $color02 !important;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  font-family: $Helvetica-Regular;
+  @media screen and (max-width: $window-size-04) {
+    border-bottom: none !important;
+  }
+}
+
+#tabCasasMobileContent{
+  padding: 0px 15px;
+}
+
+.tx-section-xs-04-02{
+  margin: 15px 0px;
+  text-align: center;
+  color: $color01;
+  font-family: $Helvetica-Regular;
+  font-size: $tx-size-06;
+  span{
+    font-family: $Helvetica-Thin;
+  }
+}
+
+.img-content-nivel{
+  border-bottom: 4px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+}
+
+.tx-description-tab-01{
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-07 + .2;
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+  // border-top: 1px solid rgba(0,0,0,.1);
+  border-left: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.tx-description-tab-02{
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-07 + .2;
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+  // border-top: 1px solid rgba(0,0,0,.1);
+  border-left: 1px solid rgba(0,0,0,.1);
+  border-right: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.tx-description-tab-03{
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-07 + .2;
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+  border-left: 1px solid rgba(0,0,0,.1);
+  border-right: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+/*SECTION 05 XS*/
+.section-xs-05{
+  padding: 50px 0px 0px 0px;
+}
+  
+.tx-section-xs-05-01{
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  color: $color01;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-05;
+}
+  
+.tx-section-xs-05-02{
+  margin: 20px 0px 50px 0px;
+  text-align: center;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  span{
+    // font-family: $Arsenal-Bold;
+    font-family: $Helvetica-Regular;
+  }
+}
+
+/*SECTION 06 XS*/
+.section-xs-06{
+  background: $gradient02;
+  padding: 15px 0px 15px 0px;
+}
+
+// .content-section-06{
+//   border-left: 1px solid $color02;
+//   border-right: 1px solid $color02;
+//   border-bottom: 1px solid $color02;
+//   padding: 0px 15px 20px 15px;
+// }
+
+.tx-section-xs-06-01{
+  margin: 0px 0px 0px 0px;
+  // text-align: center;
+  // color: $blanco;
+  color: $color01;
+  font-family: $Arsenal-Regular;
+  font-size: $tx-size-05 - .2;
+}
+
+.tx-section-xs-06-02{
+  margin: 0px 0px 10px 0px;
+  // text-align: center;
+  color: $blanco;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  display: flex;
+  .global{
+    display: inline-block;
+    .icon-vieta:before{
+      color: $blanco;
+      font-size: 1.5rem;
+    }
+    margin:0rem 1.5rem 0rem 0rem;
+  }
+}
+
+.tx-section-xs-06-03{
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  color: $blanco;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+}
+
+.tx-section-06-img{
+  margin:20px 10px;
+}
+
+.section-xs-06-b{
+  background: $color01;
+  padding: 30px 0px 25px 0px;
+  // border-bottom: 5px solid $color02;
+  border-bottom: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+}
+  
+/*SECTION 07 XS*/
+.section-xs-07{
+  // border-top: 5px solid $color02;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  background: $negro;
+  padding: 30px 0px 80px 0px;
+}
+
+.tx-section-xs-07-01{
+  margin:0px 0px 30px 0px;
+  color: $blanco;
+  // font-family: $Helvetica-Thin;
+  font-family: $Arsenal-Regular;
+  font-size: $tx-size-06;
+  line-height: 2;
+}
+
+.img-footer-xs{
+  float:right;
+}
+
+
+/*VERSION WEB*/
+/* MAIN WEB */
+main{
+  // background: url('../images/bg-main-web.webp');
+  background: url('../images/exterior-casa-posterior-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 533px;
+  @media screen and (max-width: 1920px) {
+    background-size: 100% cover;
+  }
+  @media screen and (max-width: $window-size-01) {
+    background-size: 100% cover;
+    height: 533px;
+  }
+}
+
+/*SECTION 01 WEB*/
+.section-web-01{
+  padding: 40px 0px 40px 0px;
+  background: $gradient02;
+  box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+}
+
+.tx-section-web-01-01{
+  text-align: center;
+  color: $color01;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-01;
+  @media screen and (max-width: $window-size-01) {
+    font-size: $tx-size-01;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+}
+
+.tx-section-web-01-02{
+  text-align: center;
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-03;
+  margin: 25px 0px 0px 0px;
+  span{
+    display: inline-block;
+    border-bottom: 1px solid $color01;
+    margin:0rem 2rem .8rem 2rem;
+    width: 35%;
+    @media screen and (max-width: $window-size-01) {
+      width: 30%;
+    }
+    @media screen and (max-width: $window-size-03) {
+      width: 25%;
+    }
+    @media screen and (max-width: $window-size-03) {
+      width: 20%;
+    }
+    @media screen and (max-width: $window-size-03) {
+      margin:0rem 1rem .5rem 1rem;
+    }
+    @media screen and (max-width: $window-size-03) {
+      margin:0rem .75rem .5rem .75rem;
+      width: 17.5%;
+    }
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-04;
+    margin: 15px 0px 0px 0px;
+  }
+  @media screen and (max-width: $window-size-04) {
+    font-size: $tx-size-05;
+    margin: 15px 0px 0px 0px;
+  }
+  @media screen and (max-width: $window-size-04) {
+    font-size: $tx-size-06;
+    margin: 15px 0px 0px 0px;
+  }
+}
+  
+/*SECTION 02 WEB*/
+.section-web-02{
+  margin: 90px 0px 50px 0px;
+}
+.margen-contenido{
+  margin-bottom: 90px;
+}
+.contenedor-relativo{
+  position: relative;
+}
+
+.tx-section-web-02-01{
+  display: block;
+  color: $negro;
+  // font-family: $Arsenal-Bold;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-02;
+  // border-bottom: 3px solid $color02;
+  border-bottom: 3px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  margin:0px 0px 35px 0px;
+  padding:0px 0px 15px 0px;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+}
+.tx-section-web-02-01-b{
+  display: block;
+  color: $negro;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-03;
+  margin:0px 0px 35px 0px;
+  padding:0px 0px 15px 0px;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-04;
+  }
+}
+
+/* SECCION SLIDER 01*/
+.tx-section-web-02-02{
+  display: inline-block;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  // font-size: $tx-size-03;
+  font-size: $tx-size-04;
+  margin:0px 0px 50px 0px;
+  span{
+    // font-family: $Arsenal-Bold;
+    font-family: $Helvetica-Regular;
+  }
+  @media screen and (max-width: $window-size-02) {
+    // font-size: $tx-size-04;
+    font-size: $tx-size-05;
+  }
+}
+.tx-section-web-02-03{
+  float: right;
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  margin:30px 0px 0px 0px;
+  span{
+    font-family: $Helvetica-Regular;
+    a{
+      font-size: $tx-size-06 + .2;
+      text-decoration: underline;
+      &:hover{
+        color:$color01;
+      }
+    }
+  }
+}
+
+/* RECORRIDO VIRUTAL WEB*/
+@keyframes animar-bg-recorrido{
+  0%{
+    background-size: 100% 100%;
+  }
+  100%{
+    background-size: 110% 110%;
+  }
+}
+.content-recorrido-virtual{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background: url('../images/bg-recorrido-virtual-web.webp');
+  background:linear-gradient(90deg, rgba(17, 35, 52, .4) 0%, rgba(17, 35, 52, .4) 100%), url('../images/recorrido-virtual-area-social-vista-piscina-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 625px;
+  // &:hover > .btn-recorrido-virtual-web{
+  //   text-decoration: underline;
+  // }
+  &:hover{
+    background-size: 110% 110%;
+    animation-name: animar-bg-recorrido;
+    animation-duration: .5s;
+    animation-iteration-count: 1s;
+    animation-timing-function: ease-in-outs; 
+  }
+  @media screen and (max-width: $window-size-01) {
+    height: 450px; ;
+  }
+}
+
+.global{
+  .icon-recorrido-virtual:before{
+    color: $blanco;
+    font-size: 15rem;
+  }
+}
+
+
+.tx-section-web-02-04{
+  display: block;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-04;
+  margin:50px 0px 35px 0px;
+  span{
+    // font-family: $Arsenal-Bold;
+    font-family: $Helvetica-Regular;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-05;
+  }
+}
+.tx-section-web-02-05{
+  margin:0px 0px 25px 0px;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05 - .2;
+  display: flex;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06 + .2;
+  }
+  @media screen and (max-width: $window-size-04) {
+    font-size: $tx-size-06 - .2;
+  }
+  // span{
+  //   margin:0rem 2rem 0rem 0rem;
+  // }
+  .casas-campestres{
+    display: inline-block;
+    .icon-vieta:before{
+      color: $color01;
+      font-size: 2.75rem;
+      @media screen and (max-width: $window-size-04) {
+        font-size: 2rem;
+      }
+    }
+    margin:0rem 2rem 0rem 0rem;
+    @media screen and (max-width: $window-size-04) {
+      margin:0rem .5rem 0rem 0rem;
+    }
+  }
+}
+.tx-section-web-02-05.first{
+  font-family: $Helvetica-Regular;
+}
+.tx-section-web-02-05.ultimo{
+  margin:0px 0px 0px 0px;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05 - .2;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06 + .2;
+  }
+  @media screen and (max-width: $window-size-04) {
+    font-size: $tx-size-06 - .2;
+  }
+}
+
+
+/* ESTILOS TABLA DE CONTENIDO*/
+.table thead tr th{
+  text-align: center;
+  color: $color01;
+  padding: 30px 15px;
+  border-top: none;
+  border-bottom: none;
+  font-family: $Helvetica-Regular;
+  font-size: $tx-size-06 + .2;
+  vertical-align: middle;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+    padding: 20px 7px;
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-06 - .2;
+    padding: 15px 3px;
+  }
+}
+.table th{
+  padding: 20px 15px;
+  text-align: center;
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06 + .2;
+  vertical-align: middle;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+    padding: 15px 7px;
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-06 - .2;
+    padding: 15px 3px;
+  }
+}
+.table td{
+  padding: 20px 15px;
+  text-align: center;
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06 + .2;
+  vertical-align: middle;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+    padding: 15px 7px;
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-06 - .2;
+    padding: 15px 3px;
+  }
+}
+
+.table .tx-table-bold{
+  font-family: $Helvetica-Regular;
+}
+/* ESTILOS TABS WEB*/
+#tabCasasWeb{
+  margin:0px 0px 60px 0px;
+}
+
+.tab-modal-casa-web{
+  border-top: none;
+  background: $color01;
+  border-radius: 5px 5px 0px 0px;
+  padding-top: 0px;
+}
+
+.tab-modal-casa-web.nav-item{
+  width: 33.33333%;
+  text-align: center;
+}
+.tab-modal-casa-web-02.nav-item{
+  display: block;
+  width: 50% !important;
+  text-align: center;
+}
+
+
+.nav-link.v-web{
+  // font-family: $Helvetica-Thin;
+  font-family: $Arsenal-Regular;
+  font-size: $tx-size-04;
+  color:$blanco;
+  background: $color01;
+  border: none;
+  cursor: pointer;
+  border-top: 5px solid transparent !important;
+  padding: 10px 2px;
+  &:focus{
+    color:$blanco;
+  }
+  &:hover{
+    color:$blanco;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-05;
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-06;
+  }
+  @media screen and (max-width: $window-size-05) {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-bottom: none !important;
+  }
+}
+
+.nav-link.v-web-02{
+  // font-family: $Helvetica-Thin;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05 - .2;
+  color:$color01;
+  background: $color05;
+  border: none;
+  cursor: pointer;
+  border-top: 5px solid transparent !important;
+  padding: 10px 2px;
+  &:focus{
+    color:$color01;
+  }
+  &:hover{
+    color:$color01;
+  }
+  @media screen and (max-width: $window-size-05) {
+    font-size: $tx-size-06;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-bottom: none !important;
+  }
+}
+
+
+
+.tab-modal-casa-web-02{
+  // border-left: 1px solid rgba(0,0,0,.05);
+  // border-right: 1px solid rgba(0,0,0,.05);
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.nav-link.v-web.active{
+  color:$color01 !important;
+  background: $blanco;
+  // border-top: 5px solid $color02 !important;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  @media screen and (max-width: $window-size-04) {
+    border-bottom: none !important;
+  }
+}
+.nav-link.v-web-02.active{
+  color:$color01 !important;
+  background: $blanco;
+  // border-top: 5px solid $color02 !important;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  // font-family: $Helvetica-Regular;
+  font-family: $Helvetica-Thin;
+  @media screen and (max-width: $window-size-04) {
+    border-bottom: none !important;
+  }
+}
+
+#tabCasasWebContent{
+  padding: 0px 0px;
+}
+
+.content-home-description{
+  padding: 0px 15px 0px 0px;
+}
+
+.tx-section-05-tab-01-01{
+  color: $blanco;
+  font-family: $Helvetica-Regular;
+  font-size: $tx-size-05;
+  background: $color01;
+  padding: 10px 5px 9px 0px;
+  margin: 0px 0px 25px 0px;
+  .casas-campestres{
+    background: $gradient06;
+    padding: 13px 14px 12px 13px;
+    margin-right: 2rem;
+    .icon-signo-pesos:before{
+      color: $color01;
+    }
+    @media screen and (max-width: $window-size-02) {
+      padding: 12px 14px 11px 13px;
+    }
+    @media screen and (max-width: $window-size-03) {
+      padding: 11px 14px 11px 13px;
+    }
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-07 + .2;
+  }
+}
+.tx-section-05-tab-01-02{
+  color: $color01;
+  font-family: $Helvetica-Regular;
+  font-size: $tx-size-05;
+  padding: 10px 5px 9px 0px;
+  margin: 0px 0px 15px 0px;
+}
+
+
+
+
+/* SECCION SLIDER 02*/
+.tx-section-web-02-06{
+  margin:30px 0px 60px 0px;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-04;
+  span{
+    // font-family: $Arsenal-Bold;
+    font-family: $Helvetica-Regular;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-05;
+  }
+}
+.tx-section-web-02-07{
+  margin:15px 0px 90px 0px;
+  text-align: center;
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05 - .2;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+  @media screen and (max-width: $window-size-04) {
+    font-size: $tx-size-06 - .2;
+  }
+}
+.icon-caracteristica-condominio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .icon-panel-solar:before,
+  .icon-wi-fi:before,
+  .icon-sistema-de-acueducto:before{
+    background: $gradient02;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8rem;
+    text-align: center;
+    @media screen and (max-width: $window-size-04) {
+      font-size: 6rem;
+    }
+  }
+}
+.tx-cta-web{
+  background: url('/images/cta-adp-landing-web.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  color: $blanco;
+  font-family: $Arsenal-Regular;
+  font-size: $tx-size-02;
+  // position: absolute;
+  bottom:-90px;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  z-index: 200;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+}
+
+.content-text-section-web-02{
+  margin: 40px 0px 0px 60px;
+}  

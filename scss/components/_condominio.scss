@@ -1,0 +1,293 @@
+/** EL CONDOMINIO **/
+/* CONDOMINIO XS */
+/* SECTION 02 XS */
+.section-condominio-xs-02{
+  background: $color01;
+  // border-top: 5px solid $color02;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  padding: 20px 0px;
+}
+
+.tx-section-condominio-xs-02-01{
+  text-align: center;
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-03;
+}
+
+/* SECTION 03 XS */
+.section-condominio-xs-03{
+  padding: 20px 0px;
+}
+
+.tx-section-condominio-xs-03-01{
+  text-align: center;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-04;
+  margin:0px 0px 20px 0px;
+}
+
+.tx-section-condominio-xs-03-02{
+  text-align: center;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  span{
+    font-family: $Helvetica-Regular;
+  }
+}
+
+/* SECTION 05 XS */
+.section-condominio-xs-05{
+  padding: 20px 0px 30px 0px;
+  background: $color01;
+}
+
+.tx-section-condominio-xs-05-01{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Regular;
+  font-size: $tx-size-05;
+  margin:0px 0px 0px 0px;
+  span{
+    font-family: $Arsenal-Bold;
+    // border-bottom: 3px solid $color02;
+    border-bottom: 3px solid transparent;
+    border-image-source: $gradient02; 
+    border-image-slice: 1;
+  }
+}
+
+/* MAIN WEB */
+.main-condominio-web{
+  // background: url('../images/bg-main-web.webp');
+  background: url('../images/el-condominio-panoramica-general-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 715px;
+  @media screen and (max-width: 1920px) {
+    background-size: 100% cover;
+  }
+  @media screen and (max-width: $window-size-01) {
+    background-size: 100% cover;
+    height: 450px;
+  }
+}
+/*SECTION CONDOMINIO 01 WEB*/
+.section-web-condominio-01{
+  padding: 40px 0px 40px 0px;
+  background: $color01;
+  // border-top: 5px solid $color02;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+}
+
+.tx-section-web-condominio-01-01{
+  text-align: center;
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-01;
+  span{
+    font-family: $Arsenal-Bold;
+  }
+  @media screen and (max-width: $window-size-01) {
+    font-size: $tx-size-02;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+}
+
+/*SECTION CONDOMINIO 02 WEB*/
+.section-web-condominio-02{
+  padding: 90px 0px 0px 0px;
+}
+
+.content-section-condominio-02-01{
+  // border-top: 5px solid $color02;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  padding: 100px 90px 100px 30px;
+  @media screen and (max-width: 1330px) {
+    padding: 60px 60px 60px 20px;
+  }
+  @media screen and (max-width: $window-size-02) {
+    padding: 70px 60px 70px 20px;
+  }
+  @media screen and (max-width: $window-size-03) {
+    padding: 50px 60px 50px 20px;
+  }
+  @media screen and (max-width: $window-size-04) {
+    padding: 40px 60px 40px 20px;
+  }
+}
+
+.tx-section-web-condominio-02-01{
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-02;
+  padding: 0px 0px 60px 0px;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-04;
+  }
+}
+.tx-section-web-condominio-02-02{
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-04;
+  line-height: 1.5;
+  // padding: 0px 0px 60px 0px;
+  span{
+    font-family: $Helvetica-Regular;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+}
+
+.content-section-condominio-02-02{
+  background: $color01;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  padding: 0px 90px 0px 30px;
+  @media screen and (max-width: $window-size-02) {
+    padding: 0px 60px 0px 20px;
+  }
+}
+
+.tx-section-web-condominio-02-03{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-02;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-04;
+  }
+}
+.border-condominio-style{
+  display: block;
+  height: 5px;
+  width: 25%;
+  margin-top: 30px;
+  // background: $color02;
+  background: $gradient02;
+  @media screen and (max-width: $window-size-03) {
+    margin-top: 10px;
+  }
+}
+
+.content-section-condominio-02-03{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: $gradient01;
+  margin: 70px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+.tx-section-web-condominio-02-04{
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-02;
+  text-align: center;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+}
+
+.container-targets-modal{
+  position: relative;
+}
+.popover-01{
+  position: absolute;
+  top:15%;
+  left:7%;
+  width: 45%;
+  @media screen and (max-width: $window-size-04) {
+    width: 55%;
+    top:10%;
+    left:2%;
+  }
+}
+.popover-02{
+  position: absolute;
+  top:36%;
+  right: 6%;
+  width: 45%;
+  @media screen and (max-width: $window-size-04) {
+    width: 55%;
+    top:33%;
+    right: 1%;
+  }
+}
+
+
+
+
+.content-section-condominio-02-04{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: $color01;
+  margin: 70px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-condominio-02-05{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05;
+  margin-bottom: 10px;
+  display: flex;
+  .global{
+    display: inline-block;
+    .icon-vieta:before{
+      color: $blanco;
+      font-size: 2.75rem;
+    }
+    margin:0rem 2rem 0rem 0rem;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+
+}
+.tx-section-web-condominio-02-05-b{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05;
+  display: flex;
+  .global{
+    display: inline-block;
+    .icon-vieta:before{
+      color: $blanco;
+      font-size: 2.75rem;
+    }
+    margin:0rem 2rem 0rem 0rem;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+
+}

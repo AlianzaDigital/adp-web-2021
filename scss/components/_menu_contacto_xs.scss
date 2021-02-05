@@ -1,0 +1,194 @@
+/*NAVBAR XS*/
+.navbar.menu_xs{
+  padding: 0;
+}
+.progress.bar-xs{
+  background-color: rgba(156, 156, 156, .4);
+  border-radius:0px;
+  height: 5px;
+}
+.progress-bar.bar-xs{
+  background-color: #3B286C;
+  border-radius:0px 5px 5px 0px;
+  height: 5px;
+}
+.navbar-toggler.menu_xs{
+  position: relative;
+  display: block;
+  padding: 15px;
+  width: 100%;
+  border:none;
+  border-radius: 0px;
+  font-family: $Arsenal-Bold;
+  color:$color01;
+  background: $gradient02;
+	font-size: $tx-size-05 - .2;
+  span img{
+    position: absolute;
+    right: 37px;
+    top:20px;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.navbar-nav.menu_xs{
+  padding: 0px 18px 0px 18px;
+}
+// .navbar-light .navbar-nav .active>.nav-link.menu_xs{
+//   position: relative;
+//   font-family: $Lato-Regular;
+//   color:$color01;
+//   font-size: $tx-size-md-04;
+//   text-align: center;
+//   padding: 20px 10px;
+//   border-bottom: 1px solid $claro02;
+//   span img{
+//     position: absolute;
+//     right: 22px;
+//     top:25px;
+//   }
+// }
+.navbar-light .navbar-nav .nav-link.menu_xs{
+  font-family: $Arsenal-Regular;
+  color:$color01;
+  font-size: $tx-size-04;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255,255,255,.4);
+  span img{
+    position: absolute;
+    right: 22px;
+    top:25px;
+  }
+}
+.navbar-light .navbar-nav .nav-link.menu_xs.ultimo{
+  border:none;
+}
+
+.nav-xs-adp.collapse{
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  background: $color01;
+	padding: 65px 50px 35px 50px;
+	transition: .5s;
+	-moz-transition: .5s;
+}
+
+
+.nav-xs-adp.collapsing{
+	padding: 0px 50px 0px 50px;
+	opacity: 0;
+	transition: .25s;
+	-moz-transition: .25s;
+}
+
+.icon-close-agil-xs{
+	position: absolute;
+	right: 10px;
+	top:10px;
+	.icon-menu-close:before{
+    background: $gradient01;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+	}
+}
+
+
+
+/*ICONOS ANIMADOS*/
+@keyframes animacion-iconos{
+	0%{
+		background-position: 20px center;
+	}
+	25%{
+		background-position: 20px center;
+	}
+	50%{
+		background-position: 40px center;
+	}
+	75%{
+		background-position: 40px center;
+	}
+	100%{
+		background-position: 60px center;
+	}
+}
+
+.iconos-contacto-fixed-animados{
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	background-image: url('../images/iconos-animation-fixed-xs.webp');
+	background-size: 40px 20px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-repeat: repeat-x, no-repeat;
+	height: 20px;
+	width: 20px;
+	animation-name: animacion-iconos;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	/* animation-timing-function: steps(2); */
+	animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+	z-index: 101;
+}
+@media screen and (max-width: 450px) {
+	.iconos-contacto-fixed-animados{
+		top: 15px;
+		left: 20px;
+	}
+}
+@media screen and (max-width: 370px) {
+	.iconos-contacto-fixed-animados{
+		top: 15px;
+		left: 10px;
+	}
+}
+
+
+.icon-arrow-btn-contacto-agil{
+	position: absolute;
+	top:15px;
+	right: 15px;
+	max-height: 30px;
+	.icon-slider-anterior-desplegable-arriba:before{
+		color: $color01;
+	}
+	.icon-slider-anterior-desplegable-abajo:before{
+		color: $color01;
+	}
+	@media screen and (max-width: 370px) {
+		right: 10px;
+	}
+}
+
+
+
+
+.icon-btn-agil-xs{
+	margin-right: 3px;
+	.icon-personal-information:before{
+		color: $color01;
+	}
+	.icon-whatsapp:before{
+		color: $color01;
+	}
+}
+
+.tx-contacto-agil-xs-01{
+	text-align: center;
+  font-family: $Helvetica-Thin;
+  color:$blanco;
+	font-size: $tx-size-06;	
+	margin: 20px 0px 20px 0px;
+	span{
+		display: inline-block;
+		border-bottom: 1px solid $blanco;
+		width: 35%;
+		margin: 0px 10px 5px 10px;
+	}
+}

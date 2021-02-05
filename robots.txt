@@ -1,0 +1,19 @@
+# Regla General - Todos los buscadores
+User-agent: *
+Allow: /
+Allow: /casas-campestres.html
+Allow: /condominio.html
+Allow: /ubicacion.html
+Allow: /preguntas-frecuentes.html
+Allow: /constructora-alianza.html
+Allow: /contacto.html
+
+Disallow: /terminos-condiciones.html
+Disallow: /mensaje_enviado.html
+Disallow: /error-404.html
+
+Disallow: /formulario-accion-mobile.html
+Disallow: /brochure_digital_altos_del_palmar.pdf
+
+# Ubicacion Sitemap
+Sitemap: https://www.altosdelpalmar.com/sitemap.xml

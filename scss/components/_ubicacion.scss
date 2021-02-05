@@ -1,0 +1,230 @@
+/** UBICACION **/
+/* CONDOMINIO XS */
+/* SECTION 02 XS */
+.section-ubicacion-xs-02{
+  background: $color01;
+  // border-bottom: 5px solid $color02;
+  border-bottom: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  padding: 20px 0px;
+}
+
+.tx-section-ubicacion-xs-02-01{
+  text-align: center;
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Regular;
+  font-size: $tx-size-04;
+  span{
+    font-family: $Arsenal-Bold;
+  }
+}
+
+/* SECTION 03 XS */
+.section-ubicacion-xs-03{
+  padding: 0px 0px 20px 0px;
+}
+
+.tx-section-ubicacion-xs-03-01{
+  text-align: center;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  margin:30px 0px 30px 0px;
+  span{
+    font-family: $Helvetica-Regular;
+  }
+}
+
+/* SECTION 05 XS */
+.section-ubicacion-xs-05{
+  padding: 20px 0px 30px 0px;
+  background: $color01;
+}
+
+.tx-section-ubicacion-xs-05-01{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Regular;
+  font-size: $tx-size-05;
+  margin:0px 0px 0px 0px;
+  span{
+    font-family: $Arsenal-Bold;
+    // border-bottom: 3px solid $color02;
+    border-bottom: 3px solid transparent;
+    border-image-source: $gradient02; 
+    border-image-slice: 1;
+  }
+}
+
+/*SECTION CONDOMINIO 01 WEB*/
+.section-web-ubicacion-01{
+  padding: 60px 0px 60px 0px;
+}
+
+.container-content-ubicacion-01{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 40px 0px 40px;
+  height: 100%;
+  background: $color01;
+}
+.tx-section-ubicacion-web-01{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-01;
+  margin:0px 0px 40px 0px;
+  @media screen and (max-width: 1330px) {
+    font-size: $tx-size-02;
+    margin:0px 0px 30px 0px;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+
+}
+.tx-section-ubicacion-web-02{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-04;
+  text-align: justify;
+  span{
+    font-family: $Helvetica-Regular;
+  }
+  @media screen and (max-width: 1330px) {
+    font-size: $tx-size-05;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-06 - .2;
+  }
+}
+
+.container-content-ubicacion-fixed{
+  height: 5px;
+  width: 75%;
+  position: absolute;
+  z-index: 100;
+  margin:0px 15px 0px 0px;
+  right: 0;
+  top:50px;
+  background: $gradient02;
+}
+
+.container-content-ubicacion-02{
+  // border-top: 5px solid $color02;
+  // border-top: 5px solid transparent;
+  // border-image-source: $gradient02; 
+  // border-image-slice: 1;
+  padding: 50px 0px 0px 60px;
+  margin: 50px 0px 0px 0px;
+}
+
+/*SECTION 02 UBICACION WEB*/
+.section-ubicacion-web-02{
+  padding: 40px 0px 40px 0px;
+  background: $color01;
+  // border-top: 5px solid $color02;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+}
+
+.tx-section-ubicacion-web-02-01{
+  text-align: center;
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-02;
+  span{
+    font-family: $Arsenal-Bold;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-04;
+  }
+}
+
+/*SECTION 03 UBICACION WEB*/
+.section-web-condominio-03{
+  padding: 60px 0px 0px 0px;
+}
+
+.content-section-ubicacion-03-03{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: $gradient01;
+  margin: 0px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+.tx-section-web-ubicacion-03-04{
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-02;
+  text-align: center;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+}
+
+.content-section-ubicacion-03-04{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: $color01;
+  margin: 0px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-ubicacion-03-05{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05;
+  margin-bottom: 10px;
+  display: flex;
+  .global{
+    display: inline-block;
+    .icon-vieta:before{
+      color: $blanco;
+      font-size: 2.75rem;
+    }
+    margin:0rem 2rem 0rem 0rem;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+
+}
+.tx-section-web-ubicacion-03-05-b{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05;
+  display: flex;
+  .global{
+    display: inline-block;
+    .icon-vieta:before{
+      color: $blanco;
+      font-size: 2.75rem;
+    }
+    margin:0rem 2rem 0rem 0rem;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+
+}

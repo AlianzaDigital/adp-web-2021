@@ -1,0 +1,199 @@
+/* TIPOGRAFIAS */
+@font-face{
+	font-family: 'Arsenal-Bold';
+	src: url('/fonts/Arsenal-Bold.ttf') format("truetype");
+	font-weight:normal;
+	// font-display:swap;
+}
+@font-face{
+	font-family: 'Arsenal-Italic';
+	src: url('/fonts/Arsenal-Italic.ttf') format("truetype");
+	font-weight:normal;
+	// font-display:swap;
+}
+@font-face{
+	font-family: 'Arsenal-Regular';
+	src: url('/fonts/Arsenal-Regular.ttf') format("truetype");
+	font-weight:normal;
+	// font-display:swap;
+}
+@font-face{
+	font-family: 'Helvetica-Neue-Bold';
+	src: url("/fonts/Helvetica-Neue-Bold.ttf") format("truetype");
+	font-weight:normal;
+	// font-display:swap;
+}
+@font-face{
+	font-family: 'Helvetica-Neue-Light';
+	src: url("/fonts/Helvetica-Neue-Light.ttf") format("truetype");
+	font-weight:normal;
+	// font-display:swap;
+}
+
+@font-face {
+  font-family: 'adp-icon-font';
+  src:  url('/fonts/icomoon.eot?kd5vfr');
+  src:  url('/fonts/icomoon.eot?kd5vfr#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?kd5vfr') format('truetype'),
+    url('/fonts/icomoon.woff?kd5vfr') format('woff'),
+    url('/fonts/icomoon.svg?kd5vfr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'adp-icon-font' !important;
+  // speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check-formulario:before {
+  content: "\e900";
+  color: #898989;
+}
+.icon-facebook:before {
+  content: "\e901";
+  color: #898989;
+}
+.icon-flecha-boton-landing-home:before {
+  content: "\e902";
+  color: #898989;
+}
+.icon-informacion-slider-1 .path1:before {
+  content: "\e903";
+  color: rgb(255, 255, 255);
+}
+.icon-informacion-slider-1 .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(137, 137, 137);
+}
+.icon-informacion-slider-1 .path3:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(137, 137, 137);
+}
+.icon-informacion-slider-1 .path4:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(137, 137, 137);
+}
+.icon-informacion-slider-1-on-clic .path1:before {
+  content: "\e907";
+  color: rgb(255, 255, 255);
+}
+.icon-informacion-slider-1-on-clic .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(137, 137, 137);
+}
+.icon-informacion-slider-1-on-clic .path3:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-informacion-slider-1-on-clic .path4:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-informacion-slider-1-on-clic .path5:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(137, 137, 137);
+}
+.icon-informacion-slider-1-on-clic .path6:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(137, 137, 137);
+}
+.icon-instagram:before {
+  content: "\e90d";
+  color: #898989;
+}
+.icon-mail:before {
+  content: "\e90e";
+  color: #898989;
+}
+.icon-menu-close:before {
+  content: "\e90f";
+  color: #898989;
+}
+.icon-menu-default:before {
+  content: "\e910";
+  color: #898989;
+}
+.icon-panel-solar:before {
+  content: "\e911";
+  color: #898989;
+}
+.icon-personal-information:before {
+  content: "\e912";
+  color: #898989;
+}
+.icon-recorrido-virtual:before {
+  content: "\e913";
+  color: #898989;
+}
+.icon-reloj-horario-atencion:before {
+  content: "\e914";
+  color: #898989;
+}
+.icon-signo-pesos:before {
+  content: "\e915";
+  color: #898989;
+}
+.icon-sistema-de-acueducto:before {
+  content: "\e916";
+  color: #898989;
+}
+.icon-slider-anterior-desplegable-abajo:before {
+  content: "\e917";
+  color: #898989;
+}
+.icon-slider-anterior-desplegable-arriba:before {
+  content: "\e918";
+  color: #898989;
+}
+.icon-slider-imagen-activa:before {
+  content: "\e919";
+  color: #898989;
+}
+.icon-slider-imagen-default:before {
+  content: "\e91a";
+  color: #898989;
+}
+.icon-telefono-atencion:before {
+  content: "\e91b";
+  color: #898989;
+}
+.icon-ubicacion:before {
+  content: "\e91c";
+  color: #898989;
+}
+.icon-vieta:before {
+  content: "\e91d";
+  color: #898989;
+}
+.icon-whatsapp:before {
+  content: "\e91e";
+  color: #898989;
+}
+.icon-wi-fi:before {
+  content: "\e91f";
+  color: #898989;
+}
+.icon-youtube:before {
+  content: "\e920";
+  color: #898989;
+}

@@ -1,0 +1,514 @@
+/** CONTACTO **/
+/* CONSTRUCTORA XS */
+/* SECTION 02 XS */
+.section-contacto-xs-02{
+  background: $color01;
+  // border-top: 5px solid $color02;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  padding: 20px 0px;
+}
+
+.tx-section-contacto-xs-02-01{
+  text-align: center;
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-04;
+  margin:0px 0px 30px 0px;
+  span{
+    // border-bottom: 3px solid $color02;
+    border-bottom:3px solid transparent;
+    border-image-source: $gradient02; 
+    border-image-slice: 1;
+  }
+}
+
+.tx-section-contacto-xs-02-02{
+  text-align: center;
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  line-height: 1.5;
+  margin:0px 0px 10px 0px;
+}
+
+/* SECTION 03 XS */
+.section-contacto-xs-03{
+  // border-top: 5px solid $color02;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  padding: 40px 0px;
+}
+
+.tx-section-contacto-xs-03-01{
+  text-align: center;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05;
+  margin:0px 0px 40px 0px;
+  span{
+    // border-bottom: 3px solid $color02;
+    border-bottom: 3px solid transparent;
+    border-image-source: $gradient02; 
+    border-image-slice: 1;
+  }
+}
+
+.content-section-contacto-xs-01{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.tx-section-contacto-xs-03-02{
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-05;
+  margin:0px 0px 0px 0px;
+}
+.tx-section-contacto-xs-03-03{
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06 + .2;
+  margin:0px 0px 20px 0px;
+}
+
+.enlace-contacto-xs-01{
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06 + .2;
+  border: 1px solid $color01;
+  margin: 0px 0px 15px 0px;
+  .contacto{
+    position: absolute;
+    left:10px;
+    .icon-telefono-atencion:before{
+      color: $color01;
+    }
+    .icon-whatsapp:before{
+      color: $color01;
+    }
+  }
+  &:focus{
+    color: $color01;
+  }
+  &:hover{
+    color: $color01;
+  }
+}
+
+.tx-section-contacto-xs-03-04{
+  color: $color01;
+  text-align: center;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06 + .2;
+  padding: 0px 0px 50px 0px;
+  // border-bottom: 5px solid $color02;
+  border-bottom: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+  margin:50px 0px 0px 0px;
+}
+
+.tx-section-contacto-xs-03-05{
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  padding: 0px 0px 0px 5px;
+  // border-left: 10px solid $color02;
+  border-left: 10px solid transparent;
+  border-image-source: $gradient03; 
+  border-image-slice: 1;
+  margin:50px 0px 0px 0px;
+}
+
+.tx-section-contacto-xs-03-06{
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Regular;
+  font-size: $tx-size-06;
+  margin:0px 0px 30px 15px;
+}
+
+.tx-aviso-importante-contacto-xs{
+  display: flex;
+  color: $color04;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  margin:0px 0px 1rem 45px;
+  font-style: italic;
+}
+
+.tx-section-contacto-xs-03-07{
+  display: flex;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  margin:0px 0px 1.4rem 15px;
+  .contacto{
+    margin-right: 13px;
+    .icon-reloj-horario-atencion:before,
+    .icon-ubicacion:before,
+    .icon-whatsapp:before,
+    .icon-telefono-atencion:before,
+    .icon-mail:before{
+      display: inline-block;
+      width: 15px;
+      color: $color01;
+    }
+  }
+}
+
+.tx-section-contacto-xs-03-07-b{
+  display: flex;
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  margin:0px 0px 0px 15px;
+  .contacto{
+    width: 14px;
+    margin-right: 15px;
+    .icon-reloj-horario-atencion:before,
+    .icon-ubicacion:before,
+    .icon-whatsapp:before,
+    .icon-telefono-atencion:before,
+    .icon-mail:before{
+      display: inline-block;
+      width: 15px;
+      color: $color01;
+    }
+  }
+  .margen-tx-contacto-xs{
+    display: block;
+    margin:0px 0px 0px 25px;
+  }
+}
+
+.enlace-contacto-xs-02{
+  display: inline-block;
+  color: $color02;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06;
+  margin:0px 0px 10px 45px;
+  &:focus{
+    text-decoration: none;
+    color: $color02;
+  }
+  &:hover{
+    text-decoration: none;
+    color: $color02;
+  }
+}
+
+
+/* MAIN WEB */
+.main-contacto-web {
+  // background: url('../images/bg-main-web.webp');
+  background: url('../images/panoramica-casa-frontal-condominio-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 850px;
+  @media screen and (max-width: 1920px) {
+    background-size: 100% cover;
+    height: 850px;
+  }
+  @media screen and (max-width: $window-size-01) {
+    background-size: 100% cover;
+    height: 715px;
+  }
+  @media screen and (max-width: $window-size-02) {
+    background-size: 100% cover;
+    height: 450px;
+  }
+}
+/*SECTION CONDOMINIO 01 WEB*/
+.section-contacto-web-01{
+  padding: 60px 0px 80px 0px;
+  background: $color01;
+  // border-top: 5px solid $color02;
+  border-top: 5px solid transparent;
+  border-image-source: $gradient02; 
+  border-image-slice: 1;
+}
+
+.tx-section-contacto-web-01-01{
+  text-align: center;
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Arsenal-Bold;
+  font-size: $tx-size-01;
+  span{
+    font-family: $Arsenal-Bold;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-02;
+  }
+}
+.tx-section-contacto-web-01-02{
+  text-align: center;
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-04;
+  margin: 40px 0px 0px 0px;
+  line-height: 1.5;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-05;
+  }
+}
+
+/*SECTION 02 CONTACTO WEB*/
+.section-contacto-web-02{
+  padding: 100px 0px 0px 0px;
+}
+
+.container-contacto-01{
+  padding: 0px 0px;
+  height: 100%;
+  @media screen and (max-width: $window-size-03) {
+    padding: 0px 60px;
+  }
+  .tx-section-contacto-web-02-01{
+    color: $color01;
+    font-family: $Arsenal-Regular;
+    font-size: $tx-size-03;
+    margin: 50px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    // border-left: 10px solid $color02;
+    border-left: 10px solid transparent;
+    border-image-source: $gradient03; 
+    border-image-slice: 1;
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-04;
+    }
+  }
+  .tx-section-contacto-web-02-02{
+    color: $color01;
+    font-family: $Arsenal-Bold;
+    font-size: $tx-size-04;
+    margin: 10px 0px 0px 25px;
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-05;
+    }
+  }
+  .tx-aviso-importante-contacto{
+    display: flex;
+    color: $color04;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05 - .2;
+    margin: 10px 0px 0px 75px;
+    line-height: 1.25;
+    font-style: italic;
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-06;
+    }
+  }
+  .tx-section-contacto-web-02-03{
+    display: flex;
+    color: $color01;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05 - .2;
+    margin: 17px 0px 0px 45px;
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-06;
+      margin: 14px 0px 0px 45px;
+    }
+    .contacto{
+      margin-right: 15px;
+      .icon-reloj-horario-atencion:before,
+      .icon-ubicacion:before,
+      .icon-whatsapp:before,
+      .icon-telefono-atencion:before,
+      .icon-mail:before{
+        color: $color01;
+      }
+    }
+  }
+  .enlace-contacto-01{
+    display: inline-block;
+    margin: 0px 0px 0px 80px;
+    color: $color02;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-06;
+    &:focus{
+      text-decoration: none;
+      color: $color02; 
+    }
+    &:hover{
+      text-decoration: none;
+      color: $color02; 
+    }
+    @media screen and (max-width: $window-size-02) {
+      font-size: $tx-size-06 - .2;
+    }
+  }
+}
+
+.container-contacto-02{
+  padding: 0px 0px;
+  height: 100%;
+  @media screen and (max-width: $window-size-03) {
+    padding: 0px 60px;
+  }
+  .tx-section-contacto-web-02-01{
+    color: $color01;
+    font-family: $Arsenal-Regular;
+    font-size: $tx-size-03;
+    margin: 50px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    // border-left: 10px solid $color02;
+    border-left: 10px solid transparent;
+    border-image-source: $gradient03; 
+    border-image-slice: 1;
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-04;
+    }
+  }
+  .tx-section-contacto-web-02-02{
+    color: $color01;
+    font-family: $Arsenal-Bold;
+    font-size: $tx-size-04;
+    margin: 10px 0px 0px 25px;
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-05;
+    }
+  }
+  .tx-aviso-importante-contacto{
+    display: flex;
+    color: $color04;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05 - .2;
+    margin: 10px 0px 0px 75px;
+    line-height: 1.25;
+    font-style: italic;
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-06;
+    }
+  }
+  .tx-section-contacto-web-02-03{
+    display: flex;
+    color: $color01;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05 - .2;
+    margin: 17px 0px 0px 45px;
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-06;
+      margin: 14px 0px 0px 45px;
+    }
+    .contacto{
+      margin-right: 15px;
+      .icon-reloj-horario-atencion:before,
+      .icon-ubicacion:before,
+      .icon-whatsapp:before,
+      .icon-telefono-atencion:before,
+      .icon-mail:before{
+        color: $color01;
+      }
+    }
+  }
+  .enlace-contacto-01{
+    display: inline-block;
+    margin: 0px 0px 0px 80px;
+    color: $color02;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-06;
+    &:focus{
+      text-decoration: none;
+      color: $color02; 
+    }
+    &:hover{
+      text-decoration: none;
+      color: $color02; 
+    }
+    @media screen and (max-width: $window-size-02) {
+      font-size: $tx-size-06;
+    }
+  }
+}
+
+
+.content-section-contacto-02-03{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: $gradient01;
+  margin: 60px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+.tx-section-web-contacto-02-04{
+  color: $color01;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-02;
+  text-align: center;
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-03;
+  }
+}
+.content-section-contacto-02-04{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: $color01;
+  margin: 60px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-contacto-02-05{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05;
+  margin-bottom: 10px;
+  display: flex;
+  .global{
+    display: inline-block;
+    .icon-vieta:before{
+      color: $blanco;
+      font-size: 2.75rem;
+    }
+    margin:0rem 2rem 0rem 0rem;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+
+}
+.tx-section-web-contacto-02-05-b{
+  color: $blanco;
+  // font-family: $Arsenal-Regular;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-05;
+  display: flex;
+  .global{
+    display: inline-block;
+    .icon-vieta:before{
+      color: $blanco;
+      font-size: 2.75rem;
+    }
+    margin:0rem 2rem 0rem 0rem;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+
+}

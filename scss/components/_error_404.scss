@@ -1,0 +1,167 @@
+/** ERROR 404**/
+.section-error-404{
+  padding: 40px 0px 0px 0px;
+  // height: calc(100vh - 80px);
+}
+
+
+.content-section-error-404{
+  background: url('../images/bg-error-404-web.webp');
+  // background-size: 100% 100%;
+  // background-size: auto 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  // background-position: right bottom;
+  // height: calc(100vh - 118px);
+  height: 100vh;
+  padding: 90px 8.333% 0px 16.6666%;
+  @media screen and (max-width: $window-size-01) {
+    padding: 60px 8.333% 0px 16.6666%;
+  }
+  // @media screen and (max-width: 1400px) {
+  //   background-position: bottom right;
+  //   background-size: auto 100%;
+  // }
+  @media screen and (max-width: $window-size-02) {
+    background: none;
+  }
+  @media screen and (max-width: $window-size-04) {
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+  h1:nth-child(1){
+    color: $color01;
+    font-family: $Arsenal-Bold;
+    font-size: $tx-size-03;
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-04;
+    }
+  }
+  p:nth-child(2){
+    color: $color01;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05;
+    margin:30px 0px 0px 0px;
+    @media screen and (max-width: $window-size-03) {
+      margin:20px 0px 0px 0px;
+      font-size: $tx-size-06;
+    }
+  }
+  p:nth-child(3){
+    color: $color01;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05;
+    margin:40px 0px 0px 0px;
+    @media screen and (max-width: $window-size-03) {
+      margin:30px 0px 0px 0px;
+      font-size: $tx-size-06;
+    }
+  }
+  p:nth-child(4){
+    color: $color01;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05;
+    margin:40px 0px 0px 30px;
+    @media screen and (max-width: $window-size-03) {
+      margin:30px 0px 0px 0px;
+      font-size: $tx-size-06;
+    }
+  }
+  p:nth-child(5){
+    color: $color01;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05;
+    margin:10px 0px 0px 30px;
+    @media screen and (max-width: $window-size-03) {
+      margin:5px 0px 0px 0px;
+      font-size: $tx-size-06;
+    }
+  }
+  p:nth-child(6){
+    color: $color01;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05;
+    margin:10px 0px 0px 30px;
+    @media screen and (max-width: $window-size-03) {
+      margin:5px 0px 0px 0px;
+      font-size: $tx-size-06;
+    }
+  }
+  p:nth-child(7){
+    color: $color01;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-05;
+    margin:40px 0px 0px 0px;
+    span{
+      font-family: $Helvetica-Regular;
+    }
+    @media screen and (max-width: $window-size-03) {
+      font-size: $tx-size-06;
+      margin:30px 0px 0px 0px;
+    }
+  }
+}
+
+.content-section-error-404-02{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // height: calc(100vh - 118px);
+  height:100vh;
+  @media screen and (max-width: $window-size-04) {
+    height: 100%;
+  }
+}
+.bg-error-404{
+  margin:0px 0px 0px 0px;
+  @media screen and (max-width: $window-size-03) {
+    margin:50px 0px 0px 0px;
+  }
+}
+
+.regresar-inicio-error-404{
+  margin: 40px 0px 0px 0px;
+  display: block;
+  text-align: right;
+  font-family: $Helvetica-Regular;
+  font-size: $tx-size-05 - .2;
+  color:$negro;
+  &:focus{
+    // color:$negro;
+    color:$color02;
+    .volver-inicio{
+      .icon-slider-anterior-desplegable-arriba:before{
+        color: $color02;
+      }
+    }
+  }
+  &:hover{
+    // color:$negro;
+    color:$color02;
+    .volver-inicio{
+      .icon-slider-anterior-desplegable-arriba:before{
+        color: $color02;
+      }
+    }
+  }
+  .volver-inicio{
+    margin-right: 10px;
+    .icon-slider-anterior-desplegable-arriba:before{
+      display: inline-block;
+      transform: rotate(-90deg);
+      color: $color01;
+      font-size: 1.4rem;
+    }
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+  @media screen and (max-width: $window-size-03) {
+    margin:30px 0px 0px 0px;
+  }
+  @media screen and (max-width: $window-size-04) {
+    margin:40px 0px 0px 0px;
+    text-align: center;
+  }
+}

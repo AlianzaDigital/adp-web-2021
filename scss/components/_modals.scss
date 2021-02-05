@@ -1,0 +1,160 @@
+/*MODALES WEB*/
+// .modalCasa.modal-dialog{
+//   max-width: 1080px;
+//   @media screen and (max-width: $window-size-02) {
+//     max-width: 800px;
+//   }
+//   @media screen and (max-width: $window-size-03) {
+//     max-width: 650px;
+//   }
+// }
+
+// .modalCasa.modal-body{
+//   padding: 0px;
+// }
+
+// .head-modal-casa{
+//   padding: 40px 0px 40px 0px;
+//   background: $color01;
+// }
+
+// .close-modal-casa{
+//   position: absolute;
+//   right: 30px;
+//   top: 45px;
+//   color:$blanco !important;
+//   font-family: $Helvetica-Regular;
+//   font-size: $tx-size-05 - .2;
+//   cursor: pointer;
+//   span{
+//     margin-right: 10px;
+//   }
+//   @media screen and (max-width: $window-size-02) {
+//     font-size: $tx-size-05;
+//   }
+//   @media screen and (max-width: $window-size-03) {
+//     font-size: $tx-size-06;
+//   }
+// }
+
+// .tx-modal-casa-web-01{
+//   text-align: center;
+//   color:$blanco;
+//   font-family: $Arsenal-Bold;
+//   font-size: $tx-size-03;
+//   @media screen and (max-width: $window-size-02) {
+//     font-size: $tx-size-04;
+//   }
+//   @media screen and (max-width: $window-size-03) {
+//     font-size: $tx-size-05;
+//   }
+// }
+
+
+// .tab-modal-casa-web.nav-item{
+//   width: 50%;
+//   text-align: center;
+// }
+
+// .nav-tabs .nav-link {
+//   border: none;
+//   border-top-left-radius: none;
+//   border-top-right-radius: none;
+// }
+
+// .nav-link{
+//   font-family: $Helvetica-Thin;
+//   font-size: $tx-size-05 - .2;
+//   color:$color01;
+//   background: #C4C4C4;
+//   border: none;
+//   border-bottom: 10px solid transparent !important;
+//   cursor: pointer;
+//   &:focus{
+//     color:$color01;
+//   }
+//   &:hover{
+//     color:$color01;
+//   }
+//   @media screen and (max-width: $window-size-02) {
+//     font-size: $tx-size-05;
+//   }
+//   @media screen and (max-width: $window-size-03) {
+//     font-size: $tx-size-06 - .2;
+//   }
+//   @media screen and (max-width: $window-size-04) {
+//     border-top: 5px solid transparent !important;
+//   }
+// }
+// .nav-link.mobile-02.active{
+//   color:$color01 !important;
+//   background: $blanco;
+//   border: none;
+//   border-bottom: 10px solid $color02 !important;
+//   @media screen and (max-width: $window-size-04) {
+//     border-bottom: none  !important;
+//     border-top: 5px solid $color02 !important;
+//   }
+// }
+
+.iframe-modal-condiciones {
+  height: 520px;
+  border-top: 1px solid #EAEAEA;
+  border-left: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+  border-right: none;
+  margin: 0px 0px 10px 0px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 575px) {
+  .iframe-modal-condiciones {
+    height: 65vh;
+  }
+}
+
+.modalTerminos.modal-dialog{
+  max-width: 1080px;
+  @media screen and (max-width: $window-size-02) {
+    max-width: 800px;
+  }
+  @media screen and (max-width: $window-size-03) {
+    max-width: 650px;
+  }
+  @media screen and (max-width: $window-size-04) {
+    max-width: 90%;
+    margin:2rem auto 2rem auto;
+  }
+}
+
+.modalTerminos.modal-body{
+  padding: 5rem 5rem 0rem 5rem;
+  @media screen and (max-width: $window-size-04) {
+    padding: 5rem 1rem 0rem 1rem;
+  }
+}
+
+.modalSlider01.modal-dialog{
+  position: relative;
+  max-width: 1080px;
+  margin:5rem auto 5rem auto;
+  @media screen and (max-width: $window-size-02) {
+    max-width: 800px;
+    margin:3rem auto 3rem auto;
+  }
+  @media screen and (max-width: $window-size-03) {
+    max-width: 650px;
+    margin:1rem auto 0rem auto;
+  }
+  @media screen and (max-width: $window-size-04) {
+    max-width: 90%;
+    top: 50%;
+    margin-top: -35%;
+  }
+}
+
+.modalSlider01.modal-body{
+  padding: 1rem;
+  @media screen and (max-width: $window-size-04) {
+    padding: .5rem;
+  }
+}

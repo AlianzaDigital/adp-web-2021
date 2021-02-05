@@ -1,0 +1,7328 @@
+@charset "UTF-8";
+/* GLOBALES */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  /** Fusiona padding con medidas especificas **/
+  font-size: 62.5%;
+  /** Reset para REMS - 62.5% => 10px === 1rem **/
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Arsenal-Regular";
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.25;
+}
+
+.tx_seo {
+  position: absolute;
+  top: -500px;
+  z-index: -1;
+}
+
+.sin-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.sin-padding-responsive {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 991px) {
+  .sin-padding-responsive {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.sin-padding-left {
+  padding-left: 0px;
+}
+
+.sin-padding-left-responsive {
+  padding-left: 0px;
+}
+@media screen and (max-width: 991px) {
+  .sin-padding-left-responsive {
+    padding-left: 15px;
+  }
+}
+
+.sin-padding-right {
+  padding-right: 0px;
+}
+
+.sin-padding-right-responsive {
+  padding-right: 0px;
+}
+@media screen and (max-width: 991px) {
+  .sin-padding-right-responsive {
+    padding-right: 15px;
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+#backdrop-menu-principal.show {
+  opacity: 1;
+}
+
+#backdrop-menu-principal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.7) 0%, rgba(17, 35, 52, 0.7) 100%);
+}
+
+#backdrop-menu-agil.show {
+  opacity: 1;
+}
+
+#backdrop-menu-agil {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.7) 0%, rgba(17, 35, 52, 0.7) 100%);
+}
+
+.modal-backdrop {
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.7) 0%, rgba(17, 35, 52, 0.7) 100%);
+}
+
+/* NAV MENU PRINCIPAL*/
+.menu-adp-estilo {
+  position: relative;
+  background: #FFF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  z-index: 800;
+}
+@media screen and (max-width: 991px) {
+  .menu-adp-estilo {
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.menu-adp.navbar.navbar-expand-lg.navbar-light {
+  padding: 0px 0px;
+}
+
+.borde-dorado-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: none;
+  width: 250px;
+  padding: 10px 0px;
+}
+@media screen and (max-width: 991px) {
+  .borde-dorado-nav {
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.navbar-brand {
+  margin-left: 15px;
+}
+.navbar-brand img {
+  width: inherit;
+}
+@media screen and (max-width: 991px) {
+  .navbar-brand img {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .navbar-brand img {
+    width: 120px;
+  }
+}
+
+.menu-adp.navbar-toggler {
+  margin-right: 15px;
+  padding: 3px 0px 3px 7px;
+  border: none;
+}
+
+.global .icon-menu-default {
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+
+.global .icon-menu-close {
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+
+.menu-adp.navbar-light .navbar-nav {
+  align-items: center;
+}
+@media screen and (max-width: 991px) {
+  .menu-adp.navbar-light .navbar-nav {
+    align-items: initial;
+  }
+}
+
+.menu-adp.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.menu-adp.navbar-light .navbar-nav .nav-item {
+  border-right: 1px solid #E5E5E5;
+}
+@media screen and (max-width: 991px) {
+  .menu-adp.navbar-light .navbar-nav .nav-item {
+    border-right: none;
+    border-bottom: 1px solid #E5E5E5;
+  }
+}
+
+.menu-adp.navbar-light .navbar-nav .nav-link {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.6rem;
+  line-height: 1;
+  background: #FFF;
+  border: none;
+  border-bottom: 3px solid transparent !important;
+  padding: 5px 10px 5px 10px;
+  margin: 0px 15px;
+}
+.menu-adp.navbar-light .navbar-nav .nav-link:hover {
+  color: #BC913E;
+  border-bottom: 3px solid transparent !important;
+}
+@media screen and (max-width: 1700px) {
+  .menu-adp.navbar-light .navbar-nav .nav-link {
+    padding: 5px 5px 5px 5px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .menu-adp.navbar-light .navbar-nav .nav-link {
+    padding: 5px 2px 5px 2px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .menu-adp.navbar-light .navbar-nav .nav-link {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 15px 0px 15px 0px;
+  }
+}
+
+.menu-adp.navbar-light .navbar-nav .nav-link.active {
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.menu-adp.navbar-light .navbar-nav .ultimo.nav-item {
+  border-right: 1px solid transparent;
+}
+@media screen and (max-width: 991px) {
+  .menu-adp.navbar-light .navbar-nav .ultimo.nav-item {
+    border-right: none;
+    border-bottom: none;
+  }
+}
+
+.menu-adp.navbar-light .navbar-nav .contacto.nav-item {
+  border-right: 1px solid transparent;
+}
+@media screen and (max-width: 991px) {
+  .menu-adp.navbar-light .navbar-nav .contacto.nav-item {
+    border-right: none;
+    border-bottom: none;
+  }
+}
+
+.menu-adp.navbar-light .navbar-nav .contacto .nav-link {
+  color: #112334;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border: 1px solid transparent !important;
+  border-right: 1px solid transparent;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 5px;
+}
+.menu-adp.navbar-light .navbar-nav .contacto .nav-link:hover {
+  color: #112334;
+  background: #FFF;
+  border: 1px solid #BC913E !important;
+}
+@media screen and (max-width: 991px) {
+  .menu-adp.navbar-light .navbar-nav .contacto .nav-link {
+    margin: 0px 0px;
+    padding: 15px 15px 15px 15px;
+    font-family: "Helvetica-Neue-Bold";
+  }
+}
+
+.menu-adp.navbar-light .navbar-nav .contacto .nav-link.active {
+  color: #112334;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-right: 1px solid transparent;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 5px;
+}
+.menu-adp.navbar-light .navbar-nav .contacto .nav-link.active:hover {
+  background: transparent;
+  border: 1px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  color: #112334;
+}
+@media screen and (max-width: 991px) {
+  .menu-adp.navbar-light .navbar-nav .contacto .nav-link.active {
+    margin: 0px 0px;
+    padding: 15px 15px 15px 15px;
+    font-family: "Helvetica-Neue-Bold";
+  }
+}
+
+/* TIPOGRAFIAS */
+@font-face {
+  font-family: "Arsenal-Bold";
+  src: url("/fonts/Arsenal-Bold.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Arsenal-Italic";
+  src: url("/fonts/Arsenal-Italic.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Arsenal-Regular";
+  src: url("/fonts/Arsenal-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Helvetica-Neue-Bold";
+  src: url("/fonts/Helvetica-Neue-Bold.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Helvetica-Neue-Light";
+  src: url("/fonts/Helvetica-Neue-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "adp-icon-font";
+  src: url("/fonts/icomoon.eot?kd5vfr");
+  src: url("/fonts/icomoon.eot?kd5vfr#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?kd5vfr") format("truetype"), url("/fonts/icomoon.woff?kd5vfr") format("woff"), url("/fonts/icomoon.svg?kd5vfr#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "adp-icon-font" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check-formulario:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-facebook:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-flecha-boton-landing-home:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-informacion-slider-1 .path1:before {
+  content: "";
+  color: white;
+}
+
+.icon-informacion-slider-1 .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #898989;
+}
+
+.icon-informacion-slider-1 .path3:before {
+  content: "";
+  margin-left: -1em;
+  color: #898989;
+}
+
+.icon-informacion-slider-1 .path4:before {
+  content: "";
+  margin-left: -1em;
+  color: #898989;
+}
+
+.icon-informacion-slider-1-on-clic .path1:before {
+  content: "";
+  color: white;
+}
+
+.icon-informacion-slider-1-on-clic .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #898989;
+}
+
+.icon-informacion-slider-1-on-clic .path3:before {
+  content: "";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-informacion-slider-1-on-clic .path4:before {
+  content: "";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-informacion-slider-1-on-clic .path5:before {
+  content: "";
+  margin-left: -1em;
+  color: #898989;
+}
+
+.icon-informacion-slider-1-on-clic .path6:before {
+  content: "";
+  margin-left: -1em;
+  color: #898989;
+}
+
+.icon-instagram:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-mail:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-menu-close:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-menu-default:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-panel-solar:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-personal-information:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-recorrido-virtual:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-reloj-horario-atencion:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-signo-pesos:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-sistema-de-acueducto:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-slider-anterior-desplegable-abajo:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-slider-anterior-desplegable-arriba:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-slider-imagen-activa:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-slider-imagen-default:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-telefono-atencion:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-ubicacion:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-vieta:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-whatsapp:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-wi-fi:before {
+  content: "";
+  color: #898989;
+}
+
+.icon-youtube:before {
+  content: "";
+  color: #898989;
+}
+
+/* SLIDERS */
+/* SLIDER WEB 01*/
+.slider-xs-01.carousel-item {
+  height: 420px;
+}
+@media screen and (max-width: 575px) {
+  .slider-xs-01.carousel-item {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .slider-xs-01.carousel-item {
+    height: 210px;
+  }
+}
+
+.item-slider-xs-01 {
+  background: url("/images/slider-1-1-area-social-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-xs-01 h2 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.item-slider-xs-02 {
+  background: url("/images/slider-1-2-cocina-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-xs-02 h2 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.item-slider-xs-03 {
+  background: url("/images/slider-1-3-habitacion-principal-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-xs-03 h2 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.item-slider-xs-04 {
+  background: url("/images/slider-1-4-habitacion-2-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-xs-04 h2 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.item-slider-xs-05 {
+  background: url("/images/slider-1-5-min-habitacion-3-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-xs-05 h2 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.slider-web-01.carousel-item {
+  height: 467px;
+}
+
+.item-slider-web-01 {
+  background: url("/images/slider-1-1-area-social-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-web-01 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.item-slider-web-02 {
+  background: url("/images/slider-1-2-cocina-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-web-02 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.item-slider-web-03 {
+  background: url("/images/slider-1-3-habitacion-principal-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-web-03 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.item-slider-web-04 {
+  background: url("/images/slider-1-4-habitacion-2-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-web-04 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.item-slider-web-05 {
+  background: url("/images/slider-1-5-min-habitacion-3-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-slider-web-05 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.slider-web-01.left {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+  padding: 20px 15px;
+}
+.slider-web-01.left:hover {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+}
+@media screen and (max-width: 575px) {
+  .slider-web-01.left img {
+    width: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-web-01.left {
+    bottom: 50%;
+    padding: 5px 15px 10px 7px;
+  }
+}
+
+.slider-web-01.right {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+  padding: 20px 15px;
+}
+.slider-web-01.right:hover {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+}
+@media screen and (max-width: 575px) {
+  .slider-web-01.right img {
+    width: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-web-01.right {
+    bottom: 50%;
+    padding: 5px 7px 10px 15px;
+  }
+}
+
+.slider-web-01.carousel-indicators {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 12px 0px 0px 0px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .slider-web-01.carousel-indicators {
+    border-bottom: 4px solid #FFF;
+    margin-right: 5px;
+    width: 90%;
+    margin: 12px auto 0px auto;
+  }
+}
+
+.slider-web-01.carousel-indicators li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin-right: 10px;
+  margin-left: 0px;
+  cursor: pointer;
+  text-indent: 0;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+  border-bottom: 6px solid #FFF;
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+.slider-web-01.carousel-indicators li:focus {
+  border-bottom: 6px solid #FFF;
+  color: #112334;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+.slider-web-01.carousel-indicators li:hover {
+  border-bottom: 6px solid #FFF;
+  color: #112334;
+}
+@media screen and (max-width: 1700px) {
+  .slider-web-01.carousel-indicators li {
+    height: 85px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .slider-web-01.carousel-indicators li {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-web-01.carousel-indicators li {
+    border-bottom: 4px solid #FFF;
+    margin-right: 5px;
+    height: 40px;
+    font-family: "Helvetica-Neue-Light";
+    font-size: 1.2rem;
+  }
+  .slider-web-01.carousel-indicators li:focus {
+    border-bottom: 4px solid #FFF;
+    color: #112334;
+    border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+    border-image-slice: 1;
+  }
+  .slider-web-01.carousel-indicators li:hover {
+    border-bottom: 4px solid #FFF;
+    color: #112334;
+  }
+}
+
+.indicator-item-slider-web-01 {
+  background: url("/images/indicador-slider-web-01-01.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-01:focus {
+  background: url("/images/indicador-slider-web-01-01.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-01:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("/images/indicador-slider-web-01-01.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.indicator-item-slider-web-02 {
+  background: url("/images/indicador-slider-web-01-02.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-02:focus {
+  background: url("/images/indicador-slider-web-01-02.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-02:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("/images/indicador-slider-web-01-02.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.indicator-item-slider-web-03 {
+  background: url("/images/indicador-slider-web-01-03.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-03:focus {
+  background: url("/images/indicador-slider-web-01-03.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-03:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("/images/indicador-slider-web-01-03.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.indicator-item-slider-web-04 {
+  background: url("/images/indicador-slider-web-01-04.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-04:focus {
+  background: url("/images/indicador-slider-web-01-04.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-04:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("/images/indicador-slider-web-01-04.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.indicator-item-slider-web-05 {
+  background: url("/images/indicador-slider-web-01-05.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-05:focus {
+  background: url("/images/indicador-slider-web-01-05.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-05:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("/images/indicador-slider-web-01-05.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.indicator-item-slider-web-01.active {
+  background: url("/images/indicador-slider-web-01-01.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-01.active:focus {
+  background: url("/images/indicador-slider-web-01-01.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-01.active:hover {
+  background: url("/images/indicador-slider-web-01-01.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.indicator-item-slider-web-02.active {
+  background: url("/images/indicador-slider-web-01-02.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-02.active:focus {
+  background: url("/images/indicador-slider-web-01-02.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-02.active:hover {
+  background: url("/images/indicador-slider-web-01-02.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.indicator-item-slider-web-03.active {
+  background: url("/images/indicador-slider-web-01-03.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-03.active:focus {
+  background: url("/images/indicador-slider-web-01-03.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-03.active:hover {
+  background: url("/images/indicador-slider-web-01-03.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.indicator-item-slider-web-04.active {
+  background: url("/images/indicador-slider-web-01-04.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-04.active:focus {
+  background: url("/images/indicador-slider-web-01-04.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-04.active:hover {
+  background: url("/images/indicador-slider-web-01-04.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.indicator-item-slider-web-05.active {
+  background: url("/images/indicador-slider-web-01-05.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-05.active:focus {
+  background: url("/images/indicador-slider-web-01-05.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.indicator-item-slider-web-05.active:hover {
+  background: url("/images/indicador-slider-web-01-05.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.slider-web-01.carousel-indicators .ultimo {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.slider-web-01.carousel-indicators li.active {
+  border-bottom: 6px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  color: #FFF;
+}
+@media screen and (max-width: 767px) {
+  .slider-web-01.carousel-indicators li.active {
+    border-bottom: 4px solid transparent;
+    border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+    border-image-slice: 1;
+  }
+}
+
+/* SLIDER WEB 02*/
+.slider-xs-02.carousel-item {
+  height: 420px;
+}
+@media screen and (max-width: 575px) {
+  .slider-xs-02.carousel-item {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .slider-xs-02.carousel-item {
+    height: 210px;
+  }
+}
+
+.slider-web-02.left {
+  position: absolute;
+  left: 0;
+  bottom: 42.5%;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+  padding: 20px 15px;
+}
+.slider-web-02.left:hover {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+}
+@media screen and (max-width: 1199px) {
+  .slider-web-02.left {
+    bottom: 30%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .slider-web-02.left img {
+    width: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-web-02.left {
+    bottom: 40%;
+    padding: 5px 15px 10px 7px;
+  }
+}
+
+.slider-web-02.right {
+  position: absolute;
+  right: 0;
+  bottom: 42.5%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+  padding: 20px 15px;
+}
+.slider-web-02.right:hover {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+}
+@media screen and (max-width: 1199px) {
+  .slider-web-02.right {
+    bottom: 30%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .slider-web-02.right img {
+    width: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-web-02.right {
+    bottom: 40%;
+    padding: 10px 7px 10px 15px;
+  }
+}
+
+.slider-web-02.carousel-item {
+  height: 467px;
+}
+
+.item-slider-web-02-01 {
+  background: url("/images/slider-2-1-zona-de-relajacion-condominio-campestre-altos-del-palmar.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.item-slider-web-02-01 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+@media screen and (max-width: 767px) {
+  .item-slider-web-02-01 h3 {
+    font-size: 1.8rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+}
+
+.item-slider-web-02-02 {
+  background: url("/images/slider-2-2-vista-panoramica-condominio-campestre-altos-del-palmar.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.item-slider-web-02-02 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+@media screen and (max-width: 767px) {
+  .item-slider-web-02-02 h3 {
+    font-size: 1.8rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+}
+
+.item-slider-web-02-03 {
+  background: url("/images/slider-2-3-cama-de-masajes-condominio-campestre-altos-del-palmar.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.item-slider-web-02-03 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+@media screen and (max-width: 767px) {
+  .item-slider-web-02-03 h3 {
+    font-size: 1.8rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+}
+
+.item-slider-web-02-04 {
+  background: url("/images/slider-2-4-cancha-de-tenis-condominio-campestre-altos-del-palmar.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.item-slider-web-02-04 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+@media screen and (max-width: 767px) {
+  .item-slider-web-02-04 h3 {
+    font-size: 1.8rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+}
+
+.item-slider-web-02-05 {
+  background: url("/images/slider-2-5-cancha-multiple-condominio-campestre-altos-del-palmar.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.item-slider-web-02-05 h3 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+@media screen and (max-width: 767px) {
+  .item-slider-web-02-05 h3 {
+    font-size: 1.8rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+}
+
+.popover-slider-web-01-01 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 50%;
+  left: 47%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-01-01:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-01-01:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-01-02 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 37%;
+  left: 67%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-01-02:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-01-02:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-01-03 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 35%;
+  left: 38%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-01-03:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-01-03:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-01-04 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 28%;
+  left: 57%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-01-04:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-01-04:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-01-05 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 10%;
+  left: 25%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-01-05:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-01-05:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-02-01 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 57%;
+  left: 50%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-02-01:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-02-01:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-02-02 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 30%;
+  left: 45%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-02-02:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-02-02:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-03-01 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 60%;
+  left: 0%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-03-01:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-03-01:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-03-02 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 40%;
+  left: 86%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-03-02:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-03-02:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 767px) {
+  .popover-slider-web-03-02 {
+    left: 80%;
+  }
+}
+
+.popover-slider-web-03-03 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 35%;
+  left: 27%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-03-03:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-03-03:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-03-04 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 22.5%;
+  left: 52.5%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-03-04:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-03-04:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-03-05 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 35%;
+  left: 67%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-03-05:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-03-05:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-03-06 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 7%;
+  left: 80%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-03-06:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-03-06:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 767px) {
+  .popover-slider-web-03-06 {
+    left: 70%;
+  }
+}
+
+.popover-slider-web-03-07 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 20%;
+  left: 10%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-03-07:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-03-07:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-03-08 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 20%;
+  left: 92.5%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-03-08:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-03-08:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 767px) {
+  .popover-slider-web-03-08 {
+    left: 85%;
+  }
+}
+
+.popover-slider-web-04-01 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 42.5%;
+  left: 7%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-04-01:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-04-01:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-04-02 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 30%;
+  left: 27.5%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-04-02:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-04-02:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-04-03 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 65%;
+  left: 57.5%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-04-03:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-04-03:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-04-04 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 22.5%;
+  left: 80%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-04-04:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-04-04:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-04-05 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 30%;
+  left: 47.5%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-04-05:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-04-05:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-05-01 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 50%;
+  left: 30%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-05-01:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-05-01:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-05-02 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 22.5%;
+  left: 45%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-05-02:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-05-02:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-slider-web-05-03 {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+  bottom: 27.5%;
+  left: 75%;
+  background: url("../images/icono-ver-mas-slider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+}
+.popover-slider-web-05-03:focus {
+  outline: none;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.popover-slider-web-05-03:hover {
+  height: 48px;
+  width: 48px;
+  background: url("../images/icono-ver-mas-slider-hover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.popover-body {
+  background-color: #112334;
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+}
+
+.bs-popover-top > .arrow::after {
+  border-top-color: #112334;
+}
+
+/* SLIDER ZONA CONDOMINIO*/
+.slider-zona.carousel-item {
+  height: 515px;
+}
+
+.content-slide-zona-xs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 2rem 1rem;
+}
+.content-slide-zona-xs h5:nth-of-type(1) {
+  padding: 0rem 3rem 0.5rem 3rem;
+  margin: 0rem 0rem 1rem 0rem;
+  display: inline-block;
+  color: #112334;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 1.2rem;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  text-align: center;
+}
+.content-slide-zona-xs p:nth-of-type(1) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1rem;
+  text-align: center;
+}
+
+.slider-zona.left {
+  position: absolute;
+  left: 0;
+  bottom: 45%;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+  padding: 20px 15px;
+}
+.slider-zona.left:hover {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+}
+@media screen and (max-width: 1199px) {
+  .slider-zona.left {
+    bottom: 45%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-zona.left {
+    bottom: 55%;
+    padding: 10px 7px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.slider-zona.right {
+  position: absolute;
+  right: 0;
+  bottom: 45%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+  padding: 20px 15px;
+}
+.slider-zona.right:hover {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #112334 100%);
+}
+@media screen and (max-width: 1199px) {
+  .slider-zona.right {
+    bottom: 45%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-zona.right {
+    bottom: 55%;
+    padding: 10px 7px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.item-slider-zona-01-01 {
+  background: url("/images/slider-3-1-zona-relajacion-bali-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.item-slider-zona-01-01 .content-slide-zona-web {
+  margin: 0rem 0rem 4rem 0rem;
+  background: rgba(17, 35, 52, 0.75);
+  padding: 1rem 1.5rem 1rem 3rem;
+  max-width: 490px;
+}
+.item-slider-zona-01-01 .content-slide-zona-web h5:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 2.4rem;
+  padding: 0px 0px 0.5rem 0px;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  margin: 0px 0px 1rem 0px;
+}
+.item-slider-zona-01-01 .content-slide-zona-web p:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+
+.item-slider-zona-01-02 {
+  background: url("/images/slider-3-2-sala-de-descanso-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.item-slider-zona-01-02 .content-slide-zona-web {
+  margin: 0rem 0rem 4rem 0rem;
+  background: rgba(17, 35, 52, 0.75);
+  padding: 1rem 1.5rem 1rem 3rem;
+  max-width: 490px;
+}
+.item-slider-zona-01-02 .content-slide-zona-web h5:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 2.4rem;
+  padding: 0px 0px 0.5rem 0px;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  margin: 0px 0px 1rem 0px;
+}
+.item-slider-zona-01-02 .content-slide-zona-web p:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+
+.item-slider-zona-01-03 {
+  background: url("/images/slider-3-3-zona-masajes-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.item-slider-zona-01-03 .content-slide-zona-web {
+  margin: 0rem 0rem 4rem 0rem;
+  background: rgba(17, 35, 52, 0.75);
+  padding: 1rem 1.5rem 1rem 3rem;
+  max-width: 490px;
+}
+.item-slider-zona-01-03 .content-slide-zona-web h5:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 2.4rem;
+  padding: 0px 0px 0.5rem 0px;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  margin: 0px 0px 1rem 0px;
+}
+.item-slider-zona-01-03 .content-slide-zona-web p:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+
+.item-slider-zona-01-04 {
+  background: url("/images/slider-3-4-cancha-multiple-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.item-slider-zona-01-04 .content-slide-zona-web {
+  margin: 0rem 0rem 4rem 0rem;
+  background: rgba(17, 35, 52, 0.75);
+  padding: 1rem 1.5rem 1rem 3rem;
+  max-width: 490px;
+}
+.item-slider-zona-01-04 .content-slide-zona-web h5:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 2.4rem;
+  padding: 0px 0px 0.5rem 0px;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  margin: 0px 0px 1rem 0px;
+}
+.item-slider-zona-01-04 .content-slide-zona-web p:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+
+.item-slider-zona-01-05 {
+  background: url("/images/slider-3-5-cancha-tenis-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.item-slider-zona-01-05 .content-slide-zona-web {
+  margin: 0rem 0rem 4rem 0rem;
+  background: rgba(17, 35, 52, 0.75);
+  padding: 1rem 1.5rem 1rem 3rem;
+  max-width: 490px;
+}
+.item-slider-zona-01-05 .content-slide-zona-web h5:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 2.4rem;
+  padding: 0px 0px 0.5rem 0px;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  margin: 0px 0px 1rem 0px;
+}
+.item-slider-zona-01-05 .content-slide-zona-web p:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .slider-zona.carousel-indicators {
+    bottom: -12.5px;
+  }
+}
+
+.slider-zona.carousel-indicators li {
+  background-color: transparent;
+  text-indent: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider-zona.carousel-indicators li span:before {
+  content: "";
+  font-size: 1.4rem;
+  color: #FFF;
+  margin: 0 auto;
+  font-family: "adp-icon-font" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (max-width: 767px) {
+  .slider-zona.carousel-indicators li span:before {
+    font-size: 1.1rem;
+    color: #112334;
+    width: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-zona.carousel-indicators li {
+    width: 1.5rem;
+  }
+}
+
+.slider-zona.carousel-indicators li.active span:before {
+  content: "";
+  font-size: 1.5rem;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "adp-icon-font" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (max-width: 767px) {
+  .slider-zona.carousel-indicators li.active span:before {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/*MODALES WEB*/
+.iframe-modal-condiciones {
+  height: 520px;
+  border-top: 1px solid #EAEAEA;
+  border-left: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+  border-right: none;
+  margin: 0px 0px 10px 0px;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 575px) {
+  .iframe-modal-condiciones {
+    height: 65vh;
+  }
+}
+.modalTerminos.modal-dialog {
+  max-width: 1080px;
+}
+@media screen and (max-width: 1199px) {
+  .modalTerminos.modal-dialog {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modalTerminos.modal-dialog {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modalTerminos.modal-dialog {
+    max-width: 90%;
+    margin: 2rem auto 2rem auto;
+  }
+}
+
+.modalTerminos.modal-body {
+  padding: 5rem 5rem 0rem 5rem;
+}
+@media screen and (max-width: 767px) {
+  .modalTerminos.modal-body {
+    padding: 5rem 1rem 0rem 1rem;
+  }
+}
+
+.modalSlider01.modal-dialog {
+  position: relative;
+  max-width: 1080px;
+  margin: 5rem auto 5rem auto;
+}
+@media screen and (max-width: 1199px) {
+  .modalSlider01.modal-dialog {
+    max-width: 800px;
+    margin: 3rem auto 3rem auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modalSlider01.modal-dialog {
+    max-width: 650px;
+    margin: 1rem auto 0rem auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modalSlider01.modal-dialog {
+    max-width: 90%;
+    top: 50%;
+    margin-top: -35%;
+  }
+}
+
+.modalSlider01.modal-body {
+  padding: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .modalSlider01.modal-body {
+    padding: 0.5rem;
+  }
+}
+
+/* BOTONES */
+/*XS*/
+.btn-ubicacion-xs-01 {
+  display: block;
+  border: 1px solid #112334;
+  padding: 5px;
+  text-align: center;
+  margin: 0px 0px 15px 0px;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.6rem;
+}
+.btn-ubicacion-xs-01:focus {
+  text-decoration: none;
+  color: #112334;
+}
+.btn-ubicacion-xs-01:hover {
+  text-decoration: none;
+  color: #112334;
+}
+
+.btn-recorrido-virtual-web {
+  display: block;
+  margin: 50px 0px 0px 0px;
+  color: #FFF;
+  font-family: "Helvetica-Neue-Bold";
+}
+.btn-recorrido-virtual-web:focus {
+  color: #FFF;
+}
+.btn-recorrido-virtual-web:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+.btn-recorrido-virtual-web span {
+  margin-left: 15px;
+}
+.btn-recorrido-virtual-web span img {
+  width: 9px;
+}
+@media screen and (max-width: 1199px) {
+  .btn-recorrido-virtual-web {
+    font-size: 1.6rem;
+  }
+}
+
+.table .btn-tabla-adp-web a {
+  display: block;
+  padding: 15px 0;
+  color: #112334;
+  border: 1px solid #112334;
+  font-size: 1.6rem;
+  font-family: "Arsenal-Regular";
+  cursor: pointer;
+}
+.table .btn-tabla-adp-web a:hover {
+  color: #112334;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border: 1px solid transparent;
+}
+@media screen and (max-width: 1199px) {
+  .table .btn-tabla-adp-web a {
+    font-size: 1.4rem;
+  }
+}
+
+.enviar-form {
+  display: block;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  font-size: 1.8rem;
+  font-family: "Arsenal-Bold";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border: none;
+  margin: 30px 0px 0px 0px;
+}
+@media screen and (max-width: 1700px) {
+  .enviar-form {
+    font-size: 1.4rem;
+    margin: 30px 0px 0px 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .enviar-form {
+    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+}
+.enviar-form:focus {
+  text-decoration: none;
+  color: #FFF;
+  background: #112334;
+}
+.enviar-form:hover {
+  text-decoration: none;
+  color: #FFF;
+  background: #112334;
+}
+
+.content-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  font-size: 2rem;
+  font-family: "Arsenal-Bold";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  margin: 30px 0px 0px 0px;
+  text-align: center;
+}
+@media screen and (max-width: 1700px) {
+  .btn-whatsapp {
+    margin: 15px 0px 0px 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-whatsapp {
+    font-size: 1.4rem;
+  }
+}
+.btn-whatsapp:focus {
+  text-decoration: none;
+  color: #FFF;
+  background: #112334;
+}
+.btn-whatsapp:focus .icon-btn-agil-xs .icon-whatsapp:before {
+  color: #FFF;
+}
+.btn-whatsapp:hover {
+  text-decoration: none;
+  color: #FFF;
+  background: #112334;
+}
+.btn-whatsapp:hover .icon-btn-agil-xs .icon-whatsapp:before {
+  color: #FFF;
+}
+
+.contact-btn-footer-xs {
+  text-align: center;
+  display: block;
+  color: #112334;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  font-size: 1.6rem;
+  font-family: "Arsenal-Bold";
+  width: 100%;
+  padding: 10px 0px;
+}
+.contact-btn-footer-xs:focus {
+  text-decoration: none;
+  color: #112334;
+}
+.contact-btn-footer-xs:hover {
+  text-decoration: none;
+  color: #112334;
+}
+
+.btn-modal-terminos {
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #112334;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  font-size: 1.6rem;
+  font-family: "Arsenal-Bold";
+  width: 100%;
+  padding: 10px 0px;
+  outline: none;
+  margin: 10px 0px 20px 0px;
+}
+.btn-modal-terminos:focus {
+  text-decoration: none;
+  color: #112334;
+}
+.btn-modal-terminos:hover {
+  text-decoration: none;
+  color: #112334;
+}
+
+.close-modal-terminos {
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+}
+.close-modal-terminos .modal-terminos .icon-menu-close:before {
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+.close-modal-terminos:focus {
+  text-decoration: none;
+  color: #112334;
+}
+.close-modal-terminos:hover {
+  text-decoration: none;
+  color: #112334;
+}
+
+.close-modal-zona {
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .close-modal-zona {
+    padding: 0px 0px;
+    right: -5px;
+    top: -5px;
+  }
+}
+.close-modal-zona .icon-close-agil-xs {
+  padding: 0.5rem;
+  background: #FFF;
+}
+@media screen and (max-width: 767px) {
+  .close-modal-zona .icon-close-agil-xs {
+    padding: 0.25rem;
+  }
+}
+.close-modal-zona:focus {
+  text-decoration: none;
+}
+.close-modal-zona:hover {
+  text-decoration: none;
+}
+
+.content-btn-index {
+  position: absolute;
+  bottom: 20.5%;
+  right: 0;
+}
+.content-btn-index:focus {
+  text-decoration: none;
+}
+.content-btn-index:hover {
+  text-decoration: none;
+}
+
+.btn-index-web-01 {
+  display: block;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  border: 1px solid #112334;
+  font-size: 2rem;
+  padding: 10px 70px 10px 70px;
+  position: relative;
+}
+.btn-index-web-01:focus {
+  color: #FFF;
+  background: #112334;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+.btn-index-web-01:focus .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #FFF;
+}
+.btn-index-web-01:hover {
+  color: #FFF;
+  background: #112334;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+.btn-index-web-01:hover .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #FFF;
+}
+.btn-index-web-01 .btn-adp {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+.btn-index-web-01 .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #112334;
+}
+@media screen and (max-width: 1199px) {
+  .btn-index-web-01 .btn-adp {
+    right: 15px;
+    top: 12px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-index-web-01 .btn-adp {
+    right: 10px;
+    top: 8px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .btn-index-web-01 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .btn-index-web-01 {
+    padding: 10px 55px 10px 55px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-index-web-01 {
+    padding: 7px 45px 7px 45px;
+  }
+}
+
+.btn-index-xs-01 {
+  display: block;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  border: 1px solid #112334;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+}
+.btn-index-xs-01:focus {
+  color: #FFF;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background: #112334;
+}
+.btn-index-xs-01:focus .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #FFF;
+}
+.btn-index-xs-01:hover {
+  color: #FFF;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background: #112334;
+}
+.btn-index-xs-01:hover .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #FFF;
+}
+.btn-index-xs-01 .btn-adp {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+.btn-index-xs-01 .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #112334;
+}
+@media screen and (max-width: 1199px) {
+  .btn-index-xs-01 .btn-adp {
+    right: 15px;
+    top: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-index-xs-01 .btn-adp {
+    right: 10px;
+    top: 8px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .btn-index-xs-01 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .btn-index-xs-01 {
+    padding: 10px 55px 10px 55px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-index-xs-01 {
+    padding: 7px 45px 7px 45px;
+  }
+}
+
+/* CONTENIDO DENUNCIA */
+.section-denuncia-xs {
+  margin: 3rem 0rem 0rem 0rem;
+}
+
+.bg-content-denuncia-02 {
+  background: #112334;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  padding: 2rem 0rem;
+}
+
+.border-dorado-denuncia-xs-01 {
+  height: 3px;
+  width: 50%;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  margin: 0px 0px 2rem 0px;
+}
+
+.content-denuncia-xs-01 {
+  position: relative;
+  line-height: 1.25;
+  height: 100%;
+}
+.content-denuncia-xs-01 h2:nth-child(1) {
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 1.8rem;
+  border-bottom: 3px solid transparent;
+  border-image-source: #112334;
+  border-image-slice: 1;
+  margin: 1rem 3rem 1rem 3rem;
+  text-align: center;
+}
+.content-denuncia-xs-01 h2:nth-child(1) img {
+  width: 22px;
+  margin-right: 1rem;
+}
+.content-denuncia-xs-01 p:nth-child(4) {
+  color: #FFF;
+  font-size: 1.4rem;
+  font-family: "Helvetica-Neue-Light";
+  text-align: justify;
+  margin: 3rem 3rem 3rem 3rem;
+  text-align: center;
+}
+.content-denuncia-xs-01 p:nth-child(4) span {
+  font-family: "Helvetica-Neue-Bold";
+}
+.content-denuncia-xs-01 p:nth-child(5) {
+  color: #FFF;
+  font-size: 1.4rem;
+  font-family: "Helvetica-Neue-Bold";
+  text-align: justify;
+  margin: 0rem 3rem 2rem 3rem;
+  text-align: center;
+}
+
+.section-denuncia-web {
+  margin: 6rem 0rem 0rem 0rem;
+}
+
+.bg-content-denuncia-01 {
+  background: url("../images/bg-content-denuncia-01.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  padding: 5rem 2.5rem;
+}
+
+.content-denuncia-01 {
+  position: relative;
+  margin-right: 5rem;
+  line-height: 1.25;
+  height: 100%;
+}
+.content-denuncia-01 h2:nth-child(1) {
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 3.2rem;
+  padding: 0px 0px 20px 0px;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  margin: 0rem 0rem 3rem 0rem;
+}
+@media screen and (max-width: 1199px) {
+  .content-denuncia-01 h2:nth-child(1) {
+    font-size: 2.8rem;
+  }
+}
+.content-denuncia-01 h2:nth-child(1) img {
+  margin-right: 1rem;
+}
+.content-denuncia-01 p:nth-child(2) {
+  color: #FFF;
+  font-size: 2.4rem;
+  font-family: "Helvetica-Neue-Light";
+  text-align: justify;
+  margin: 0rem 0rem 3rem 0rem;
+}
+.content-denuncia-01 p:nth-child(2) span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .content-denuncia-01 p:nth-child(2) {
+    font-size: 2rem;
+  }
+}
+.content-denuncia-01 p:nth-child(3) {
+  color: #FFF;
+  font-size: 2.4rem;
+  font-family: "Helvetica-Neue-Bold";
+  text-align: justify;
+  margin: 0rem 0rem 10rem 0rem;
+}
+@media screen and (max-width: 1199px) {
+  .content-denuncia-01 p:nth-child(3) {
+    font-size: 2rem;
+  }
+}
+
+.content-denuncia-02 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.content-btn-index-denuncia-01 {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+}
+
+.btn-index-denuncia-web-01 {
+  display: block;
+  color: #112334;
+  background: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  border: 1px solid #112334;
+  font-size: 2rem;
+  padding: 10px 70px 10px 70px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.btn-index-denuncia-web-01:focus {
+  color: #112334;
+  background: #FFF;
+  border: 1px solid #112334;
+  text-decoration: none;
+}
+.btn-index-denuncia-web-01:focus .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #112334;
+}
+.btn-index-denuncia-web-01:hover {
+  color: #112334;
+  background: #FFF;
+  border: 1px solid #112334;
+  text-decoration: none;
+}
+.btn-index-denuncia-web-01:hover .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #112334;
+}
+.btn-index-denuncia-web-01 .btn-adp {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+.btn-index-denuncia-web-01 .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #112334;
+}
+@media screen and (max-width: 1199px) {
+  .btn-index-denuncia-web-01 .btn-adp {
+    right: 15px;
+    top: 12px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-index-denuncia-web-01 .btn-adp {
+    right: 10px;
+    top: 8px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .btn-index-denuncia-web-01 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .btn-index-denuncia-web-01 {
+    padding: 10px 55px 10px 55px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-index-denuncia-web-01 {
+    padding: 7px 45px 7px 45px;
+  }
+}
+
+.btn-index-denuncia-xs-01 {
+  display: block;
+  color: #112334;
+  background: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  border: 1px solid #112334;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  margin: 0rem 3rem;
+}
+.btn-index-denuncia-xs-01:focus {
+  color: #112334;
+  background: #FFF;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.btn-index-denuncia-xs-01:focus .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #112334;
+}
+.btn-index-denuncia-xs-01:hover {
+  color: #112334;
+  background: #FFF;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.btn-index-denuncia-xs-01:hover .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #112334;
+}
+.btn-index-denuncia-xs-01 .btn-adp {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+.btn-index-denuncia-xs-01 .btn-adp .icon-flecha-boton-landing-home:before {
+  color: #112334;
+}
+@media screen and (max-width: 1199px) {
+  .btn-index-denuncia-xs-01 .btn-adp {
+    right: 15px;
+    top: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-index-denuncia-xs-01 .btn-adp {
+    right: 10px;
+    top: 8px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .btn-index-denuncia-xs-01 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .btn-index-denuncia-xs-01 {
+    padding: 10px 55px 10px 55px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-index-denuncia-xs-01 {
+    padding: 7px 45px 7px 45px;
+  }
+}
+
+/** INDEX**/
+/* VERSION XS */
+/* SECTION 02 XS*/
+.section-index-xs-02 {
+  background: #112334;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  padding: 20px 0px;
+}
+
+.tx-section-index-xs-02-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 2.4rem;
+}
+
+/* SECTION 03 XS*/
+.section-index-xs-03 {
+  padding: 30px 0px;
+}
+
+.tx-section-index-xs-03-01 {
+  text-align: center;
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 1.8rem;
+  margin: 0px 0px 10px 0px;
+}
+
+.border-dorado-xs-01 {
+  height: 3px;
+  width: 50%;
+  float: right;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  margin: 0px 0px 25px 0px;
+}
+
+.border-dorado-xs-02 {
+  height: 3px;
+  width: 50%;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  margin: 0px 0px 25px 0px;
+}
+
+.content-section-index-xs-01 {
+  padding: 30px;
+}
+
+.tx-section-index-xs-03-02 {
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  margin: 0px 0px 30px 0px;
+}
+.tx-section-index-xs-03-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+
+/* MAIN WEB */
+.main-index-web {
+  background: url("../images/home-panoramica-frontal-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 533px;
+}
+@media screen and (max-width: 1920px) {
+  .main-index-web {
+    background-size: 100% cover;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .main-index-web {
+    background-size: 100% cover;
+    height: 533px;
+  }
+}
+
+/*SECTION INDEX 01 WEB*/
+.section-web-index-01 {
+  padding: 40px 0px 40px 0px;
+  background: #112334;
+  border-top: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-web-index-01-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 4rem;
+}
+.tx-section-web-index-01-01 span {
+  font-family: "Arsenal-Bold";
+}
+@media screen and (max-width: 1700px) {
+  .tx-section-web-index-01-01 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-index-01-01 {
+    font-size: 2.8rem;
+  }
+}
+
+/*SECTION INDEX 01 WEB*/
+.section-web-index-02 {
+  padding: 100px 0px 0px 0px;
+}
+
+.section-web-index-02.margen {
+  padding: 100px 0px 100px 0px;
+}
+
+.container-info-index-01 {
+  position: relative;
+  height: 100%;
+  margin: 12.5% 0px 0px 50px;
+}
+@media screen and (max-width: 1199px) {
+  .container-info-index-01 {
+    margin: 12.5% 0px 0px 30px;
+  }
+}
+
+.container-info-index-02 {
+  position: relative;
+  height: 100%;
+  margin: 12.5% 50px 0px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .container-info-index-02 {
+    margin: 12.5% 30px 0px 0px;
+  }
+}
+
+.tx-section-web-index-02-01 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 3.2rem;
+  padding: 0px 0px 20px 0px;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 1700px) {
+  .tx-section-web-index-02-01 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-index-02-01 {
+    font-size: 2.4rem;
+  }
+}
+
+.tx-section-web-index-02-02 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  padding: 0px 0px 20px 0px;
+  margin: 40px 0px 0px 0px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.tx-section-web-index-02-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-index-02-02 {
+    font-size: 1.4rem;
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+/** CASAS CAMPESTRES **/
+/* MAIN XS */
+.main-xs {
+  background: #112334;
+  padding: 15px 0px;
+}
+
+.logo-header-xs {
+  width: 120px;
+}
+
+/*SECTION 01 XS*/
+.section-xs-01 {
+  padding: 0px 0px 20px 0px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tx-section-xs-01-01 {
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+}
+@media screen and (max-width: 575px) {
+  .tx-section-xs-01-01 {
+    font-size: 2rem;
+  }
+}
+
+/*SECTION 02 XS*/
+.section-xs-02 {
+  padding: 25px 0px;
+}
+
+.tx-section-xs-02-01 {
+  text-align: center;
+  color: #000;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+}
+.tx-section-xs-02-01 span {
+  font-family: "Arsenal-Regular";
+}
+
+.tx-section-xs-02-02 {
+  margin: 25px 0px 0px 0px;
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+.tx-section-xs-02-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+
+.tx-section-xs-02-03 {
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+
+.tx-section-xs-02-04 {
+  float: right;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.2rem;
+  margin: 15px 15px 0px 0px;
+}
+.tx-section-xs-02-04 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+.tx-section-xs-02-04 span a {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.tx-section-xs-02-04 span a:hover {
+  color: #112334;
+}
+
+/*SECTION 03 XS*/
+.section-xs-03 {
+  padding: 30px 0px 0px 0px;
+}
+
+.tx-section-xs-03-01 {
+  text-align: center;
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+}
+
+.recorrido-virtual-xs {
+  margin: 20px 0px 0px 0px;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-xs-03-02 {
+  margin: 30px 0px;
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.tx-section-xs-03-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+
+/*SECTION 04 XS*/
+.section-xs-04 {
+  padding: 30px 0px 0px 0px;
+}
+
+.tx-section-xs-04-01 {
+  margin: 30px 0px 15px 0px;
+  text-align: center;
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+}
+
+#tabCasasMobile {
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tab-modal-casa-xs {
+  background: #112334;
+  padding-top: 5px;
+}
+
+.tab-modal-casa-xs.nav-item {
+  width: 33.33333%;
+  text-align: center;
+}
+
+.tab-modal-casa-xs-02.nav-item {
+  width: 50%;
+  text-align: center;
+}
+
+.nav-link.mobile {
+  font-family: "Arsenal-Regular";
+  font-size: 1.4rem;
+  color: #FFF;
+  background: #112334;
+  border: none;
+  cursor: pointer;
+  border-top: 5px solid transparent !important;
+  padding: 10px 2px;
+}
+.nav-link.mobile:focus {
+  color: #FFF;
+}
+.nav-link.mobile:hover {
+  color: #FFF;
+}
+@media screen and (max-width: 575px) {
+  .nav-link.mobile {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-bottom: none !important;
+  }
+}
+
+.nav-link.centro.mobile {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.nav-link.centro.v-web {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.nav-link.mobile.active {
+  font-family: "Arsenal-Bold";
+  color: #112334 !important;
+  background: #FFF;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  .nav-link.mobile.active {
+    border-bottom: none !important;
+  }
+}
+
+.nav-link.mobile-02 {
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  color: #112334;
+  background: #E5E5E5;
+  border: none;
+  cursor: pointer;
+  border-top: 5px solid transparent !important;
+  padding: 10px 2px;
+  border-radius: 0;
+}
+.nav-link.mobile-02:focus {
+  color: #112334;
+}
+.nav-link.mobile-02:hover {
+  color: #112334;
+}
+@media screen and (max-width: 575px) {
+  .nav-link.mobile-02 {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-bottom: none !important;
+  }
+}
+
+.nav-link.mobile-02.active {
+  color: #112334 !important;
+  background: #FFF;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 767px) {
+  .nav-link.mobile-02.active {
+    border-bottom: none !important;
+  }
+}
+
+#tabCasasMobileContent {
+  padding: 0px 15px;
+}
+
+.tx-section-xs-04-02 {
+  margin: 15px 0px;
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 1.4rem;
+}
+.tx-section-xs-04-02 span {
+  font-family: "Helvetica-Neue-Light";
+}
+
+.img-content-nivel {
+  border-bottom: 4px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-description-tab-01 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tx-description-tab-02 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tx-description-tab-03 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*SECTION 05 XS*/
+.section-xs-05 {
+  padding: 50px 0px 0px 0px;
+}
+
+.tx-section-xs-05-01 {
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+}
+
+.tx-section-xs-05-02 {
+  margin: 20px 0px 50px 0px;
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+.tx-section-xs-05-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+
+/*SECTION 06 XS*/
+.section-xs-06 {
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  padding: 15px 0px 15px 0px;
+}
+
+.tx-section-xs-06-01 {
+  margin: 0px 0px 0px 0px;
+  color: #112334;
+  font-family: "Arsenal-Regular";
+  font-size: 1.8rem;
+}
+
+.tx-section-xs-06-02 {
+  margin: 0px 0px 10px 0px;
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  display: flex;
+}
+.tx-section-xs-06-02 .global {
+  display: inline-block;
+  margin: 0rem 1.5rem 0rem 0rem;
+}
+.tx-section-xs-06-02 .global .icon-vieta:before {
+  color: #FFF;
+  font-size: 1.5rem;
+}
+
+.tx-section-xs-06-03 {
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+
+.tx-section-06-img {
+  margin: 20px 10px;
+}
+
+.section-xs-06-b {
+  background: #112334;
+  padding: 30px 0px 25px 0px;
+  border-bottom: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+/*SECTION 07 XS*/
+.section-xs-07 {
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  background: #000;
+  padding: 30px 0px 80px 0px;
+}
+
+.tx-section-xs-07-01 {
+  margin: 0px 0px 30px 0px;
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.img-footer-xs {
+  float: right;
+}
+
+/*VERSION WEB*/
+/* MAIN WEB */
+main {
+  background: url("../images/exterior-casa-posterior-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 533px;
+}
+@media screen and (max-width: 1920px) {
+  main {
+    background-size: 100% cover;
+  }
+}
+@media screen and (max-width: 1700px) {
+  main {
+    background-size: 100% cover;
+    height: 533px;
+  }
+}
+
+/*SECTION 01 WEB*/
+.section-web-01 {
+  padding: 40px 0px 40px 0px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tx-section-web-01-01 {
+  text-align: center;
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 4rem;
+}
+@media screen and (max-width: 1700px) {
+  .tx-section-web-01-01 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-01-01 {
+    font-size: 2.8rem;
+  }
+}
+
+.tx-section-web-01-02 {
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.8rem;
+  margin: 25px 0px 0px 0px;
+}
+.tx-section-web-01-02 span {
+  display: inline-block;
+  border-bottom: 1px solid #112334;
+  margin: 0rem 2rem 0.8rem 2rem;
+  width: 35%;
+}
+@media screen and (max-width: 1700px) {
+  .tx-section-web-01-02 span {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-web-01-02 span {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-web-01-02 span {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-web-01-02 span {
+    margin: 0rem 1rem 0.5rem 1rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-web-01-02 span {
+    margin: 0rem 0.75rem 0.5rem 0.75rem;
+    width: 17.5%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-web-01-02 {
+    font-size: 2.4rem;
+    margin: 15px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx-section-web-01-02 {
+    font-size: 2rem;
+    margin: 15px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx-section-web-01-02 {
+    font-size: 1.4rem;
+    margin: 15px 0px 0px 0px;
+  }
+}
+
+/*SECTION 02 WEB*/
+.section-web-02 {
+  margin: 90px 0px 50px 0px;
+}
+
+.margen-contenido {
+  margin-bottom: 90px;
+}
+
+.contenedor-relativo {
+  position: relative;
+}
+
+.tx-section-web-02-01 {
+  display: block;
+  color: #000;
+  font-family: "Arsenal-Bold";
+  font-size: 3.2rem;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  margin: 0px 0px 35px 0px;
+  padding: 0px 0px 15px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-02-01 {
+    font-size: 2.8rem;
+  }
+}
+
+.tx-section-web-02-01-b {
+  display: block;
+  color: #000;
+  font-family: "Arsenal-Bold";
+  font-size: 2.8rem;
+  margin: 0px 0px 35px 0px;
+  padding: 0px 0px 15px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-02-01-b {
+    font-size: 2.4rem;
+  }
+}
+
+/* SECCION SLIDER 01*/
+.tx-section-web-02-02 {
+  display: inline-block;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+  margin: 0px 0px 50px 0px;
+}
+.tx-section-web-02-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-02-02 {
+    font-size: 2rem;
+  }
+}
+
+.tx-section-web-02-03 {
+  float: right;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  margin: 30px 0px 0px 0px;
+}
+.tx-section-web-02-03 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+.tx-section-web-02-03 span a {
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+.tx-section-web-02-03 span a:hover {
+  color: #112334;
+}
+
+/* RECORRIDO VIRUTAL WEB*/
+@keyframes animar-bg-recorrido {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 110% 110%;
+  }
+}
+.content-recorrido-virtual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/recorrido-virtual-area-social-vista-piscina-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 625px;
+}
+.content-recorrido-virtual:hover {
+  background-size: 110% 110%;
+  animation-name: animar-bg-recorrido;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1s;
+  animation-timing-function: ease-in-outs;
+}
+@media screen and (max-width: 1700px) {
+  .content-recorrido-virtual {
+    height: 450px;
+  }
+}
+
+.global .icon-recorrido-virtual:before {
+  color: #FFF;
+  font-size: 15rem;
+}
+
+.tx-section-web-02-04 {
+  display: block;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+  margin: 50px 0px 35px 0px;
+}
+.tx-section-web-02-04 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-02-04 {
+    font-size: 2rem;
+  }
+}
+
+.tx-section-web-02-05 {
+  margin: 0px 0px 25px 0px;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-02-05 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx-section-web-02-05 {
+    font-size: 1.2rem;
+  }
+}
+.tx-section-web-02-05 .casas-campestres {
+  display: inline-block;
+  margin: 0rem 2rem 0rem 0rem;
+}
+.tx-section-web-02-05 .casas-campestres .icon-vieta:before {
+  color: #112334;
+  font-size: 2.75rem;
+}
+@media screen and (max-width: 767px) {
+  .tx-section-web-02-05 .casas-campestres .icon-vieta:before {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx-section-web-02-05 .casas-campestres {
+    margin: 0rem 0.5rem 0rem 0rem;
+  }
+}
+
+.tx-section-web-02-05.first {
+  font-family: "Helvetica-Neue-Bold";
+}
+
+.tx-section-web-02-05.ultimo {
+  margin: 0px 0px 0px 0px;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-02-05.ultimo {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx-section-web-02-05.ultimo {
+    font-size: 1.2rem;
+  }
+}
+
+/* ESTILOS TABLA DE CONTENIDO*/
+.table thead tr th {
+  text-align: center;
+  color: #112334;
+  padding: 30px 15px;
+  border-top: none;
+  border-bottom: none;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+@media screen and (max-width: 1199px) {
+  .table thead tr th {
+    font-size: 1.4rem;
+    padding: 20px 7px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .table thead tr th {
+    font-size: 1.2rem;
+    padding: 15px 3px;
+  }
+}
+
+.table th {
+  padding: 20px 15px;
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+@media screen and (max-width: 1199px) {
+  .table th {
+    font-size: 1.4rem;
+    padding: 15px 7px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .table th {
+    font-size: 1.2rem;
+    padding: 15px 3px;
+  }
+}
+
+.table td {
+  padding: 20px 15px;
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+@media screen and (max-width: 1199px) {
+  .table td {
+    font-size: 1.4rem;
+    padding: 15px 7px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .table td {
+    font-size: 1.2rem;
+    padding: 15px 3px;
+  }
+}
+
+.table .tx-table-bold {
+  font-family: "Helvetica-Neue-Bold";
+}
+
+/* ESTILOS TABS WEB*/
+#tabCasasWeb {
+  margin: 0px 0px 60px 0px;
+}
+
+.tab-modal-casa-web {
+  border-top: none;
+  background: #112334;
+  border-radius: 5px 5px 0px 0px;
+  padding-top: 0px;
+}
+
+.tab-modal-casa-web.nav-item {
+  width: 33.33333%;
+  text-align: center;
+}
+
+.tab-modal-casa-web-02.nav-item {
+  display: block;
+  width: 50% !important;
+  text-align: center;
+}
+
+.nav-link.v-web {
+  font-family: "Arsenal-Regular";
+  font-size: 2.4rem;
+  color: #FFF;
+  background: #112334;
+  border: none;
+  cursor: pointer;
+  border-top: 5px solid transparent !important;
+  padding: 10px 2px;
+}
+.nav-link.v-web:focus {
+  color: #FFF;
+}
+.nav-link.v-web:hover {
+  color: #FFF;
+}
+@media screen and (max-width: 1199px) {
+  .nav-link.v-web {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-link.v-web {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .nav-link.v-web {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-bottom: none !important;
+  }
+}
+
+.nav-link.v-web-02 {
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  color: #112334;
+  background: #E5E5E5;
+  border: none;
+  cursor: pointer;
+  border-top: 5px solid transparent !important;
+  padding: 10px 2px;
+}
+.nav-link.v-web-02:focus {
+  color: #112334;
+}
+.nav-link.v-web-02:hover {
+  color: #112334;
+}
+@media screen and (max-width: 575px) {
+  .nav-link.v-web-02 {
+    font-size: 1.4rem;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-bottom: none !important;
+  }
+}
+
+.tab-modal-casa-web-02 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-link.v-web.active {
+  color: #112334 !important;
+  background: #FFF;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  font-family: "Arsenal-Bold";
+}
+@media screen and (max-width: 767px) {
+  .nav-link.v-web.active {
+    border-bottom: none !important;
+  }
+}
+
+.nav-link.v-web-02.active {
+  color: #112334 !important;
+  background: #FFF;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  font-family: "Helvetica-Neue-Light";
+}
+@media screen and (max-width: 767px) {
+  .nav-link.v-web-02.active {
+    border-bottom: none !important;
+  }
+}
+
+#tabCasasWebContent {
+  padding: 0px 0px;
+}
+
+.content-home-description {
+  padding: 0px 15px 0px 0px;
+}
+
+.tx-section-05-tab-01-01 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 2rem;
+  background: #112334;
+  padding: 10px 5px 9px 0px;
+  margin: 0px 0px 25px 0px;
+}
+.tx-section-05-tab-01-01 .casas-campestres {
+  background: linear-gradient(180deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  padding: 13px 14px 12px 13px;
+  margin-right: 2rem;
+}
+.tx-section-05-tab-01-01 .casas-campestres .icon-signo-pesos:before {
+  color: #112334;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-05-tab-01-01 .casas-campestres {
+    padding: 12px 14px 11px 13px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-05-tab-01-01 .casas-campestres {
+    padding: 11px 14px 11px 13px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-05-tab-01-01 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-05-tab-01-01 {
+    font-size: 1.2rem;
+  }
+}
+
+.tx-section-05-tab-01-02 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 2rem;
+  padding: 10px 5px 9px 0px;
+  margin: 0px 0px 15px 0px;
+}
+
+/* SECCION SLIDER 02*/
+.tx-section-web-02-06 {
+  margin: 30px 0px 60px 0px;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+}
+.tx-section-web-02-06 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-02-06 {
+    font-size: 2rem;
+  }
+}
+
+.tx-section-web-02-07 {
+  margin: 15px 0px 90px 0px;
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-02-07 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx-section-web-02-07 {
+    font-size: 1.2rem;
+  }
+}
+
+.icon-caracteristica-condominio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-caracteristica-condominio .icon-panel-solar:before,
+.icon-caracteristica-condominio .icon-wi-fi:before,
+.icon-caracteristica-condominio .icon-sistema-de-acueducto:before {
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .icon-caracteristica-condominio .icon-panel-solar:before,
+.icon-caracteristica-condominio .icon-wi-fi:before,
+.icon-caracteristica-condominio .icon-sistema-de-acueducto:before {
+    font-size: 6rem;
+  }
+}
+
+.tx-cta-web {
+  background: url("/images/cta-adp-landing-web.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 3.2rem;
+  bottom: -90px;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  z-index: 200;
+}
+@media screen and (max-width: 1199px) {
+  .tx-cta-web {
+    font-size: 2.8rem;
+  }
+}
+
+.content-text-section-web-02 {
+  margin: 40px 0px 0px 60px;
+}
+
+/** EL CONDOMINIO **/
+/* CONDOMINIO XS */
+/* SECTION 02 XS */
+.section-condominio-xs-02 {
+  background: #112334;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  padding: 20px 0px;
+}
+
+.tx-section-condominio-xs-02-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 2.8rem;
+}
+
+/* SECTION 03 XS */
+.section-condominio-xs-03 {
+  padding: 20px 0px;
+}
+
+.tx-section-condominio-xs-03-01 {
+  text-align: center;
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2.4rem;
+  margin: 0px 0px 20px 0px;
+}
+
+.tx-section-condominio-xs-03-02 {
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+.tx-section-condominio-xs-03-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+
+/* SECTION 05 XS */
+.section-condominio-xs-05 {
+  padding: 20px 0px 30px 0px;
+  background: #112334;
+}
+
+.tx-section-condominio-xs-05-01 {
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 2rem;
+  margin: 0px 0px 0px 0px;
+}
+.tx-section-condominio-xs-05-01 span {
+  font-family: "Arsenal-Bold";
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+/* MAIN WEB */
+.main-condominio-web {
+  background: url("../images/el-condominio-panoramica-general-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 715px;
+}
+@media screen and (max-width: 1920px) {
+  .main-condominio-web {
+    background-size: 100% cover;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .main-condominio-web {
+    background-size: 100% cover;
+    height: 450px;
+  }
+}
+
+/*SECTION CONDOMINIO 01 WEB*/
+.section-web-condominio-01 {
+  padding: 40px 0px 40px 0px;
+  background: #112334;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-web-condominio-01-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 4rem;
+}
+.tx-section-web-condominio-01-01 span {
+  font-family: "Arsenal-Bold";
+}
+@media screen and (max-width: 1700px) {
+  .tx-section-web-condominio-01-01 {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-condominio-01-01 {
+    font-size: 2.8rem;
+  }
+}
+
+/*SECTION CONDOMINIO 02 WEB*/
+.section-web-condominio-02 {
+  padding: 90px 0px 0px 0px;
+}
+
+.content-section-condominio-02-01 {
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  padding: 100px 90px 100px 30px;
+}
+@media screen and (max-width: 1330px) {
+  .content-section-condominio-02-01 {
+    padding: 60px 60px 60px 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .content-section-condominio-02-01 {
+    padding: 70px 60px 70px 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .content-section-condominio-02-01 {
+    padding: 50px 60px 50px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-section-condominio-02-01 {
+    padding: 40px 60px 40px 20px;
+  }
+}
+
+.tx-section-web-condominio-02-01 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 3.2rem;
+  padding: 0px 0px 60px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-condominio-02-01 {
+    font-size: 2.4rem;
+  }
+}
+
+.tx-section-web-condominio-02-02 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+.tx-section-web-condominio-02-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-condominio-02-02 {
+    font-size: 1.4rem;
+  }
+}
+
+.content-section-condominio-02-02 {
+  background: #112334;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 90px 0px 30px;
+}
+@media screen and (max-width: 1199px) {
+  .content-section-condominio-02-02 {
+    padding: 0px 60px 0px 20px;
+  }
+}
+
+.tx-section-web-condominio-02-03 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 3.2rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-condominio-02-03 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-web-condominio-02-03 {
+    font-size: 2.4rem;
+  }
+}
+
+.border-condominio-style {
+  display: block;
+  height: 5px;
+  width: 25%;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+}
+@media screen and (max-width: 991px) {
+  .border-condominio-style {
+    margin-top: 10px;
+  }
+}
+
+.content-section-condominio-02-03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 100%);
+  margin: 70px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-condominio-02-04 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 3.2rem;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-condominio-02-04 {
+    font-size: 2.8rem;
+  }
+}
+
+.container-targets-modal {
+  position: relative;
+}
+
+.popover-01 {
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  width: 45%;
+}
+@media screen and (max-width: 767px) {
+  .popover-01 {
+    width: 55%;
+    top: 10%;
+    left: 2%;
+  }
+}
+
+.popover-02 {
+  position: absolute;
+  top: 36%;
+  right: 6%;
+  width: 45%;
+}
+@media screen and (max-width: 767px) {
+  .popover-02 {
+    width: 55%;
+    top: 33%;
+    right: 1%;
+  }
+}
+
+.content-section-condominio-02-04 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: #112334;
+  margin: 70px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-condominio-02-05 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: flex;
+}
+.tx-section-web-condominio-02-05 .global {
+  display: inline-block;
+  margin: 0rem 2rem 0rem 0rem;
+}
+.tx-section-web-condominio-02-05 .global .icon-vieta:before {
+  color: #FFF;
+  font-size: 2.75rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-condominio-02-05 {
+    font-size: 1.4rem;
+  }
+}
+
+.tx-section-web-condominio-02-05-b {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  display: flex;
+}
+.tx-section-web-condominio-02-05-b .global {
+  display: inline-block;
+  margin: 0rem 2rem 0rem 0rem;
+}
+.tx-section-web-condominio-02-05-b .global .icon-vieta:before {
+  color: #FFF;
+  font-size: 2.75rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-condominio-02-05-b {
+    font-size: 1.4rem;
+  }
+}
+
+/** UBICACION **/
+/* CONDOMINIO XS */
+/* SECTION 02 XS */
+.section-ubicacion-xs-02 {
+  background: #112334;
+  border-bottom: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  padding: 20px 0px;
+}
+
+.tx-section-ubicacion-xs-02-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 2.4rem;
+}
+.tx-section-ubicacion-xs-02-01 span {
+  font-family: "Arsenal-Bold";
+}
+
+/* SECTION 03 XS */
+.section-ubicacion-xs-03 {
+  padding: 0px 0px 20px 0px;
+}
+
+.tx-section-ubicacion-xs-03-01 {
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  margin: 30px 0px 30px 0px;
+}
+.tx-section-ubicacion-xs-03-01 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+
+/* SECTION 05 XS */
+.section-ubicacion-xs-05 {
+  padding: 20px 0px 30px 0px;
+  background: #112334;
+}
+
+.tx-section-ubicacion-xs-05-01 {
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 2rem;
+  margin: 0px 0px 0px 0px;
+}
+.tx-section-ubicacion-xs-05-01 span {
+  font-family: "Arsenal-Bold";
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+/*SECTION CONDOMINIO 01 WEB*/
+.section-web-ubicacion-01 {
+  padding: 60px 0px 60px 0px;
+}
+
+.container-content-ubicacion-01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 40px 0px 40px;
+  height: 100%;
+  background: #112334;
+}
+
+.tx-section-ubicacion-web-01 {
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 4rem;
+  margin: 0px 0px 40px 0px;
+}
+@media screen and (max-width: 1330px) {
+  .tx-section-ubicacion-web-01 {
+    font-size: 3.2rem;
+    margin: 0px 0px 30px 0px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-ubicacion-web-01 {
+    font-size: 2.8rem;
+  }
+}
+
+.tx-section-ubicacion-web-02 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+  text-align: justify;
+}
+.tx-section-ubicacion-web-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1330px) {
+  .tx-section-ubicacion-web-02 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-ubicacion-web-02 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-ubicacion-web-02 {
+    font-size: 1.2rem;
+  }
+}
+
+.container-content-ubicacion-fixed {
+  height: 5px;
+  width: 75%;
+  position: absolute;
+  z-index: 100;
+  margin: 0px 15px 0px 0px;
+  right: 0;
+  top: 50px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+}
+
+.container-content-ubicacion-02 {
+  padding: 50px 0px 0px 60px;
+  margin: 50px 0px 0px 0px;
+}
+
+/*SECTION 02 UBICACION WEB*/
+.section-ubicacion-web-02 {
+  padding: 40px 0px 40px 0px;
+  background: #112334;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-ubicacion-web-02-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 3.2rem;
+}
+.tx-section-ubicacion-web-02-01 span {
+  font-family: "Arsenal-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-ubicacion-web-02-01 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-section-ubicacion-web-02-01 {
+    font-size: 2.4rem;
+  }
+}
+
+/*SECTION 03 UBICACION WEB*/
+.section-web-condominio-03 {
+  padding: 60px 0px 0px 0px;
+}
+
+.content-section-ubicacion-03-03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 100%);
+  margin: 0px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-ubicacion-03-04 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 3.2rem;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-ubicacion-03-04 {
+    font-size: 2.8rem;
+  }
+}
+
+.content-section-ubicacion-03-04 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: #112334;
+  margin: 0px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-ubicacion-03-05 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: flex;
+}
+.tx-section-web-ubicacion-03-05 .global {
+  display: inline-block;
+  margin: 0rem 2rem 0rem 0rem;
+}
+.tx-section-web-ubicacion-03-05 .global .icon-vieta:before {
+  color: #FFF;
+  font-size: 2.75rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-ubicacion-03-05 {
+    font-size: 1.4rem;
+  }
+}
+
+.tx-section-web-ubicacion-03-05-b {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  display: flex;
+}
+.tx-section-web-ubicacion-03-05-b .global {
+  display: inline-block;
+  margin: 0rem 2rem 0rem 0rem;
+}
+.tx-section-web-ubicacion-03-05-b .global .icon-vieta:before {
+  color: #FFF;
+  font-size: 2.75rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-ubicacion-03-05-b {
+    font-size: 1.4rem;
+  }
+}
+
+/** CONSTRUCTORA ALIANZA **/
+/* CONSTRUCTORA XS */
+/* SECTION 02 XS */
+.section-constructora-xs-02 {
+  background: #112334;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  padding: 20px 0px;
+}
+
+.tx-section-constructora-xs-02-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 2.4rem;
+  margin: 0px 0px 30px 0px;
+}
+.tx-section-constructora-xs-02-01 span {
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-constructora-xs-02-02 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0px 0px 10px 0px;
+}
+
+/* SECTION 03 XS */
+.section-constructora-xs-03 {
+  padding: 50px 0px 50px 0px;
+}
+
+.comillas-xs {
+  width: 25px;
+  margin: 30px 0px 20px 0px;
+}
+
+.tx-section-constructora-xs-03-01 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2.4rem;
+  margin: 0px 0px 20px 0px;
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-constructora-xs-03-02 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0px 0px 30px 0px;
+}
+
+.tx-section-constructora-xs-03-03 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+  text-align: right;
+  margin: 0px 0px 0px 0px;
+}
+
+.tx-section-constructora-xs-03-04 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+/* SECTION 05 XS */
+.section-constructora-xs-05 {
+  padding: 20px 0px 30px 0px;
+  background: #112334;
+}
+
+.tx-section-constructora-xs-05-01 {
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 2rem;
+  margin: 0px 0px 0px 0px;
+}
+.tx-section-constructora-xs-05-01 span {
+  font-family: "Arsenal-Bold";
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+/* MAIN WEB */
+.main-constructora-web {
+  background: url("../images/constructora-alianza-panoramica-villa-maria-condominio-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 850px;
+}
+@media screen and (max-width: 1920px) {
+  .main-constructora-web {
+    background-size: 100% cover;
+    height: 850px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .main-constructora-web {
+    background-size: 100% cover;
+    height: 715px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .main-constructora-web {
+    background-size: 100% cover;
+    height: 450px;
+  }
+}
+
+/*SECTION CONDOMINIO 01 WEB*/
+.section-constructora-web-01 {
+  padding: 40px 0px 40px 0px;
+  background: #112334;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-constructora-web-01-01 {
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 4rem;
+}
+.tx-section-constructora-web-01-01 span {
+  font-family: "Arsenal-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-constructora-web-01-01 {
+    font-size: 3.2rem;
+  }
+}
+
+.border-constructora-style {
+  display: block;
+  height: 5px;
+  width: 25%;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+}
+@media screen and (max-width: 991px) {
+  .border-constructora-style {
+    margin-top: 10px;
+  }
+}
+
+.tx-section-constructora-web-01-02 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+  margin: 40px 0px 0px 0px;
+  line-height: 1.5;
+  text-align: justify;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-constructora-web-01-02 {
+    font-size: 2rem;
+  }
+}
+
+/*SECTION 02 CONSTRUCTORA WEB*/
+.section-constructora-web-02 {
+  padding: 100px 0px 0px 0px;
+}
+
+.container-constructora-01 {
+  padding: 0px 100px;
+  height: 100%;
+}
+@media screen and (max-width: 991px) {
+  .container-constructora-01 {
+    padding: 0px 60px;
+  }
+}
+.container-constructora-01 :nth-child(2) {
+  color: #112334;
+  font-family: "Arsenal-Regular";
+  font-size: 2.8rem;
+  margin: 50px 0px 0px 0px;
+  padding: 0px 0px 20px 0px;
+  border-bottom: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .container-constructora-01 :nth-child(2) {
+    font-size: 2.4rem;
+  }
+}
+.container-constructora-01 :nth-child(3) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  text-align: justify;
+  margin: 50px 0px 0px 0px;
+}
+@media screen and (max-width: 991px) {
+  .container-constructora-01 :nth-child(3) {
+    font-size: 1.4rem;
+  }
+}
+.container-constructora-01 :nth-child(4) {
+  color: #112334;
+  font-family: "Arsenal-Regular";
+  font-size: 2.8rem;
+  text-align: right;
+  margin: 50px 0px 0px 0px;
+}
+@media screen and (max-width: 991px) {
+  .container-constructora-01 :nth-child(4) {
+    font-size: 2.4rem;
+  }
+}
+.container-constructora-01 :nth-child(5) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  text-align: right;
+  margin: 10px 0px 0px 0px;
+}
+@media screen and (max-width: 991px) {
+  .container-constructora-01 :nth-child(5) {
+    font-size: 1.4rem;
+  }
+}
+
+.content-section-constructora-02-03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 100%);
+  margin: 60px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-constructora-02-04 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 3.2rem;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-constructora-02-04 {
+    font-size: 2.8rem;
+  }
+}
+
+.content-section-constructora-02-04 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: #112334;
+  margin: 60px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-constructora-02-05 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: flex;
+}
+.tx-section-web-constructora-02-05 .global {
+  display: inline-block;
+  margin: 0rem 2rem 0rem 0rem;
+}
+.tx-section-web-constructora-02-05 .global .icon-vieta:before {
+  color: #FFF;
+  font-size: 2.75rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-constructora-02-05 {
+    font-size: 1.4rem;
+  }
+}
+
+.tx-section-web-constructora-02-05-b {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  display: flex;
+}
+.tx-section-web-constructora-02-05-b .global {
+  display: inline-block;
+  margin: 0rem 2rem 0rem 0rem;
+}
+.tx-section-web-constructora-02-05-b .global .icon-vieta:before {
+  color: #FFF;
+  font-size: 2.75rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-constructora-02-05-b {
+    font-size: 1.4rem;
+  }
+}
+
+/*SECTION 02 UBICACION WEB*/
+.section-constructora-web-03 {
+  margin: 70px 0px 0px 0px;
+  padding: 40px 0px 40px 0px;
+  background: #112334;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-constructora-web-02-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 3.2rem;
+}
+.tx-section-constructora-web-02-01 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-constructora-web-02-01 {
+    font-size: 2.4rem;
+  }
+}
+
+/** PREGUNTAS FRECUENTES**/
+.section-preguntas-frecuentes {
+  padding: 40px 0px 100px 0px;
+}
+
+.tx-section-preguntas-frecuentes-01 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0px 0px 60px 0px;
+}
+@media screen and (max-width: 991px) {
+  .tx-section-preguntas-frecuentes-01 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx-section-preguntas-frecuentes-01 {
+    font-size: 2.4rem;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.content-section-preguntas-frecuentes-01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0px 8.333% 0px 16.6666%;
+}
+@media screen and (max-width: 767px) {
+  .content-section-preguntas-frecuentes-01 {
+    padding: 0px 0px 0px 0px;
+  }
+}
+.content-section-preguntas-frecuentes-01 p:nth-child(1) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 0px 0px 30px 0px;
+}
+@media screen and (max-width: 991px) {
+  .content-section-preguntas-frecuentes-01 p:nth-child(1) {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-section-preguntas-frecuentes-01 p:nth-child(1) {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+  }
+}
+.content-section-preguntas-frecuentes-01 p:nth-child(2) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+}
+@media screen and (max-width: 991px) {
+  .content-section-preguntas-frecuentes-01 p:nth-child(2) {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-section-preguntas-frecuentes-01 p:nth-child(2) {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+  }
+}
+.content-section-preguntas-frecuentes-01 p:nth-child(2) span {
+  font-family: "Helvetica-Neue-Bold";
+}
+
+#collapseFaqs {
+  margin-top: 20px;
+}
+
+.adp.card {
+  border: none;
+  background: none;
+}
+
+.adp.card-header {
+  padding: 12.5px 12.5px 12.5px 12.5px;
+  background: none;
+  border: none;
+}
+
+.adp.collapse {
+  border: none;
+}
+
+.adp.card-body {
+  padding: 45px 62.5px;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  text-align: justify;
+}
+@media screen and (max-width: 991px) {
+  .adp.card-body {
+    font-size: 1.2rem;
+    padding: 20px 27.5px;
+    text-align: justify;
+  }
+}
+
+.btn-card-faqs-adp {
+  position: relative;
+  display: block;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  padding: 30px 52px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 12.5px rgba(0, 0, 0, 0.2);
+}
+.btn-card-faqs-adp .faqs {
+  position: absolute;
+  right: 50px;
+  top: 35px;
+}
+@media screen and (max-width: 991px) {
+  .btn-card-faqs-adp .faqs {
+    right: 15px;
+    top: 18px;
+  }
+}
+.btn-card-faqs-adp .faqs .icon-slider-anterior-desplegable-abajo:before {
+  display: inline-block;
+  color: #000;
+}
+@media screen and (max-width: 767px) {
+  .btn-card-faqs-adp .faqs .icon-slider-anterior-desplegable-abajo:before {
+    font-size: 1.5rem;
+  }
+}
+.btn-card-faqs-adp .faqs .icon-slider-anterior-desplegable-arriba:before {
+  display: inline-block;
+  color: #000;
+}
+@media screen and (max-width: 767px) {
+  .btn-card-faqs-adp .faqs .icon-slider-anterior-desplegable-arriba:before {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-card-faqs-adp {
+    font-size: 1.2rem;
+    padding: 15px 15px;
+  }
+}
+
+.margen-collapse-ajust {
+  padding: 0px 25px;
+}
+
+.tx-section-preguntas-frecuentes-02 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 50px 0px 30px 0px;
+  padding-top: 45px;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .tx-section-preguntas-frecuentes-02 {
+    margin: 30px 0px 10px 0px;
+    padding-top: 25px;
+    font-size: 1.4rem;
+  }
+}
+
+/** CONTACTO **/
+/* CONSTRUCTORA XS */
+/* SECTION 02 XS */
+.section-contacto-xs-02 {
+  background: #112334;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  padding: 20px 0px;
+}
+
+.tx-section-contacto-xs-02-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 2.4rem;
+  margin: 0px 0px 30px 0px;
+}
+.tx-section-contacto-xs-02-01 span {
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-contacto-xs-02-02 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0px 0px 10px 0px;
+}
+
+/* SECTION 03 XS */
+.section-contacto-xs-03 {
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  padding: 40px 0px;
+}
+
+.tx-section-contacto-xs-03-01 {
+  text-align: center;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 0px 0px 40px 0px;
+}
+.tx-section-contacto-xs-03-01 span {
+  border-bottom: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.content-section-contacto-xs-01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.tx-section-contacto-xs-03-02 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+  margin: 0px 0px 0px 0px;
+}
+
+.tx-section-contacto-xs-03-03 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.6rem;
+  margin: 0px 0px 20px 0px;
+}
+
+.enlace-contacto-xs-01 {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.6rem;
+  border: 1px solid #112334;
+  margin: 0px 0px 15px 0px;
+}
+.enlace-contacto-xs-01 .contacto {
+  position: absolute;
+  left: 10px;
+}
+.enlace-contacto-xs-01 .contacto .icon-telefono-atencion:before {
+  color: #112334;
+}
+.enlace-contacto-xs-01 .contacto .icon-whatsapp:before {
+  color: #112334;
+}
+.enlace-contacto-xs-01:focus {
+  color: #112334;
+}
+.enlace-contacto-xs-01:hover {
+  color: #112334;
+}
+
+.tx-section-contacto-xs-03-04 {
+  color: #112334;
+  text-align: center;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.6rem;
+  padding: 0px 0px 50px 0px;
+  border-bottom: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  margin: 50px 0px 0px 0px;
+}
+
+.tx-section-contacto-xs-03-05 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  padding: 0px 0px 0px 5px;
+  border-left: 10px solid transparent;
+  border-image-source: linear-gradient(180deg, #bc913e 0%, #eceba2 100%);
+  border-image-slice: 1;
+  margin: 50px 0px 0px 0px;
+}
+
+.tx-section-contacto-xs-03-06 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 1.4rem;
+  margin: 0px 0px 30px 15px;
+}
+
+.tx-aviso-importante-contacto-xs {
+  display: flex;
+  color: #7B2627;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  margin: 0px 0px 1rem 45px;
+  font-style: italic;
+}
+
+.tx-section-contacto-xs-03-07 {
+  display: flex;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  margin: 0px 0px 1.4rem 15px;
+}
+.tx-section-contacto-xs-03-07 .contacto {
+  margin-right: 13px;
+}
+.tx-section-contacto-xs-03-07 .contacto .icon-reloj-horario-atencion:before,
+.tx-section-contacto-xs-03-07 .contacto .icon-ubicacion:before,
+.tx-section-contacto-xs-03-07 .contacto .icon-whatsapp:before,
+.tx-section-contacto-xs-03-07 .contacto .icon-telefono-atencion:before,
+.tx-section-contacto-xs-03-07 .contacto .icon-mail:before {
+  display: inline-block;
+  width: 15px;
+  color: #112334;
+}
+
+.tx-section-contacto-xs-03-07-b {
+  display: flex;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  margin: 0px 0px 0px 15px;
+}
+.tx-section-contacto-xs-03-07-b .contacto {
+  width: 14px;
+  margin-right: 15px;
+}
+.tx-section-contacto-xs-03-07-b .contacto .icon-reloj-horario-atencion:before,
+.tx-section-contacto-xs-03-07-b .contacto .icon-ubicacion:before,
+.tx-section-contacto-xs-03-07-b .contacto .icon-whatsapp:before,
+.tx-section-contacto-xs-03-07-b .contacto .icon-telefono-atencion:before,
+.tx-section-contacto-xs-03-07-b .contacto .icon-mail:before {
+  display: inline-block;
+  width: 15px;
+  color: #112334;
+}
+.tx-section-contacto-xs-03-07-b .margen-tx-contacto-xs {
+  display: block;
+  margin: 0px 0px 0px 25px;
+}
+
+.enlace-contacto-xs-02 {
+  display: inline-block;
+  color: #BC913E;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  margin: 0px 0px 10px 45px;
+}
+.enlace-contacto-xs-02:focus {
+  text-decoration: none;
+  color: #BC913E;
+}
+.enlace-contacto-xs-02:hover {
+  text-decoration: none;
+  color: #BC913E;
+}
+
+/* MAIN WEB */
+.main-contacto-web {
+  background: url("../images/panoramica-casa-frontal-condominio-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 850px;
+}
+@media screen and (max-width: 1920px) {
+  .main-contacto-web {
+    background-size: 100% cover;
+    height: 850px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .main-contacto-web {
+    background-size: 100% cover;
+    height: 715px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .main-contacto-web {
+    background-size: 100% cover;
+    height: 450px;
+  }
+}
+
+/*SECTION CONDOMINIO 01 WEB*/
+.section-contacto-web-01 {
+  padding: 60px 0px 80px 0px;
+  background: #112334;
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+
+.tx-section-contacto-web-01-01 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 4rem;
+}
+.tx-section-contacto-web-01-01 span {
+  font-family: "Arsenal-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-contacto-web-01-01 {
+    font-size: 3.2rem;
+  }
+}
+
+.tx-section-contacto-web-01-02 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+  margin: 40px 0px 0px 0px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-contacto-web-01-02 {
+    font-size: 2rem;
+  }
+}
+
+/*SECTION 02 CONTACTO WEB*/
+.section-contacto-web-02 {
+  padding: 100px 0px 0px 0px;
+}
+
+.container-contacto-01 {
+  padding: 0px 0px;
+  height: 100%;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-01 {
+    padding: 0px 60px;
+  }
+}
+.container-contacto-01 .tx-section-contacto-web-02-01 {
+  color: #112334;
+  font-family: "Arsenal-Regular";
+  font-size: 2.8rem;
+  margin: 50px 0px 0px 0px;
+  padding: 0px 0px 0px 15px;
+  border-left: 10px solid transparent;
+  border-image-source: linear-gradient(180deg, #bc913e 0%, #eceba2 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-01 .tx-section-contacto-web-02-01 {
+    font-size: 2.4rem;
+  }
+}
+.container-contacto-01 .tx-section-contacto-web-02-02 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2.4rem;
+  margin: 10px 0px 0px 25px;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-01 .tx-section-contacto-web-02-02 {
+    font-size: 2rem;
+  }
+}
+.container-contacto-01 .tx-aviso-importante-contacto {
+  display: flex;
+  color: #7B2627;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  margin: 10px 0px 0px 75px;
+  line-height: 1.25;
+  font-style: italic;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-01 .tx-aviso-importante-contacto {
+    font-size: 1.4rem;
+  }
+}
+.container-contacto-01 .tx-section-contacto-web-02-03 {
+  display: flex;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  margin: 17px 0px 0px 45px;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-01 .tx-section-contacto-web-02-03 {
+    font-size: 1.4rem;
+    margin: 14px 0px 0px 45px;
+  }
+}
+.container-contacto-01 .tx-section-contacto-web-02-03 .contacto {
+  margin-right: 15px;
+}
+.container-contacto-01 .tx-section-contacto-web-02-03 .contacto .icon-reloj-horario-atencion:before,
+.container-contacto-01 .tx-section-contacto-web-02-03 .contacto .icon-ubicacion:before,
+.container-contacto-01 .tx-section-contacto-web-02-03 .contacto .icon-whatsapp:before,
+.container-contacto-01 .tx-section-contacto-web-02-03 .contacto .icon-telefono-atencion:before,
+.container-contacto-01 .tx-section-contacto-web-02-03 .contacto .icon-mail:before {
+  color: #112334;
+}
+.container-contacto-01 .enlace-contacto-01 {
+  display: inline-block;
+  margin: 0px 0px 0px 80px;
+  color: #BC913E;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+.container-contacto-01 .enlace-contacto-01:focus {
+  text-decoration: none;
+  color: #BC913E;
+}
+.container-contacto-01 .enlace-contacto-01:hover {
+  text-decoration: none;
+  color: #BC913E;
+}
+@media screen and (max-width: 1199px) {
+  .container-contacto-01 .enlace-contacto-01 {
+    font-size: 1.2rem;
+  }
+}
+
+.container-contacto-02 {
+  padding: 0px 0px;
+  height: 100%;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-02 {
+    padding: 0px 60px;
+  }
+}
+.container-contacto-02 .tx-section-contacto-web-02-01 {
+  color: #112334;
+  font-family: "Arsenal-Regular";
+  font-size: 2.8rem;
+  margin: 50px 0px 0px 0px;
+  padding: 0px 0px 0px 15px;
+  border-left: 10px solid transparent;
+  border-image-source: linear-gradient(180deg, #bc913e 0%, #eceba2 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-02 .tx-section-contacto-web-02-01 {
+    font-size: 2.4rem;
+  }
+}
+.container-contacto-02 .tx-section-contacto-web-02-02 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2.4rem;
+  margin: 10px 0px 0px 25px;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-02 .tx-section-contacto-web-02-02 {
+    font-size: 2rem;
+  }
+}
+.container-contacto-02 .tx-aviso-importante-contacto {
+  display: flex;
+  color: #7B2627;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  margin: 10px 0px 0px 75px;
+  line-height: 1.25;
+  font-style: italic;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-02 .tx-aviso-importante-contacto {
+    font-size: 1.4rem;
+  }
+}
+.container-contacto-02 .tx-section-contacto-web-02-03 {
+  display: flex;
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  margin: 17px 0px 0px 45px;
+}
+@media screen and (max-width: 991px) {
+  .container-contacto-02 .tx-section-contacto-web-02-03 {
+    font-size: 1.4rem;
+    margin: 14px 0px 0px 45px;
+  }
+}
+.container-contacto-02 .tx-section-contacto-web-02-03 .contacto {
+  margin-right: 15px;
+}
+.container-contacto-02 .tx-section-contacto-web-02-03 .contacto .icon-reloj-horario-atencion:before,
+.container-contacto-02 .tx-section-contacto-web-02-03 .contacto .icon-ubicacion:before,
+.container-contacto-02 .tx-section-contacto-web-02-03 .contacto .icon-whatsapp:before,
+.container-contacto-02 .tx-section-contacto-web-02-03 .contacto .icon-telefono-atencion:before,
+.container-contacto-02 .tx-section-contacto-web-02-03 .contacto .icon-mail:before {
+  color: #112334;
+}
+.container-contacto-02 .enlace-contacto-01 {
+  display: inline-block;
+  margin: 0px 0px 0px 80px;
+  color: #BC913E;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+}
+.container-contacto-02 .enlace-contacto-01:focus {
+  text-decoration: none;
+  color: #BC913E;
+}
+.container-contacto-02 .enlace-contacto-01:hover {
+  text-decoration: none;
+  color: #BC913E;
+}
+@media screen and (max-width: 1199px) {
+  .container-contacto-02 .enlace-contacto-01 {
+    font-size: 1.4rem;
+  }
+}
+
+.content-section-contacto-02-03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 100%);
+  margin: 60px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-contacto-02-04 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 3.2rem;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-contacto-02-04 {
+    font-size: 2.8rem;
+  }
+}
+
+.content-section-contacto-02-04 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  background: #112334;
+  margin: 60px 0px 60px 0px;
+  padding: 0px 40px 0px 40px;
+}
+
+.tx-section-web-contacto-02-05 {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: flex;
+}
+.tx-section-web-contacto-02-05 .global {
+  display: inline-block;
+  margin: 0rem 2rem 0rem 0rem;
+}
+.tx-section-web-contacto-02-05 .global .icon-vieta:before {
+  color: #FFF;
+  font-size: 2.75rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-contacto-02-05 {
+    font-size: 1.4rem;
+  }
+}
+
+.tx-section-web-contacto-02-05-b {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  display: flex;
+}
+.tx-section-web-contacto-02-05-b .global {
+  display: inline-block;
+  margin: 0rem 2rem 0rem 0rem;
+}
+.tx-section-web-contacto-02-05-b .global .icon-vieta:before {
+  color: #FFF;
+  font-size: 2.75rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-contacto-02-05-b {
+    font-size: 1.4rem;
+  }
+}
+
+/*NAVBAR XS*/
+.navbar.menu_xs {
+  padding: 0;
+}
+
+.progress.bar-xs {
+  background-color: rgba(156, 156, 156, 0.4);
+  border-radius: 0px;
+  height: 5px;
+}
+
+.progress-bar.bar-xs {
+  background-color: #3B286C;
+  border-radius: 0px 5px 5px 0px;
+  height: 5px;
+}
+
+.navbar-toggler.menu_xs {
+  position: relative;
+  display: block;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 0px;
+  font-family: "Arsenal-Bold";
+  color: #112334;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  font-size: 1.8rem;
+}
+.navbar-toggler.menu_xs span img {
+  position: absolute;
+  right: 37px;
+  top: 20px;
+}
+.navbar-toggler.menu_xs:focus {
+  outline: none;
+}
+
+.navbar-nav.menu_xs {
+  padding: 0px 18px 0px 18px;
+}
+
+.navbar-light .navbar-nav .nav-link.menu_xs {
+  font-family: "Arsenal-Regular";
+  color: #112334;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.navbar-light .navbar-nav .nav-link.menu_xs span img {
+  position: absolute;
+  right: 22px;
+  top: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link.menu_xs.ultimo {
+  border: none;
+}
+
+.nav-xs-adp.collapse {
+  border-top: 5px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  background: #112334;
+  padding: 65px 50px 35px 50px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+
+.nav-xs-adp.collapsing {
+  padding: 0px 50px 0px 50px;
+  opacity: 0;
+  transition: 0.25s;
+  -moz-transition: 0.25s;
+}
+
+.icon-close-agil-xs {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.icon-close-agil-xs .icon-menu-close:before {
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+
+/*ICONOS ANIMADOS*/
+@keyframes animacion-iconos {
+  0% {
+    background-position: 20px center;
+  }
+  25% {
+    background-position: 20px center;
+  }
+  50% {
+    background-position: 40px center;
+  }
+  75% {
+    background-position: 40px center;
+  }
+  100% {
+    background-position: 60px center;
+  }
+}
+.iconos-contacto-fixed-animados {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background-image: url("../images/iconos-animation-fixed-xs.webp");
+  background-size: 40px 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-repeat: repeat-x, no-repeat;
+  height: 20px;
+  width: 20px;
+  animation-name: animacion-iconos;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  /* animation-timing-function: steps(2); */
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  z-index: 101;
+}
+
+@media screen and (max-width: 450px) {
+  .iconos-contacto-fixed-animados {
+    top: 15px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .iconos-contacto-fixed-animados {
+    top: 15px;
+    left: 10px;
+  }
+}
+.icon-arrow-btn-contacto-agil {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  max-height: 30px;
+}
+.icon-arrow-btn-contacto-agil .icon-slider-anterior-desplegable-arriba:before {
+  color: #112334;
+}
+.icon-arrow-btn-contacto-agil .icon-slider-anterior-desplegable-abajo:before {
+  color: #112334;
+}
+@media screen and (max-width: 370px) {
+  .icon-arrow-btn-contacto-agil {
+    right: 10px;
+  }
+}
+
+.icon-btn-agil-xs {
+  margin-right: 3px;
+}
+.icon-btn-agil-xs .icon-personal-information:before {
+  color: #112334;
+}
+.icon-btn-agil-xs .icon-whatsapp:before {
+  color: #112334;
+}
+
+.tx-contacto-agil-xs-01 {
+  text-align: center;
+  font-family: "Helvetica-Neue-Light";
+  color: #FFF;
+  font-size: 1.4rem;
+  margin: 20px 0px 20px 0px;
+}
+.tx-contacto-agil-xs-01 span {
+  display: inline-block;
+  border-bottom: 1px solid #FFF;
+  width: 35%;
+  margin: 0px 10px 5px 10px;
+}
+
+/*FOOTER WEB*/
+footer {
+  background: #112334;
+  padding: 70px 0px 65px 0px;
+  margin: 0px 0px 0px 0px;
+}
+@media screen and (max-width: 575px) {
+  footer {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.tx-footer-web-01 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.6rem;
+  line-height: 1.25;
+  text-align: center;
+  margin-top: 40px;
+  padding: 0rem 7rem 0rem 7rem;
+}
+@media screen and (max-width: 1700px) {
+  .tx-footer-web-01 {
+    padding: 0rem 5rem 0rem 5rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-footer-web-01 {
+    padding: 0rem 5rem 0rem 5rem;
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tx-footer-web-01 {
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx-footer-web-01 {
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+}
+
+.tx-footer-web-02 {
+  color: #FFF;
+  font-family: "Arsenal-Regular";
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0px 0px 15px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .tx-footer-web-02 {
+    font-size: 2.8rem;
+  }
+}
+
+.btn-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+  color: #FFF;
+  width: 100%;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%);
+  border-image-slice: 1;
+}
+.btn-footer:hover {
+  color: #FFF;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer {
+    height: 60px;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .btn-footer {
+    height: 60px;
+    font-size: 1.4rem;
+  }
+}
+
+.btn-footer.btn-footer-01.active {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-1-min-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-01.active {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-1-min-mobile-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.btn-footer.btn-footer-01.active:hover {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-1-min-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-01.active:hover {
+    color: #FFF;
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-1-min-mobile-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+    border-image-slice: 1;
+  }
+}
+
+.btn-footer.btn-footer-02.active {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-2-min-condominio-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-02.active {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-2-min-mobile-condominio-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.btn-footer.btn-footer-02.active:hover {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-2-min-condominio-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-02.active:hover {
+    color: #FFF;
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-2-min-mobile-condominio-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+    border-image-slice: 1;
+  }
+}
+
+.btn-footer.btn-footer-03.active {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-3-min-ubicacion-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-03.active {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-3-min-ubicacion-mobile-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.btn-footer.btn-footer-03.active:hover {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-3-min-ubicacion-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-03.active:hover {
+    color: #FFF;
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-3-min-ubicacion-mobile-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+    border-image-slice: 1;
+  }
+}
+
+.btn-footer.btn-footer-04.active {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-4-min-constructora-alianza-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-04.active {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-4-min-mobile-constructora-alianza-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.btn-footer.btn-footer-04.active:hover {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-4-min-constructora-alianza-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-04.active:hover {
+    color: #FFF;
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-4-min-mobile-constructora-alianza-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+    border-image-slice: 1;
+  }
+}
+
+.btn-footer.btn-footer-05.active {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-5-min-contacto-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-05.active {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-5-min-contacto-mobile-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.btn-footer.btn-footer-05.active:hover {
+  color: #FFF;
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-5-min-contacto-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-05.active:hover {
+    color: #FFF;
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-5-min-contacto-mobile-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid transparent;
+    border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+    border-image-slice: 1;
+  }
+}
+
+.btn-footer.btn-footer-01 {
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-1-min-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.btn-footer.btn-footer-01:hover {
+  color: #112334;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-1-min-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-01:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-1-min-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-01 {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-1-min-mobile-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn-footer.btn-footer-02 {
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-2-min-condominio-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.btn-footer.btn-footer-02:hover {
+  color: #112334;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-2-min-condominio-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-02:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-2-min-condominio-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-02 {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-2-min-mobile-condominio-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn-footer.btn-footer-03 {
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-3-min-ubicacion-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.btn-footer.btn-footer-03:hover {
+  color: #112334;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-3-min-ubicacion-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-03:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-3-min-ubicacion-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-03 {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-3-min-ubicacion-mobile-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn-footer.btn-footer-04 {
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-4-min-constructora-alianza-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.btn-footer.btn-footer-04:hover {
+  color: #112334;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-4-min-constructora-alianza-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-04:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-4-min-constructora-alianza-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-04 {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-4-min-mobile-constructora-alianza-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn-footer.btn-footer-05 {
+  background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-5-min-contacto-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.btn-footer.btn-footer-05:hover {
+  color: #112334;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-5-min-contacto-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-05:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../images/explorar-menu-5-min-contacto-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-footer.btn-footer-05 {
+    background: linear-gradient(90deg, rgba(17, 35, 52, 0.4) 0%, rgba(17, 35, 52, 0.4) 100%), url("../images/explorar-menu-5-min-contacto-mobile-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* ENDPAGE */
+.end-page {
+  padding: 40px 0px 70px 0px;
+}
+
+.tx-end-page-01 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 25px 0px 15px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .tx-end-page-01 {
+    margin: 15px 0px 15px 0px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx-end-page-01 {
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+.contenedor-redes-sociales {
+  display: flex;
+  flex-direction: row;
+}
+.contenedor-redes-sociales .global {
+  margin-right: 0px;
+}
+.contenedor-redes-sociales .global .icon-instagram:before {
+  margin-left: 8px;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+.contenedor-redes-sociales .global .icon-facebook:before,
+.contenedor-redes-sociales .global .icon-youtube:before {
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  margin-left: 18px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 991px) {
+  .contenedor-redes-sociales {
+    justify-content: flex-end;
+  }
+}
+
+.logo-constructora-alianza-footer {
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .logo-constructora-alianza-footer {
+    justify-content: flex-end;
+  }
+}
+.logo-constructora-alianza-footer img {
+  margin: 0px 0px 0px 0px;
+  width: 130px;
+}
+
+/* SECCION TERMINOS */
+.form-content-fixed-web {
+  padding: 35px 30px 45px 30px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  border-top: 10px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1700px) {
+  .form-content-fixed-web {
+    padding: 15px 15px 25px 15px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form-content-fixed-web {
+    padding: 50px 0px 70px 0px;
+    box-shadow: none;
+    margin-left: 0;
+    border-top: none;
+  }
+}
+
+.tx-form-web-01 {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  color: #000;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+}
+@media screen and (max-width: 1199px) {
+  .tx-form-web-01 {
+    font-size: 1.8rem;
+    margin: 0px 0px 25px 0px;
+    line-height: 1;
+  }
+}
+
+.tx-form-web-02 {
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+  color: #000;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+}
+@media screen and (max-width: 1700px) {
+  .tx-form-web-02 {
+    font-size: 1.4rem;
+    margin: 0px 0px 45px 0px;
+    line-height: 1;
+  }
+}
+
+.tx-form-web-03 {
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+  color: #000;
+  font-family: "Arsenal-Bold";
+  font-size: 2rem;
+}
+@media screen and (max-width: 1700px) {
+  .tx-form-web-03 {
+    font-size: 1.8rem;
+    margin: 0px 0px 30px 0px;
+    line-height: 1;
+  }
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 1700px) {
+  .form-group {
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form-group {
+    margin-bottom: 3rem;
+  }
+}
+
+.form-group.web {
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 1700px) {
+  .form-group.web {
+    margin-bottom: 4rem;
+  }
+}
+
+label {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.6rem;
+  line-height: 1;
+}
+label span {
+  color: #7B2627;
+}
+@media screen and (max-width: 1700px) {
+  label {
+    font-size: 1.4rem;
+  }
+}
+
+.label-form-web {
+  height: 30px;
+}
+@media screen and (max-width: 1700px) {
+  .label-form-web {
+    height: 30px;
+  }
+}
+
+.container-option-check {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #898989;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.container-option-check.error {
+  border: 1px solid #7B2627;
+}
+
+.container-option-check.ultimo {
+  margin-bottom: 0px;
+}
+
+.option-checked {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #BC913E;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  color: #BC913E;
+}
+
+.option-checked > .tx-opcion-check {
+  border-left: 1px solid #BC913E;
+}
+
+.checkbox-opcion {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1rem !important;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tx-opcion-check {
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  border-left: 1px solid #898989;
+  padding: 5px 0px 2px 10px;
+  height: 33px;
+}
+@media screen and (max-width: 1700px) {
+  .tx-opcion-check {
+    padding: 7px 0px 0px 10px;
+    font-size: 1.2rem;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-opcion-check {
+    font-size: 1.2rem;
+  }
+}
+
+.tx-opcion-check.error {
+  border-left: 1px solid #7B2627;
+  color: #7B2627;
+}
+
+.margen-interno-form {
+  padding: 0px 40px 0px 40px;
+}
+@media screen and (max-width: 1199px) {
+  .margen-interno-form {
+    padding: 15px 15px 0px 15px;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 7px;
+  letter-spacing: 1px;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #898989;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 1px solid #898989;
+  border-radius: 0px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media screen and (max-width: 1700px) {
+  .form-control {
+    font-size: 1.2rem;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .form-control {
+    font-size: 1.2rem;
+  }
+}
+
+.form-control:focus {
+  color: #112334;
+  border: 1px solid #112334;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control.error {
+  border-color: #7B2627;
+  box-shadow: none;
+  color: #7B2627;
+}
+
+.form-control.error::placeholder {
+  color: #7B2627;
+}
+
+.form-control::placeholder {
+  color: #898989;
+}
+
+.checkbox {
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0rem 0rem 0rem 0rem;
+}
+.checkbox p {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.2rem;
+  margin: 0rem 0rem 0rem 0.5rem;
+  line-height: 1.25;
+}
+.checkbox p .tx_terminos {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .checkbox p .tx_terminos {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .checkbox p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .checkbox {
+    font-size: 1.2rem;
+  }
+}
+
+#msgSubmit_checkbox_medio_contacto {
+  position: absolute;
+  font-size: 1.4rem;
+  font-family: "Helvetica-Neue-Light";
+  color: #7B2627 !important;
+  margin: 3px 0px 0px 10px;
+}
+@media screen and (max-width: 1700px) {
+  #msgSubmit_checkbox_medio_contacto {
+    margin: 1.5px 0px 0px 10px;
+    font-size: 1.2rem;
+  }
+}
+
+#msgSubmit_condiciones_fixed_web,
+#msgSubmit_fixed_web {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  font-size: 1.4rem;
+  font-family: "Helvetica-Neue-Light";
+  color: #7B2627 !important;
+  margin: 3px 0px 0px 0px;
+}
+@media screen and (max-width: 1700px) {
+  #msgSubmit_condiciones_fixed_web,
+#msgSubmit_fixed_web {
+    margin: 1.5px 0px 0px 0px;
+    font-size: 1.2rem;
+  }
+}
+
+.help-block.with-errors.form-web .list-unstyled {
+  position: absolute;
+  bottom: -20px;
+  font-size: 1.4rem;
+  font-family: "Helvetica-Neue-Light";
+  color: #7B2627 !important;
+  margin: 3px 0px 0px 1rem;
+}
+@media screen and (max-width: 1700px) {
+  .help-block.with-errors.form-web .list-unstyled {
+    margin: 1.5px 0px 0px 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.help-block.with-errors .list-unstyled {
+  position: absolute;
+  bottom: 7px;
+  font-size: 1.4rem;
+  font-family: "Helvetica-Neue-Light";
+  color: #7B2627 !important;
+  margin: 3px 0px 0px 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1700px) {
+  .help-block.with-errors .list-unstyled {
+    bottom: 5px;
+    margin: 1.5px 0px 0px 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.position-tx-email.help-block.with-errors.form-web .list-unstyled {
+  position: static;
+}
+
+.position-tx-email.help-block.with-errors .list-unstyled {
+  position: static;
+}
+
+.fixed-form {
+  position: sticky;
+  z-index: 1000;
+  top: 3%;
+}
+@media screen and (max-width: 1700px) {
+  .fixed-form {
+    top: 5px;
+  }
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*THANK YOU PAGE*/
+.header-externo {
+  background: #112334;
+  padding: 25px 0px;
+}
+@media screen and (max-width: 575px) {
+  .header-externo {
+    background: none;
+    padding: 11px 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+  }
+}
+
+.section-thank-you-page {
+  background: url("../images/formulario-recibido-panoramica-cercana-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 151px);
+}
+@media screen and (max-width: 991px) {
+  .section-thank-you-page {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 575px) {
+  .section-thank-you-page {
+    background: none;
+  }
+}
+
+.bg-content-thank-you-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  padding: 0px 60px 0px 60px;
+  height: 100%;
+}
+@media screen and (max-width: 575px) {
+  .bg-content-thank-you-page {
+    justify-content: flex-start;
+    height: calc(100vh - 60px);
+    padding: 30px 30px 0px 30px;
+    background: url("../images/formulario-recibido-panoramica-cercana-condominio-campestre-altos-del-palmar-mobile-adp-web-2020-adp-recursos-web-imagenes.webp");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+  }
+}
+
+.icon-check {
+  width: 48px;
+}
+
+.tx-thank-you-page-01 {
+  padding: 40px 0px 0px 0px;
+  font-family: "Arsenal-Bold";
+  font-size: 2.8rem;
+  color: #112334;
+}
+@media screen and (max-width: 1199px) {
+  .tx-thank-you-page-01 {
+    font-size: 2.4rem;
+  }
+}
+
+.tx-thank-you-page-02 {
+  padding: 30px 0px 0px 0px;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  color: #112334;
+}
+@media screen and (max-width: 575px) {
+  .tx-thank-you-page-02 {
+    font-size: 1.4rem;
+    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 300px 0px;
+  }
+}
+
+.regresar-inicio-thank-you-page {
+  margin: 70px 0px 0px 0px;
+  display: block;
+  text-align: right;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 1.8rem;
+  color: #000;
+}
+.regresar-inicio-thank-you-page:hover {
+  color: #000;
+}
+.regresar-inicio-thank-you-page span {
+  margin-right: 10px;
+}
+@media screen and (max-width: 1199px) {
+  .regresar-inicio-thank-you-page {
+    font-size: 1.4rem;
+  }
+}
+
+.regresar-inicio-thank-you-page-b {
+  margin: 0px 0px 0px 0px;
+  display: block;
+  text-align: right;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 1.8rem;
+  color: #000;
+}
+.regresar-inicio-thank-you-page-b:focus {
+  color: #BC913E;
+}
+.regresar-inicio-thank-you-page-b:focus .volver-inicio .icon-slider-anterior-desplegable-arriba:before {
+  color: #BC913E;
+}
+.regresar-inicio-thank-you-page-b:hover {
+  color: #BC913E;
+}
+.regresar-inicio-thank-you-page-b:hover .volver-inicio .icon-slider-anterior-desplegable-arriba:before {
+  color: #BC913E;
+}
+.regresar-inicio-thank-you-page-b .volver-inicio {
+  margin-right: 10px;
+}
+.regresar-inicio-thank-you-page-b .volver-inicio .icon-slider-anterior-desplegable-arriba:before {
+  display: inline-block;
+  transform: rotate(-90deg);
+  color: #112334;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 1199px) {
+  .regresar-inicio-thank-you-page-b {
+    font-size: 1.4rem;
+  }
+}
+
+.formulario-web {
+  padding: 40px 95px 70px 95px;
+  margin: 0px 0px 60px 0px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tx-form-web-adp-01 {
+  text-align: center;
+  font-family: "Arsenal-Bold";
+  font-size: 3.2rem;
+  color: #112334;
+  margin: 0px 0px 30px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .tx-form-web-adp-01 {
+    font-size: 2.8rem;
+  }
+}
+
+.tx-form-web-adp-02 {
+  text-align: center;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  color: #112334;
+  margin: 0px 0px 50px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .tx-form-web-adp-02 {
+    font-size: 1.4rem;
+  }
+}
+
+.gracias .icon-check-formulario {
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  padding: 2rem;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 5;
+}
+@media screen and (max-width: 767px) {
+  .gracias .icon-check-formulario {
+    border: 2px solid transparent;
+    border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+    border-image-slice: 5;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+.img-gracias-xs {
+  position: relative;
+  bottom: 0px;
+}
+
+/** ERROR 404**/
+.section-error-404 {
+  padding: 40px 0px 0px 0px;
+}
+
+.content-section-error-404 {
+  background: url("../images/bg-error-404-web.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 100vh;
+  padding: 90px 8.333% 0px 16.6666%;
+}
+@media screen and (max-width: 1700px) {
+  .content-section-error-404 {
+    padding: 60px 8.333% 0px 16.6666%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .content-section-error-404 {
+    background: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-section-error-404 {
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+}
+.content-section-error-404 h1:nth-child(1) {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 2.8rem;
+}
+@media screen and (max-width: 991px) {
+  .content-section-error-404 h1:nth-child(1) {
+    font-size: 2.4rem;
+  }
+}
+.content-section-error-404 p:nth-child(2) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 30px 0px 0px 0px;
+}
+@media screen and (max-width: 991px) {
+  .content-section-error-404 p:nth-child(2) {
+    margin: 20px 0px 0px 0px;
+    font-size: 1.4rem;
+  }
+}
+.content-section-error-404 p:nth-child(3) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 40px 0px 0px 0px;
+}
+@media screen and (max-width: 991px) {
+  .content-section-error-404 p:nth-child(3) {
+    margin: 30px 0px 0px 0px;
+    font-size: 1.4rem;
+  }
+}
+.content-section-error-404 p:nth-child(4) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 40px 0px 0px 30px;
+}
+@media screen and (max-width: 991px) {
+  .content-section-error-404 p:nth-child(4) {
+    margin: 30px 0px 0px 0px;
+    font-size: 1.4rem;
+  }
+}
+.content-section-error-404 p:nth-child(5) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 10px 0px 0px 30px;
+}
+@media screen and (max-width: 991px) {
+  .content-section-error-404 p:nth-child(5) {
+    margin: 5px 0px 0px 0px;
+    font-size: 1.4rem;
+  }
+}
+.content-section-error-404 p:nth-child(6) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 10px 0px 0px 30px;
+}
+@media screen and (max-width: 991px) {
+  .content-section-error-404 p:nth-child(6) {
+    margin: 5px 0px 0px 0px;
+    font-size: 1.4rem;
+  }
+}
+.content-section-error-404 p:nth-child(7) {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2rem;
+  margin: 40px 0px 0px 0px;
+}
+.content-section-error-404 p:nth-child(7) span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 991px) {
+  .content-section-error-404 p:nth-child(7) {
+    font-size: 1.4rem;
+    margin: 30px 0px 0px 0px;
+  }
+}
+
+.content-section-error-404-02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .content-section-error-404-02 {
+    height: 100%;
+  }
+}
+
+.bg-error-404 {
+  margin: 0px 0px 0px 0px;
+}
+@media screen and (max-width: 991px) {
+  .bg-error-404 {
+    margin: 50px 0px 0px 0px;
+  }
+}
+
+.regresar-inicio-error-404 {
+  margin: 40px 0px 0px 0px;
+  display: block;
+  text-align: right;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 1.8rem;
+  color: #000;
+}
+.regresar-inicio-error-404:focus {
+  color: #BC913E;
+}
+.regresar-inicio-error-404:focus .volver-inicio .icon-slider-anterior-desplegable-arriba:before {
+  color: #BC913E;
+}
+.regresar-inicio-error-404:hover {
+  color: #BC913E;
+}
+.regresar-inicio-error-404:hover .volver-inicio .icon-slider-anterior-desplegable-arriba:before {
+  color: #BC913E;
+}
+.regresar-inicio-error-404 .volver-inicio {
+  margin-right: 10px;
+}
+.regresar-inicio-error-404 .volver-inicio .icon-slider-anterior-desplegable-arriba:before {
+  display: inline-block;
+  transform: rotate(-90deg);
+  color: #112334;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 1199px) {
+  .regresar-inicio-error-404 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .regresar-inicio-error-404 {
+    margin: 30px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .regresar-inicio-error-404 {
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+  }
+}
+
+/** TERMINOS CONDICIONES **/
+.seccion-terminos {
+  padding: 50px 0px;
+}
+@media screen and (max-width: 767px) {
+  .seccion-terminos {
+    padding: 15px 0px;
+  }
+}
+
+.tx-section-terminos-01 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 4rem;
+}
+@media screen and (max-width: 991px) {
+  .tx-section-terminos-01 {
+    font-size: 2rem;
+  }
+}
+
+.tx-section-terminos-02 {
+  color: #112334;
+  font-family: "Arsenal-Bold";
+  font-size: 3.2rem;
+}
+@media screen and (max-width: 991px) {
+  .tx-section-terminos-02 {
+    font-size: 1.8rem;
+  }
+}
+
+.tx-section-terminos-03 {
+  color: #112334;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  text-align: justify;
+}
+@media screen and (max-width: 991px) {
+  .tx-section-terminos-03 {
+    font-size: 1.4rem;
+  }
+}
+
+.contenido-terminos-condiciones {
+  padding: 80px 0px 120px 0px;
+}
+
+.tx-terminos-condiciones-promo-01 {
+  text-align: center;
+  font-family: "Arsenal-Bold";
+  font-size: 2.8rem;
+  color: #000;
+}
+@media screen and (max-width: 1199px) {
+  .tx-terminos-condiciones-promo-01 {
+    font-size: 1.6rem;
+  }
+}
+
+.tx-terminos-condiciones-promo-02 {
+  text-align: center;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  color: #000;
+}
+.tx-terminos-condiciones-promo-02 span {
+  font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-terminos-condiciones-promo-02 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .tx-terminos-condiciones-promo-02 {
+    text-align: left;
+  }
+}
+
+.tx-terminos-condiciones-promo-03 {
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 1.8rem;
+  color: #000;
+}
+@media screen and (max-width: 1199px) {
+  .tx-terminos-condiciones-promo-03 {
+    font-size: 1.4rem;
+  }
+}
+
+.tx-terminos-condiciones-promo-04 {
+  font-family: "Helvetica-Neue-Light";
+  font-size: 1.8rem;
+  color: #000;
+}
+.tx-terminos-condiciones-promo-04 span a {
+  color: blue;
+}
+.tx-terminos-condiciones-promo-04 span a:focus {
+  color: blue;
+}
+.tx-terminos-condiciones-promo-04 span a:hover {
+  color: blue;
+}
+@media screen and (max-width: 1199px) {
+  .tx-terminos-condiciones-promo-04 {
+    font-size: 1.4rem;
+  }
+}

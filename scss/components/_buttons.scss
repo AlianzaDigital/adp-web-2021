@@ -1,0 +1,362 @@
+/* BOTONES */
+
+/*XS*/
+.btn-ubicacion-xs-01{
+  display: block;
+  border: 1px solid $color01;
+  padding: 5px;
+  text-align: center;
+  margin:0px 0px 15px 0px;
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  font-size: $tx-size-06 + .2;
+  &:focus{
+    text-decoration: none;
+    color: $color01;
+  }
+  &:hover{
+    text-decoration: none;
+    color: $color01;
+  }
+}
+
+.btn-recorrido-virtual-web{
+  display: block;
+  margin: 50px 0px 0px 0px;
+  color: $blanco;
+  font-family: $Helvetica-Regular;
+  &:focus{
+    color: $blanco;
+  }
+  &:hover{
+    color: $blanco;
+    text-decoration: underline;
+  }
+  span{
+    margin-left: 15px;
+    img{
+      width: 9px;
+    }
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06 + .2;
+  }
+}
+
+.table .btn-tabla-adp-web a{
+  display: block;
+  padding: 15px 0;
+  color:$color01;
+  border: 1px solid $color01;
+  font-size: $tx-size-06 + .2;
+  font-family: $Arsenal-Regular;
+  cursor:pointer;
+  &:hover{
+    color:$color01;
+    background:$gradient02;
+    border: 1px solid transparent;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-06;
+  }
+}
+
+.enviar-form{
+  display:block;
+  background: $gradient02;
+  font-size: $tx-size-05 - .2;
+  font-family: $Arsenal-Bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border: none;
+  margin:30px 0px 0px 0px;
+  @media screen and (max-width: $window-size-01) {
+    font-size: $tx-size-06;
+    margin:30px 0px 0px 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  @media screen and (max-width: $window-size-02) {
+    font-size: $tx-size-07 + .2;
+    font-size: $tx-size-06;
+  }
+  &:focus{
+    text-decoration: none;
+    color:$blanco;
+    background: $color01;
+  }
+  &:hover{
+    text-decoration: none;
+    color:$blanco;
+    background: $color01;
+  }
+}
+
+.content-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-whatsapp{
+  display:inline-block;
+  background: $gradient02;
+  font-size: $tx-size-05;
+  font-family: $Arsenal-Bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  margin:30px 0px 0px 0px;
+  text-align: center;
+  @media screen and (max-width: $window-size-01) {
+    margin:15px 0px 0px 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media screen and (max-width: $window-size-03) {
+    font-size: $tx-size-06;
+  }
+  &:focus{
+    text-decoration: none;
+    color:$blanco;
+    background: $color01;
+    .icon-btn-agil-xs{
+      .icon-whatsapp:before{
+        color:$blanco;
+      }
+    }
+  }
+  &:hover{
+    text-decoration: none;
+    color:$blanco;
+    background: $color01;
+    .icon-btn-agil-xs{
+      .icon-whatsapp:before{
+        color:$blanco;
+      }
+    }
+  }
+}
+
+.contact-btn-footer-xs{
+  text-align: center;
+  display:block;
+  color:$color01;
+  background: $gradient02;
+  font-size: $tx-size-06 + .2;
+  font-family: $Arsenal-Bold;
+  width: 100%;
+  padding: 10px 0px;
+  &:focus{
+    text-decoration: none;
+    color:$color01;
+  }
+  &:hover{
+    text-decoration: none;
+    color:$color01;
+  }
+}
+
+.btn-modal-terminos{
+  text-align: center;
+  display:inline-block;
+  text-transform: uppercase;
+  color:$color01;
+  background: $gradient02;
+  font-size: $tx-size-06 + .2;
+  font-family: $Arsenal-Bold;
+  width: 100%;
+  padding: 10px 0px;
+  outline: none;
+  margin:10px 0px 20px 0px;
+  &:focus{
+    text-decoration: none;
+    color:$color01;
+  }
+  &:hover{
+    text-decoration: none;
+    color:$color01;
+  }
+}
+
+.close-modal-terminos{
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  .modal-terminos{
+    .icon-menu-close:before{
+      background: $gradient01;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3rem;
+    }
+  }
+  &:focus{
+    text-decoration: none;
+    color:$color01;
+  }
+  &:hover{
+    text-decoration: none;
+    color:$color01;
+  }
+}
+
+.close-modal-zona{
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  @media screen and (max-width: $window-size-04) {
+    padding: 0px 0px;
+    right: -5px;
+    top: -5px;
+  }
+  .icon-close-agil-xs{
+    padding: .5rem;
+    background: $blanco;
+    @media screen and (max-width: $window-size-04) {
+      padding: .25rem;
+    }
+  }
+  &:focus{
+    text-decoration: none;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+
+
+.content-btn-index{
+  position: absolute;
+  bottom: 20.5%;
+  right: 0;
+  &:focus{
+    text-decoration: none;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.btn-index-web-01{
+  display: block;
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  border: 1px solid $color01;
+  font-size: $tx-size-05;
+  padding: 10px 70px 10px 70px;
+  position: relative;
+  &:focus{
+    color: $blanco;
+    background: $color01;
+    border: 1px solid transparent;
+    text-decoration: none;
+    .btn-adp{
+      .icon-flecha-boton-landing-home:before{
+        color: $blanco;
+      }
+    }
+  }
+  &:hover{
+    color: $blanco;
+    background: $color01;
+    border: 1px solid transparent;
+    text-decoration: none;
+    .btn-adp{
+      .icon-flecha-boton-landing-home:before{
+        color: $blanco;
+      }
+    }
+  }
+  .btn-adp{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    .icon-flecha-boton-landing-home:before{
+      color: $color01;
+    }
+    @media screen and (max-width: $window-size-02) {
+      right: 15px;
+      top: 12px;
+    }
+    @media screen and (max-width: $window-size-03) {
+      right: 10px;
+      top: 8px;
+    }
+  }
+  @media screen and (max-width: $window-size-01) {
+    font-size: $tx-size-05;
+  }
+  @media screen and (max-width: $window-size-02) {
+    padding: 10px 55px 10px 55px;
+    font-size: $tx-size-06;
+  }
+  @media screen and (max-width: $window-size-03) {
+    padding: 7px 45px 7px 45px;
+  }
+}
+
+.btn-index-xs-01{
+  display: block;
+  color: $color01;
+  font-family: $Helvetica-Thin;
+  border: 1px solid $color01;
+  font-size: $tx-size-05;
+  position: relative;
+  text-align: center;
+  &:focus{
+    color: $blanco;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: $color01;
+    .btn-adp{
+      .icon-flecha-boton-landing-home:before{
+        color: $blanco;
+      }
+    }
+  }
+  &:hover{
+    color: $blanco;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: $color01;
+    .btn-adp{
+      .icon-flecha-boton-landing-home:before{
+        color: $blanco;
+      }
+    }
+  }
+  .btn-adp{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    .icon-flecha-boton-landing-home:before{
+      color: $color01;
+    }
+    @media screen and (max-width: $window-size-02) {
+      right: 15px;
+      top: 10px;
+    }
+    @media screen and (max-width: $window-size-03) {
+      right: 10px;
+      top: 8px;
+    }
+  }
+  @media screen and (max-width: $window-size-01) {
+    font-size: $tx-size-05;
+  }
+  @media screen and (max-width: $window-size-02) {
+    padding: 10px 55px 10px 55px;
+    font-size: $tx-size-06;
+  }
+  @media screen and (max-width: $window-size-03) {
+    padding: 7px 45px 7px 45px;
+  }
+}
