@@ -305,7 +305,7 @@ function submitForm_fixed_web(){
 }
 
 function formSuccess_fixed_web(){
-  $("#contactForm_fixed_web")[0].reset();
+  $("#contactForm_web")[0].reset();
   submitMSG_fixed_web(true, "Gracias por dejar sus datos, pronto estaremos en contacto.")
 }
 
