@@ -264,14 +264,20 @@ function submitForm_fixed_web(){
   let first_name_fixed_web = $("#first_name_fixed_web").val();
   let telephone_fixed_web = $("#telephone_fixed_web").val();
   let email_fixed_web = $("#email_fixed_web").val();
-  // let tipo_casa_fixed_web = ($('select[id=tipo_casa_fixed_web]').val());
-  // let inversion_fixed_web = ($('select[id=inversion_fixed_web]').val());
-  let tipo_casa_fixed_web = ($("#checkbox-opcion-casa-01").val()) + ($("#checkbox-opcion-casa-02").val()) 
-  + ($("#checkbox-opcion-casa-03").val());
-  let inversion_fixed_web = ($("#checkbox-opcion-tiempo-01").val()) + ($("#checkbox-opcion-tiempo-02").val()) 
-  + ($("#checkbox-opcion-tiempo-03").val());
-  let checkbox_seleccionados = ($("#checkbox-opcion-medio-01").val()) + ($("#checkbox-opcion-medio-02").val()) 
-  + ($("#checkbox-opcion-medio-03").val());
+
+  // let tipo_casa_fixed_web = ($("#checkbox-opcion-casa-01").val()) + ($("#checkbox-opcion-casa-02").val()) 
+  // + ($("#checkbox-opcion-casa-03").val());
+  let tipo_casa_fixed_web = ($("#checkbox-opcion-casa-01").val()) + ($("#checkbox-opcion-casa-02").val());
+
+  // let inversion_fixed_web = ($("#checkbox-opcion-tiempo-01").val()) + ($("#checkbox-opcion-tiempo-02").val()) 
+  // + ($("#checkbox-opcion-tiempo-03").val());
+  let inversion_fixed_web = ($("#checkbox-opcion-tiempo-02").val()) + ($("#checkbox-opcion-tiempo-03").val());
+
+  let checkbox_seleccionados = 
+    ($("#checkbox-opcion-medio-01").val()) + 
+    ($("#checkbox-opcion-medio-02").val()) + 
+    ($("#checkbox-opcion-medio-03").val());
+
   let getURL = ($('#getURL').val());
   let actualURL = ($('#actualURL').val());
 

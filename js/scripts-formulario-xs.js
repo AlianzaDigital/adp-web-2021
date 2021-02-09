@@ -207,15 +207,19 @@ $("#contactForm_fixed_web").validator().on("submit", function (event) {
 
 function submitForm_fixed_web(){
   // Initiate Variables With Form Content
-  var first_name_fixed_web = $("#first_name_fixed_web").val();
-  var telephone_fixed_web = $("#telephone_fixed_web").val();
-  var email_fixed_web = $("#email_fixed_web").val();
-  var tipo_casa_fixed_web = ($('select[id=tipo_casa_fixed_web]').val());
-  var inversion_fixed_web = ($('select[id=inversion_fixed_web]').val());
-  var checkbox_seleccionados = ($("#checkbox-opcion-01").val()) + ($("#checkbox-opcion-02").val()) 
-  + ($("#checkbox-opcion-03").val());
-  var getPreviousURL = ($('#getPreviousURL').val());
-  var previousURL = ($('#previousURL').val());
+  let first_name_fixed_web = $("#first_name_fixed_web").val();
+  let telephone_fixed_web = $("#telephone_fixed_web").val();
+  let email_fixed_web = $("#email_fixed_web").val();
+  let tipo_casa_fixed_web = ($('select[id=tipo_casa_fixed_web]').val());
+  let inversion_fixed_web = ($('select[id=inversion_fixed_web]').val());
+
+  let checkbox_seleccionados = 
+    ($("#checkbox-opcion-medio-01").val()) + 
+    ($("#checkbox-opcion-medio-02").val()) + 
+    ($("#checkbox-opcion-medio-03").val());
+
+  let getPreviousURL = ($('#getPreviousURL').val());
+  let previousURL = ($('#previousURL').val());
 
   $.ajax({
       type: "POST",
