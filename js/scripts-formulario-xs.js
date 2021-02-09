@@ -175,12 +175,12 @@ $("#contactForm_fixed_web").validator().on("submit", function (event) {
 
   //Checkbox medio contacto
   if (($("input[name='checkbox-medio-contacto']").is(':checked') === false)){
-    submitMSG_checkbox_medio_contacto(false, "Seleccione una opción.");
+    submitMSG_checkbox_medio_contacto(false, "Selecciona almenos una opción.");
     $(".container-option-check.medio, .tx-opcion-check.medio").addClass("error");
   }else {
     event.preventDefault();
-    submitMSG_checkbox_medio_contacto(true, "");
     $(".container-option-check.medio, .tx-opcion-check.medio").removeClass("error");
+    submitMSG_checkbox_medio_contacto(true, "");
     valido_select_03 = 1;
   }
 
