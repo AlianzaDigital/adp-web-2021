@@ -23,19 +23,20 @@ $('#telephone_fixed_web').on('input', function () {
 });
 
 // GET URL UTM CAMPAINGS
-let previousURL = document.referrer
-$('#previousURL').attr('value', previousURL)
+$( document ).ready(function() {
+  let previousURL = document.referrer
+  $('#previousURL').attr('value', previousURL)
 
-
-if (previousURL.includes('pauta-facebook-ads')) {
-  $('#getPreviousURL').attr('value','pauta-facebook-ads')
-}
-else if (previousURL.includes('pauta-google-search')) {
-  $('#getPreviousURL').attr('value','pauta-google-search')
-}
-else{
-  $('#getPreviousURL').attr('value','seo-sitio-web')
-}
+  if (previousURL.includes('pauta-facebook-ads')) {
+    $('#getPreviousURL').attr('value','pauta-facebook-ads')
+  }
+  else if (previousURL.includes('pauta-google-search')) {
+    $('#getPreviousURL').attr('value','pauta-google-search')
+  }
+  else{
+    $('#getPreviousURL').attr('value','seo-sitio-web')
+  }
+});
 
 // Validate state First Name
 $("#first_name_fixed_web").blur(function(){

@@ -40,18 +40,21 @@ $('#telephone_fixed_web').on('input', function () {
 // GET URL UTM CAMPAINGS
 //let previosURL = document.referrer
 //console.log(previosURL)
-let actualURL = window.location.href
-$('#actualURL').attr('value',actualURL)
+$( document ).ready(function() {
+  let actualURL = window.location.href
+  $('#actualURL').attr('value',actualURL)
 
-if (actualURL.includes('pauta-facebook-ads')) {
-  $('#getURL').attr('value','pauta-facebook-ads')
-}
-else if (actualURL.includes('pauta-google-search')) {
-  $('#getURL').attr('value','pauta-google-search')
-}
-else{
-  $('#getURL').attr('value','seo-sitio-web')
-}
+  if (actualURL.includes('pauta-facebook-ads')) {
+    $('#getURL').attr('value','pauta-facebook-ads')
+  }
+  else if (actualURL.includes('pauta-google-search')) {
+    $('#getURL').attr('value','pauta-google-search')
+  }
+  else{
+    $('#getURL').attr('value','seo-sitio-web')
+  }
+});
+
 
 // Validate state First Name
 $("#first_name_fixed_web").blur(function(){
