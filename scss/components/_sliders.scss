@@ -11,7 +11,7 @@
 }
 
 .item-slider-xs-01{
-  background: url('/images/slider-1-1-area-social-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-1-area-social-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -29,7 +29,7 @@
   }
 }
 .item-slider-xs-02{
-  background: url('/images/slider-1-2-cocina-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-2-cocina-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -48,7 +48,7 @@
 }
 
 .item-slider-xs-03{
-  background: url('/images/slider-1-3-habitacion-principal-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-3-habitacion-principal-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -67,7 +67,7 @@
 }
 
 .item-slider-xs-04{
-  background: url('/images/slider-1-4-habitacion-2-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-4-habitacion-2-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -86,7 +86,7 @@
 }
 
 .item-slider-xs-05{
-  background: url('/images/slider-1-5-min-habitacion-3-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-5-min-habitacion-3-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -110,7 +110,7 @@
 
 // ITEMS
 .item-slider-web-01{
-  background: url('/images/slider-1-1-area-social-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-1-area-social-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -129,7 +129,7 @@
 }
 
 .item-slider-web-02{
-  background: url('/images/slider-1-2-cocina-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-2-cocina-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -148,7 +148,7 @@
 }
 
 .item-slider-web-03{
-  background: url('/images/slider-1-3-habitacion-principal-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-3-habitacion-principal-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -167,7 +167,7 @@
 }
 
 .item-slider-web-04{
-  background: url('/images/slider-1-4-habitacion-2-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-4-habitacion-2-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -186,7 +186,7 @@
 }
 
 .item-slider-web-05{
-  background: url('/images/slider-1-5-min-habitacion-3-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-1-5-min-habitacion-3-casa-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -326,18 +326,18 @@
 }
 
 .indicator-item-slider-web-01{
-  background: url('/images/indicador-slider-web-01-01.webp');
+  background: url('../images/indicador-slider-web-01-01.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-01.webp');
+    background:url('../images/indicador-slider-web-01-01.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('/images/indicador-slider-web-01-01.webp');
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('../images/indicador-slider-web-01-01.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -345,18 +345,18 @@
 }
 
 .indicator-item-slider-web-02{
-  background: url('/images/indicador-slider-web-01-02.webp');
+  background: url('../images/indicador-slider-web-01-02.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-02.webp');
+    background:url('../images/indicador-slider-web-01-02.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('/images/indicador-slider-web-01-02.webp');
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('../images/indicador-slider-web-01-02.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -364,18 +364,18 @@
 }
 
 .indicator-item-slider-web-03{
-  background: url('/images/indicador-slider-web-01-03.webp');
+  background: url('../images/indicador-slider-web-01-03.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-03.webp');
+    background:url('../images/indicador-slider-web-01-03.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('/images/indicador-slider-web-01-03.webp');
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('../images/indicador-slider-web-01-03.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -383,18 +383,18 @@
 }
 
 .indicator-item-slider-web-04{
-  background: url('/images/indicador-slider-web-01-04.webp');
+  background: url('../images/indicador-slider-web-01-04.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-04.webp');
+    background:url('../images/indicador-slider-web-01-04.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('/images/indicador-slider-web-01-04.webp');
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('../images/indicador-slider-web-01-04.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -402,18 +402,18 @@
 }
 
 .indicator-item-slider-web-05{
-  background: url('/images/indicador-slider-web-01-05.webp');
+  background: url('../images/indicador-slider-web-01-05.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-05.webp');
+    background:url('../images/indicador-slider-web-01-05.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('/images/indicador-slider-web-01-05.webp');
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url('../images/indicador-slider-web-01-05.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -421,18 +421,18 @@
 }
 
 .indicator-item-slider-web-01.active{
-  background: url('/images/indicador-slider-web-01-01.webp');
+  background: url('../images/indicador-slider-web-01-01.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-01.webp');
+    background:url('../images/indicador-slider-web-01-01.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:url('/images/indicador-slider-web-01-01.webp');
+    background:url('../images/indicador-slider-web-01-01.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -440,18 +440,18 @@
 }
 
 .indicator-item-slider-web-02.active{
-  background: url('/images/indicador-slider-web-01-02.webp');
+  background: url('../images/indicador-slider-web-01-02.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-02.webp');
+    background:url('../images/indicador-slider-web-01-02.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:url('/images/indicador-slider-web-01-02.webp');
+    background:url('../images/indicador-slider-web-01-02.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -459,18 +459,18 @@
 }
 
 .indicator-item-slider-web-03.active{
-  background: url('/images/indicador-slider-web-01-03.webp');
+  background: url('../images/indicador-slider-web-01-03.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-03.webp');
+    background:url('../images/indicador-slider-web-01-03.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:url('/images/indicador-slider-web-01-03.webp');
+    background:url('../images/indicador-slider-web-01-03.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -478,18 +478,18 @@
 }
 
 .indicator-item-slider-web-04.active{
-  background: url('/images/indicador-slider-web-01-04.webp');
+  background: url('../images/indicador-slider-web-01-04.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-04.webp');
+    background:url('../images/indicador-slider-web-01-04.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:url('/images/indicador-slider-web-01-04.webp');
+    background:url('../images/indicador-slider-web-01-04.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -497,18 +497,18 @@
 }
 
 .indicator-item-slider-web-05.active{
-  background: url('/images/indicador-slider-web-01-05.webp');
+  background: url('../images/indicador-slider-web-01-05.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   &:focus{
-    background:url('/images/indicador-slider-web-01-05.webp');
+    background:url('../images/indicador-slider-web-01-05.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
   }
   &:hover{
-    background:url('/images/indicador-slider-web-01-05.webp');
+    background:url('../images/indicador-slider-web-01-05.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -598,7 +598,7 @@
 
 // ITEMS
 .item-slider-web-02-01{
-  background: url('/images/slider-2-1-zona-de-relajacion-condominio-campestre-altos-del-palmar.webp');
+  background: url('../images/slider-2-1-zona-de-relajacion-condominio-campestre-altos-del-palmar.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -621,7 +621,7 @@
 }
 
 .item-slider-web-02-02{
-  background: url('/images/slider-2-2-vista-panoramica-condominio-campestre-altos-del-palmar.webp');
+  background: url('../images/slider-2-2-vista-panoramica-condominio-campestre-altos-del-palmar.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -644,7 +644,7 @@
 }
 
 .item-slider-web-02-03{
-  background: url('/images/slider-2-3-cama-de-masajes-condominio-campestre-altos-del-palmar.webp');
+  background: url('../images/slider-2-3-cama-de-masajes-condominio-campestre-altos-del-palmar.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -667,7 +667,7 @@
 }
 
 .item-slider-web-02-04{
-  background: url('/images/slider-2-4-cancha-de-tenis-condominio-campestre-altos-del-palmar.webp');
+  background: url('../images/slider-2-4-cancha-de-tenis-condominio-campestre-altos-del-palmar.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -690,7 +690,7 @@
 }
 
 .item-slider-web-02-05{
-  background: url('/images/slider-2-5-cancha-multiple-condominio-campestre-altos-del-palmar.webp');
+  background: url('../images/slider-2-5-cancha-multiple-condominio-campestre-altos-del-palmar.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -1467,7 +1467,7 @@
 
 // ITEMS
 .item-slider-zona-01-01{
-  background: url('/images/slider-3-1-zona-relajacion-bali-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-3-1-zona-relajacion-bali-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -1500,7 +1500,7 @@
 }
 
 .item-slider-zona-01-02{
-  background: url('/images/slider-3-2-sala-de-descanso-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-3-2-sala-de-descanso-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -1533,7 +1533,7 @@
 }
 
 .item-slider-zona-01-03{
-  background: url('/images/slider-3-3-zona-masajes-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-3-3-zona-masajes-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -1567,7 +1567,7 @@
 
 
 .item-slider-zona-01-04{
-  background: url('/images/slider-3-4-cancha-multiple-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-3-4-cancha-multiple-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -1600,7 +1600,7 @@
 }
 
 .item-slider-zona-01-05{
-  background: url('/images/slider-3-5-cancha-tenis-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+  background: url('../images/slider-3-5-cancha-tenis-condominio-campestre-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
