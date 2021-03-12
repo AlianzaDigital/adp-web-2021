@@ -6505,7 +6505,12 @@ footer {
 
 /* ENDPAGE */
 .end-page {
-  padding: 40px 0px 70px 0px;
+  padding: 40px 0px 180px 0px;
+}
+@media screen and (max-width: 767px) {
+  .end-page {
+    padding: 40px 0px 70px 0px;
+  }
 }
 
 .tx-end-page-01 {
