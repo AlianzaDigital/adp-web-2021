@@ -11,16 +11,26 @@
 /*SECTION 01 XS*/
 .section-xs-01{
   padding: 0px 0px 20px 0px;
-  background: $gradient02;
+  // background: $gradient02;
+  background: $gradient07;
   box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+  .content-section-xs-01-01{
+    border-top: 3px solid transparent;
+    border-image-source: $gradient02; 
+    border-image-slice: 1;
+  }
 }
   
 .tx-section-xs-01-01{
   padding: 20px 0px 0px 0px;
   text-align: center;
-  color: $color01;
-  font-family: $Arsenal-Bold;
+  // color: $color01;
+  color: $blanco;
+  font-family: $Arsenal-Regular;
   font-size: $tx-size-05;
+  span{
+font-family: $Arsenal-Bold;
+  }
   @media screen and (max-width: $window-size-05) {
     font-size: $tx-size-05;
   }

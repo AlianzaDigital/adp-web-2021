@@ -6,6 +6,7 @@
   border-image-source: $gradient02; 
   border-image-slice: 1;
   margin-left:20px;
+  background: $blanco;
   // margin-bottom: 35px;
   @media screen and (max-width: $window-size-01) {
     padding: 15px 15px 25px 15px;
@@ -16,6 +17,9 @@
     box-shadow: none;
     margin-left:0;
     border-top: none;
+  }
+  &:hover{
+    z-index: 1550;
   }
 }
 

@@ -50,10 +50,13 @@
   p:nth-child(5){
     color: $blanco;
     font-size: $tx-size-06;
-    font-family: $Helvetica-Regular;
+    font-family: $Helvetica-Thin;
     text-align: justify;
     margin:0rem 3rem 2rem 3rem;
     text-align: center;
+    span{
+      font-family: $Helvetica-Regular;
+    }
   }
 }
 
@@ -89,6 +92,7 @@
     border-image-slice: 1;
     // border-image-source: #112334; 
     margin:0rem 0rem 3rem 0rem;
+    text-align: center;
     @media screen and (max-width: $window-size-02) {
       font-size: $tx-size-03;
     }
@@ -112,9 +116,12 @@
   p:nth-child(3){
     color: $blanco;
     font-size: $tx-size-04;
-    font-family: $Helvetica-Regular;
+    font-family: $Helvetica-Thin;
     text-align: justify;
     margin:0rem 0rem 10rem 0rem;
+    span{
+      font-family: $Helvetica-Regular;
+    }
     @media screen and (max-width: $window-size-02) {
       font-size: $tx-size-05;
     }
@@ -140,7 +147,7 @@
   font-family: $Helvetica-Thin;
   border: 1px solid $color01;
   font-size: $tx-size-05;
-  padding: 10px 70px 10px 70px;
+  padding: 10px 45px 10px 45px;
   position: relative;
   text-align: center;
   // width: 340px;
