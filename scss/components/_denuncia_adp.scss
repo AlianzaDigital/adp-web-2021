@@ -92,9 +92,12 @@
     border-image-slice: 1;
     // border-image-source: #112334; 
     margin:0rem 0rem 3rem 0rem;
-    text-align: center;
+    text-align: left;
     @media screen and (max-width: $window-size-02) {
       font-size: $tx-size-03;
+    }
+    @media screen and (max-width: $window-size-04) {
+      text-align: center;
     }
     img{
       margin-right: 1rem;
@@ -259,6 +262,6 @@
     font-size: $tx-size-06;
   }
   @media screen and (max-width: $window-size-03) {
-    padding: 7px 45px 7px 45px;
+    padding: 7px 25px 7px 25px;
   }
 }
