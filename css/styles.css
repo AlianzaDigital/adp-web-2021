@@ -2881,6 +2881,10 @@ button:focus {
   flex-direction: row;
   align-items: center;
   height: 100%;
+  background: url("../images/casa-oportunidad-inversion-segura-home-altos-del-palmar-casas-campestres.webp");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
 }
 
 .content-btn-index-denuncia-01 {
