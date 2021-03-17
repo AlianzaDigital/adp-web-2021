@@ -2886,6 +2886,11 @@ button:focus {
   background-size: auto 100%;
   background-position: center;
 }
+@media screen and (max-width: 1300px) {
+  .content-denuncia-02 {
+    background-size: 100% auto;
+  }
+}
 
 .content-btn-index-denuncia-01 {
   position: absolute;
