@@ -465,13 +465,11 @@ main{
     @media screen and (max-width: $window-size-01) {
       width: 30%;
     }
-    @media screen and (max-width: $window-size-03) {
-      width: 25%;
-    }
-    @media screen and (max-width: $window-size-03) {
+    @media screen and (max-width: $window-size-02) {
       width: 20%;
     }
     @media screen and (max-width: $window-size-03) {
+      width: 20%;
       margin:0rem 1rem .5rem 1rem;
     }
     @media screen and (max-width: $window-size-03) {

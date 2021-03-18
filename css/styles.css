@@ -3764,18 +3764,14 @@ main {
     width: 30%;
   }
 }
-@media screen and (max-width: 991px) {
-  .tx-section-web-01-02 span {
-    width: 25%;
-  }
-}
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
   .tx-section-web-01-02 span {
     width: 20%;
   }
 }
 @media screen and (max-width: 991px) {
   .tx-section-web-01-02 span {
+    width: 20%;
     margin: 0rem 1rem 0.5rem 1rem;
   }
 }
