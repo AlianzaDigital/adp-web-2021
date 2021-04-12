@@ -7,6 +7,9 @@ RewriteRule ^(.*)$ https://www.altosdelpalmar.com/$1 [R,L]
 Redirect /prueba-c/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
 Redirect /casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
 
+Redirect /index https://www.altosdelpalmar.com
+Redirect /index.html https://www.altosdelpalmar.com/
+
 Redirect /casas-campestres https://www.altosdelpalmar.com/casas-campestres.html
 Redirect /condominio https://www.altosdelpalmar.com/condominio .html
 Redirect /ubicacion https://www.altosdelpalmar.com/ubicacion.html
