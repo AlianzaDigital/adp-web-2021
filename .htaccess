@@ -4,24 +4,24 @@ RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
 RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^(.*)$ https://www.altosdelpalmar.com/$1 [R,L]
 
-Redirect /prueba-c/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
-Redirect /casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
+Redirect https://www.altosdelpalmar.com/prueba-c/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
+Redirect https://www.altosdelpalmar.com/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
 
-Redirect /index https://www.altosdelpalmar.com
-Redirect /index.html https://www.altosdelpalmar.com/
+Redirect https://www.altosdelpalmar.com/index https://www.altosdelpalmar.com
+Redirect https://www.altosdelpalmar.com/index.html https://www.altosdelpalmar.com/
 
-Redirect /casas-campestres https://www.altosdelpalmar.com/casas-campestres.html
-Redirect /condominio https://www.altosdelpalmar.com/condominio .html
-Redirect /ubicacion https://www.altosdelpalmar.com/ubicacion.html
-Redirect /preguntas-frecuentes https://www.altosdelpalmar.com/preguntas-frecuentes.html
-Redirect /constructora-alianza https://www.altosdelpalmar.com/constructora-alianza.html
-Redirect /contacto https://www.altosdelpalmar.com/contacto.html
+Redirect https://www.altosdelpalmar.com/casas-campestres https://www.altosdelpalmar.com/casas-campestres.html
+Redirect https://www.altosdelpalmar.com/condominio https://www.altosdelpalmar.com/condominio .html
+Redirect https://www.altosdelpalmar.com/ubicacion https://www.altosdelpalmar.com/ubicacion.html
+Redirect https://www.altosdelpalmar.com/preguntas-frecuentes https://www.altosdelpalmar.com/preguntas-frecuentes.html
+Redirect https://www.altosdelpalmar.com/constructora-alianza https://www.altosdelpalmar.com/constructora-alianza.html
+Redirect https://www.altosdelpalmar.com/contacto https://www.altosdelpalmar.com/contacto.html
 
-Redirect /formulario-accion-mobile https://www.altosdelpalmar.com/formulario-accion-mobile.html
-Redirect /terminos-condiciones https://www.altosdelpalmar.com/terminos-condiciones.html
-Redirect /gracias https://www.altosdelpalmar.com/gracias.html
+Redirect https://www.altosdelpalmar.com/formulario-accion-mobile https://www.altosdelpalmar.com/formulario-accion-mobile.html
+Redirect https://www.altosdelpalmar.com/terminos-condiciones https://www.altosdelpalmar.com/terminos-condiciones.html
+Redirect https://www.altosdelpalmar.com/gracias https://www.altosdelpalmar.com/gracias.html
 
-Redirect /error-404 https://www.altosdelpalmar.com/error-404.html
+Redirect https://www.altosdelpalmar.com/error-404 https://www.altosdelpalmar.com/error-404.html
 
 
 ErrorDocument 404 https://www.altosdelpalmar.com/error-404.html
