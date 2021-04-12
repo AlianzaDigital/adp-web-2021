@@ -7,20 +7,6 @@ RewriteRule ^(.*)$ https://www.altosdelpalmar.com/$1 [R,L]
 Redirect https://www.altosdelpalmar.com/prueba-c/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
 Redirect https://www.altosdelpalmar.com/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
 
-Redirect https://www.altosdelpalmar.com/casas-campestres https://www.altosdelpalmar.com/casas-campestres.html
-Redirect https://www.altosdelpalmar.com/condominio https://www.altosdelpalmar.com/condominio .html
-Redirect https://www.altosdelpalmar.com/ubicacion https://www.altosdelpalmar.com/ubicacion.html
-Redirect https://www.altosdelpalmar.com/preguntas-frecuentes https://www.altosdelpalmar.com/preguntas-frecuentes.html
-Redirect https://www.altosdelpalmar.com/constructora-alianza https://www.altosdelpalmar.com/constructora-alianza.html
-Redirect https://www.altosdelpalmar.com/contacto https://www.altosdelpalmar.com/contacto.html
-
-Redirect https://www.altosdelpalmar.com/formulario-accion-mobile https://www.altosdelpalmar.com/formulario-accion-mobile.html
-Redirect https://www.altosdelpalmar.com/terminos-condiciones https://www.altosdelpalmar.com/terminos-condiciones.html
-Redirect https://www.altosdelpalmar.com/gracias https://www.altosdelpalmar.com/gracias.html
-
-Redirect https://www.altosdelpalmar.com/error-404 https://www.altosdelpalmar.com/error-404.html
-
-
 ErrorDocument 404 https://www.altosdelpalmar.com/error-404.html
 
 #Disables GZIP
