@@ -4,8 +4,21 @@ RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
 RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^(.*)$ https://www.altosdelpalmar.com/$1 [R,L]
 
-Redirect https://www.altosdelpalmar.com/prueba-c/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
-Redirect https://www.altosdelpalmar.com/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
+Redirect 301 /prueba-c/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
+Redirect 301 /casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
+
+Redirect 301 /casas-campestres https://www.altosdelpalmar.com/casas-campestres.html
+Redirect 301 /condominio https://www.altosdelpalmar.com/condominio.html
+Redirect 301 /ubicacion https://www.altosdelpalmar.com/ubicacion.html
+Redirect 301 /preguntas-frecuentes https://www.altosdelpalmar.com/preguntas-frecuentes.html
+Redirect 301 /constructora-alianza https://www.altosdelpalmar.com/constructora-alianza.html
+Redirect 301 /contacto https://www.altosdelpalmar.com/contacto.html
+
+Redirect 301 /terminos-condiciones https://www.altosdelpalmar.com/terminos-condiciones.html
+Redirect 301 /gracias https://www.altosdelpalmar.com/gracias.html
+Redirect 301 /error-404 https://www.altosdelpalmar.com/error-404.html
+
+Redirect 301 /formulario-accion-mobile https://www.altosdelpalmar.com/formulario-accion-mobile.html
 
 ErrorDocument 404 https://www.altosdelpalmar.com/error-404.html
 
