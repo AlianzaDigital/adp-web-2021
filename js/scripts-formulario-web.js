@@ -27,6 +27,12 @@ $( document ).ready(function() {
   else if (actualURL.includes('pauta-google-search')) {
     $('#getURL').attr('value','pauta-google-search')
   }
+  else if (previousURL.includes('google-my-business')) {
+    $('#getURL').attr('value','google-my-business')
+  }
+  else if (previousURL.includes('mailing')) {
+    $('#getURL').attr('value','mailing')
+  }
   else{
     $('#getURL').attr('value','seo-sitio-web')
   }
