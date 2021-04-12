@@ -9,7 +9,7 @@ Allow: /constructora-alianza.html
 Allow: /contacto.html
 
 Disallow: /terminos-condiciones.html
-Disallow: /mensaje_enviado.html
+Disallow: /gracias.html
 Disallow: /error-404.html
 
 Disallow: /formulario-accion-mobile.html

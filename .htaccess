@@ -7,6 +7,20 @@ RewriteRule ^(.*)$ https://www.altosdelpalmar.com/$1 [R,L]
 Redirect /prueba-c/casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
 Redirect /casas-campestres-melgar.html https://www.altosdelpalmar.com/casas-campestres.html
 
+Redirect /casas-campestres https://www.altosdelpalmar.com/casas-campestres.html
+Redirect /condominio https://www.altosdelpalmar.com/condominio .html
+Redirect /ubicacion https://www.altosdelpalmar.com/ubicacion.html
+Redirect /preguntas-frecuentes https://www.altosdelpalmar.com/preguntas-frecuentes.html
+Redirect /constructora-alianza https://www.altosdelpalmar.com/constructora-alianza.html
+Redirect /contacto https://www.altosdelpalmar.com/contacto.html
+
+Redirect /formulario-accion-mobile https://www.altosdelpalmar.com/formulario-accion-mobile.html
+Redirect /terminos-condiciones https://www.altosdelpalmar.com/terminos-condiciones.html
+Redirect /gracias https://www.altosdelpalmar.com/gracias.html
+
+Redirect /error-404 https://www.altosdelpalmar.com/error-404.html
+
+
 ErrorDocument 404 https://www.altosdelpalmar.com/error-404.html
 
 #Disables GZIP
