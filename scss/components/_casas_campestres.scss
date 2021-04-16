@@ -1022,3 +1022,40 @@ main{
     }
   }
 }
+
+.content-section-inversion-02{
+  img{
+    height: 80px;
+    margin-bottom:5rem;
+    @media screen and (max-width: $window-size-04) {
+      height: 60px;
+      margin-bottom:3rem;
+    }
+  }
+  h3:nth-of-type(1){
+    color: $blanco;
+    font-family: $Helvetica-Regular;
+    font-size: $tx-size-02;
+    text-align: center;
+    margin:0rem 0rem 4rem 0rem;
+    @media screen and (max-width: $window-size-02) {
+      font-size: $tx-size-04;
+    }
+    @media screen and (max-width: $window-size-04) {
+      font-size: $tx-size-06;
+      margin:0rem 0rem 2.5rem 0rem;
+    }
+  }
+  p:nth-of-type(1){
+    color: $blanco;
+    font-family: $Helvetica-Thin;
+    font-size: $tx-size-04;
+    text-align: center;
+    @media screen and (max-width: $window-size-02) {
+      font-size: $tx-size-05;
+    }
+    @media screen and (max-width: $window-size-04) {
+      font-size: $tx-size-06 + .2;
+    }
+  }
+}
