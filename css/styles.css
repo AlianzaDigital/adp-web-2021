@@ -2881,7 +2881,7 @@ button:focus {
   flex-direction: row;
   align-items: center;
   height: 100%;
-  background: url("../images/casa-rentabilidad-oportunidad-inversion-segura-home-altos-del-palmar-casas-campestres.webp");
+  background: url("../images/disfrutar-espacios-abril-altos-del-palmar-casas-campestres.webp");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
@@ -3324,7 +3324,7 @@ button:focus {
 /*SECTION 01 XS*/
 .section-xs-01 {
   padding: 0px 0px 20px 0px;
-  background: linear-gradient(270deg, #112334 0%, #00011c 100%);
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 .section-xs-01 .content-section-xs-01-01 {
@@ -3336,7 +3336,7 @@ button:focus {
 .tx-section-xs-01-01 {
   padding: 20px 15px 0px 15px;
   text-align: center;
-  color: #FFF;
+  color: #112334;
   font-family: "Arsenal-Regular";
   font-size: 2rem;
 }
@@ -4304,6 +4304,89 @@ main {
 
 .content-text-section-web-02 {
   margin: 40px 0px 0px 60px;
+}
+
+/* DIV INVERSION ABRIL 2021 */
+.section-inversion-web {
+  border-bottom: 10px solid transparent;
+  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+  border-image-slice: 1;
+  background: #112334;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 8.5rem 0rem 7rem 0rem;
+}
+@media screen and (max-width: 767px) {
+  .section-inversion-web {
+    padding: 3rem 0rem 5rem 0rem;
+  }
+}
+.section-inversion-web h2:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Arsenal-Bold";
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0rem 0rem 6.5rem 0rem;
+}
+@media screen and (max-width: 1199px) {
+  .section-inversion-web h2:nth-of-type(1) {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-inversion-web h2:nth-of-type(1) {
+    font-size: 1.8rem;
+    margin: 0rem 0rem 5rem 0rem;
+  }
+}
+
+.content-section-inversion-01 img {
+  height: 80px;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .content-section-inversion-01 img {
+    height: 60px;
+    margin-bottom: 3rem;
+  }
+}
+.content-section-inversion-01 h3:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0rem 0rem 4rem 0rem;
+}
+@media screen and (max-width: 1199px) {
+  .content-section-inversion-01 h3:nth-of-type(1) {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-section-inversion-01 h3:nth-of-type(1) {
+    font-size: 1.4rem;
+    margin: 0rem 0rem 2.5rem 0rem;
+  }
+}
+.content-section-inversion-01 p:nth-of-type(1) {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .content-section-inversion-01 p:nth-of-type(1) {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-section-inversion-01 p:nth-of-type(1) {
+    font-size: 1.6rem;
+    padding: 0rem 0rem 3rem 0rem;
+    margin: 0rem 0rem 3rem 0rem;
+    border-bottom: 1px solid transparent;
+    border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
+    border-image-slice: 1;
+  }
 }
 
 /** EL CONDOMINIO **/
