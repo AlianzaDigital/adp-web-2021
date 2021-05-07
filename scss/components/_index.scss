@@ -65,18 +65,23 @@
 }
 /* MAIN WEB */
 .main-index-web{
-  // background: url('../images/bg-main-web.webp');
-  background: url('../images/home-panoramica-frontal-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  height: 533px;
-  @media screen and (max-width: 1920px) {
-    background-size: 100% cover;
-  }
-  @media screen and (max-width: $window-size-01) {
-    background-size: 100% cover;
-    height: 533px;
+//   background: url('../images/bg-main-web.webp');
+//   background: url('../images/home-panoramica-frontal-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp');
+//   background: url('../images/campaña-dia-madre-semana-1-xs-home-altos-del-palmar.webp');
+//   background: none;
+//   background-size: cover;
+//   background-position: center bottom;
+//   background-repeat: no-repeat;
+//   height: 533px;
+//   @media screen and (max-width: 1920px) {
+//     background-size: 100% cover;
+//   }
+//   @media screen and (max-width: $window-size-01) {
+//     background-size: 100% cover;
+//     height: 533px;
+//   }
+  img{
+    max-width: 1920px;
   }
 }
 

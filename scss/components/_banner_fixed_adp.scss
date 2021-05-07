@@ -1,10 +1,12 @@
 /* BANNER FIXED ADP WEB */
 .banner-fixed-web{
-  background: $color01;
+  // background: $color01;
+  background: $gradient02;
   padding: 1.5rem 0rem;
-  border-top: 5px solid transparent;
-  border-image-source: $gradient02; 
-  border-image-slice: 1;
+  border-top: 5px solid $color01;
+  // border-top: 5px solid transparent;
+  // border-image-source: $gradient02; 
+  // border-image-slice: 1;
   position: fixed;
   bottom:0;
   width: 100%;
@@ -12,11 +14,13 @@
 }
 
 .banner-fixed-web-custom{
-  background: $color01;
+  // background: $color01;
+  background: $gradient02;
   padding: 1.5rem 0rem;
-  border-top: 5px solid transparent;
-  border-image-source: $gradient02; 
-  border-image-slice: 1;
+  border-top: 5px solid $color01;
+  // border-top: 5px solid transparent;
+  // border-image-source: $gradient02; 
+  // border-image-slice: 1;
   position: fixed;
   bottom:0;
   width: 64.5%;
@@ -30,7 +34,8 @@
   height: 100%;
   padding-left: 1.5rem;
   .tx-banner-fixed-web-01{
-    color: $blanco;
+    // color: $blanco;
+    color: $color01;
     font-family: $Arsenal-Regular;
     font-size: $tx-size-04;
     span{
@@ -42,6 +47,38 @@
   }
 }
 
+
+.block-relative-banner-fixed{
+  position: relative;
+}
+
+.flor-banner-left{
+  position: absolute;
+  bottom: -1.5rem;
+  left: -15px;
+  width: 60px;
+}
+
+.flor-banner-left-02{
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0px;
+  width: 60px;
+}
+
+.flor-banner-right-01{
+  position: absolute;
+  bottom: -1.5rem;
+  right: -10rem;
+  width: 250px;
+}
+
+.flor-banner-right-02{
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0rem;
+}
+
 .content-banner-fixed-02{
   display: flex;
   flex-direction: row;
@@ -50,7 +87,8 @@
   justify-content: center;
   height: 100%;
   .tx-banner-fixed-web-02{
-    color: $blanco;
+    // color: $blanco;
+    color: $color01;
     font-family: $Arsenal-Bold;
     font-size: $tx-size-02;
     text-align: center;

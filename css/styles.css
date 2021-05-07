@@ -2881,7 +2881,7 @@ button:focus {
   flex-direction: row;
   align-items: center;
   height: 100%;
-  background: url("../images/disfrutar-magia-familia-abril-altos-del-palmar-casas-campestres.webp");
+  background: url("../images/construir-hogar-familia-mayo-altos-del-palmar-casas-campestres.webp");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
@@ -3033,11 +3033,9 @@ button:focus {
 
 /* BANNER FIXED ADP WEB */
 .banner-fixed-web {
-  background: #112334;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
   padding: 1.5rem 0rem;
-  border-top: 5px solid transparent;
-  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
-  border-image-slice: 1;
+  border-top: 5px solid #112334;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -3045,11 +3043,9 @@ button:focus {
 }
 
 .banner-fixed-web-custom {
-  background: #112334;
+  background: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
   padding: 1.5rem 0rem;
-  border-top: 5px solid transparent;
-  border-image-source: linear-gradient(90deg, #bc913e 0%, #eceba2 50%, #bc913e 100%);
-  border-image-slice: 1;
+  border-top: 5px solid #112334;
   position: fixed;
   bottom: 0;
   width: 64.5%;
@@ -3065,7 +3061,7 @@ button:focus {
   padding-left: 1.5rem;
 }
 .content-banner-fixed-01 .tx-banner-fixed-web-01 {
-  color: #FFF;
+  color: #112334;
   font-family: "Arsenal-Regular";
   font-size: 2.4rem;
 }
@@ -3078,6 +3074,37 @@ button:focus {
   }
 }
 
+.block-relative-banner-fixed {
+  position: relative;
+}
+
+.flor-banner-left {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -15px;
+  width: 60px;
+}
+
+.flor-banner-left-02 {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0px;
+  width: 60px;
+}
+
+.flor-banner-right-01 {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -10rem;
+  width: 250px;
+}
+
+.flor-banner-right-02 {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0rem;
+}
+
 .content-banner-fixed-02 {
   display: flex;
   flex-direction: row;
@@ -3086,7 +3113,7 @@ button:focus {
   height: 100%;
 }
 .content-banner-fixed-02 .tx-banner-fixed-web-02 {
-  color: #FFF;
+  color: #112334;
   font-family: "Arsenal-Bold";
   font-size: 3.2rem;
   text-align: center;
@@ -3192,23 +3219,8 @@ button:focus {
 }
 
 /* MAIN WEB */
-.main-index-web {
-  background: url("../images/home-panoramica-frontal-casas-campestres-altos-del-palmar-adp-web-2020-adp-recursos-web-imagenes.webp");
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  height: 533px;
-}
-@media screen and (max-width: 1920px) {
-  .main-index-web {
-    background-size: 100% cover;
-  }
-}
-@media screen and (max-width: 1700px) {
-  .main-index-web {
-    background-size: 100% cover;
-    height: 533px;
-  }
+.main-index-web img {
+  max-width: 1920px;
 }
 
 /*SECTION INDEX 01 WEB*/

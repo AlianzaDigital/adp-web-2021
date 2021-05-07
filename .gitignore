@@ -1,3 +1,4 @@
 # ignore .config prepros
 *.config
 *.php
+*/php/.php
