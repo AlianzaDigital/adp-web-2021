@@ -3630,6 +3630,14 @@ button:focus {
 .tx-section-xs-05-02 span {
   font-family: "Helvetica-Neue-Bold";
 }
+.tx-section-xs-05-02 span a {
+  color: #112334;
+  font-family: "Helvetica-Neue-Bold";
+  font-size: 1.4rem;
+}
+.tx-section-xs-05-02 span a:hover {
+  font-family: "Helvetica-Neue-Bold";
+}
 
 /*SECTION 06 XS*/
 .section-xs-06 {
@@ -4234,8 +4242,15 @@ main {
   font-family: "Helvetica-Neue-Light";
   font-size: 2.4rem;
 }
-.tx-section-web-02-06 span {
+.tx-section-web-02-06 span a {
+  color: #112334;
+  font-size: 2.4rem;
   font-family: "Helvetica-Neue-Bold";
+}
+@media screen and (max-width: 1199px) {
+  .tx-section-web-02-06 span a {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 1199px) {
   .tx-section-web-02-06 {
@@ -4388,6 +4403,24 @@ main {
     border-image-slice: 1;
   }
 }
+.content-section-inversion-01 p:nth-of-type(1) span a {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+}
+.content-section-inversion-01 p:nth-of-type(1) span a:hover {
+  color: #BC913E;
+}
+@media screen and (max-width: 1199px) {
+  .content-section-inversion-01 p:nth-of-type(1) span a {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-section-inversion-01 p:nth-of-type(1) span a {
+    font-size: 1.6rem;
+  }
+}
 
 .content-section-inversion-02 img {
   height: 80px;
@@ -4430,6 +4463,24 @@ main {
 }
 @media screen and (max-width: 767px) {
   .content-section-inversion-02 p:nth-of-type(1) {
+    font-size: 1.6rem;
+  }
+}
+.content-section-inversion-02 p:nth-of-type(1) span a {
+  color: #FFF;
+  font-family: "Helvetica-Neue-Light";
+  font-size: 2.4rem;
+}
+.content-section-inversion-02 p:nth-of-type(1) span a:hover {
+  color: #BC913E;
+}
+@media screen and (max-width: 1199px) {
+  .content-section-inversion-02 p:nth-of-type(1) span a {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-section-inversion-02 p:nth-of-type(1) span a {
     font-size: 1.6rem;
   }
 }

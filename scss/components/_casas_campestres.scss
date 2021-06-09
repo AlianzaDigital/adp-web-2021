@@ -327,6 +327,15 @@
   span{
     // font-family: $Arsenal-Bold;
     font-family: $Helvetica-Regular;
+    a{
+      color: $color01;
+      font-family: $Helvetica-Regular;
+      font-size: $tx-size-06;
+      &:hover{
+        // color: $color02;
+        font-family: $Helvetica-Regular;
+      }
+    }
   }
 }
 
@@ -895,7 +904,14 @@ main{
   font-size: $tx-size-04;
   span{
     // font-family: $Arsenal-Bold;
-    font-family: $Helvetica-Regular;
+    a{
+      color: $color01;
+      font-size: $tx-size-04;
+      font-family: $Helvetica-Regular;
+      @media screen and (max-width: $window-size-02) {
+        font-size: $tx-size-05;
+      }
+    }
   }
   @media screen and (max-width: $window-size-02) {
     font-size: $tx-size-05;
@@ -1020,6 +1036,22 @@ main{
       border-image-source: $gradient02; 
       border-image-slice: 1;
     }
+    span{
+      a{
+        color: $blanco;
+        font-family: $Helvetica-Thin;
+        font-size: $tx-size-04;
+        &:hover{
+          color: $color02;
+        }
+        @media screen and (max-width: $window-size-02) {
+          font-size: $tx-size-05;
+        }
+        @media screen and (max-width: $window-size-04) {
+          font-size: $tx-size-06 + .2;
+        }
+      }
+    }
   }
 }
 
@@ -1056,6 +1088,22 @@ main{
     }
     @media screen and (max-width: $window-size-04) {
       font-size: $tx-size-06 + .2;
+    }
+    span{
+      a{
+        color: $blanco;
+        font-family: $Helvetica-Thin;
+        font-size: $tx-size-04;
+        &:hover{
+          color: $color02;
+        }
+        @media screen and (max-width: $window-size-02) {
+          font-size: $tx-size-05;
+        }
+        @media screen and (max-width: $window-size-04) {
+          font-size: $tx-size-06 + .2;
+        }
+      }
     }
   }
 }
