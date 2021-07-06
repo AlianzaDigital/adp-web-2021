@@ -3,43 +3,51 @@
 	font-family: 'Arsenal-Bold';
 	src: url('../fonts/Arsenal-Bold.ttf') format("truetype");
 	font-weight:normal;
-	// font-display:swap;
+	font-display:swap;
 }
 @font-face{
 	font-family: 'Arsenal-Italic';
 	src: url('../fonts/Arsenal-Italic.ttf') format("truetype");
 	font-weight:normal;
-	// font-display:swap;
+	font-display:swap;
 }
 @font-face{
 	font-family: 'Arsenal-Regular';
 	src: url('../fonts/Arsenal-Regular.ttf') format("truetype");
 	font-weight:normal;
-	// font-display:swap;
+	font-display:swap;
 }
 @font-face{
 	font-family: 'Helvetica-Neue-Bold';
 	src: url("../fonts/Helvetica-Neue-Bold.ttf") format("truetype");
 	font-weight:normal;
-	// font-display:swap;
+	font-display:swap;
 }
 @font-face{
 	font-family: 'Helvetica-Neue-Light';
 	src: url("../fonts/Helvetica-Neue-Light.ttf") format("truetype");
 	font-weight:normal;
-	// font-display:swap;
+	font-display:swap;
 }
 
+// @font-face {
+//   font-family: 'adp-icon-font';
+//   src:  url('../fonts/icomoon.eot?kd5vfr');
+//   src:  url('../fonts/icomoon.eot?kd5vfr#iefix') format('embedded-opentype'),
+//     url('../fonts/icomoon.ttf?kd5vfr') format('truetype'),
+//     url('../fonts/icomoon.woff?kd5vfr') format('woff'),
+//     url('../fonts/icomoon.svg?kd5vfr#icomoon') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: block;
+// }
 @font-face {
   font-family: 'adp-icon-font';
-  src:  url('../fonts/icomoon.eot?kd5vfr');
-  src:  url('../fonts/icomoon.eot?kd5vfr#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?kd5vfr') format('truetype'),
-    url('../fonts/icomoon.woff?kd5vfr') format('woff'),
-    url('../fonts/icomoon.svg?kd5vfr#icomoon') format('svg');
+  src:  url('../fonts/icomoon.ttf?kd5vfr');
+  src:  url('../fonts/icomoon.ttf?kd5vfr') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 [class^="icon-"], [class*=" icon-"] {

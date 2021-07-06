@@ -32,9 +32,18 @@
     <meta property="og:description" content="Ingrese y conozca aquí todos los términos y condiciones de promo casa más mobiliario de Altos del Palmar Condominio Campestre." />
     <meta property="og:site_name" content="Altos del Palmar | Condominio Campestre" />
 
+    <!-- Preload fonts -->
+    <link rel="preload" as="font" href="./fonts/Arsenal-Bold.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/Arsenal-Italic.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/Arsenal-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/Helvetica-Neue-Bold.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/Helvetica-Neue-Light.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/icomoon.ttf?kd5vfr" type="font/ttf" crossorigin="anonymous">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    
     <link rel="shortcut icon" href="images/favicon-altos-del-palmar.webp" type="image/x-icon">
 
     <!-- Google Tag Manager -->
@@ -202,6 +211,8 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js" ></script>
+    <!-- Lazyload validation -->
+    <script src="js/lazyload.min.js"></script>
     
   </body>
 </html>

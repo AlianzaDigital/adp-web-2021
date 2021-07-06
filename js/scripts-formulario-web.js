@@ -1,3 +1,27 @@
+function loadXMLDoc() {
+
+  let importIframe =  document.getElementById("iframeTerminos");
+
+  let request = new XMLHttpRequest();
+  request.open("GET", "terminos-condiciones.html", true);
+  request.responseType = "document";
+  request.send(null);
+  request.onreadystatechange = function() {
+    if (request.readyState == 4) {
+      let doc = request.response;
+      let elem = doc.getElementById("importHTML").innerHTML;
+      // alert(elem.innerHTML);
+
+      let importHTML = elem
+
+      importIframe.innerHTML = importHTML
+
+    }
+  }
+}
+
+loadXMLDoc()
+
 $('#telephone_fixed_web').on('input', function () { 
   this.value = this.value.replace(/[^0-9]/g,'');
 });

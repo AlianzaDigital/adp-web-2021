@@ -1,9 +1,33 @@
+function loadXMLDoc() {
+
+  let importIframe =  document.getElementById("iframeTerminos");
+
+  let request = new XMLHttpRequest();
+  request.open("GET", "terminos-condiciones.html", true);
+  request.responseType = "document";
+  request.send(null);
+  request.onreadystatechange = function() {
+    if (request.readyState == 4) {
+      let doc = request.response;
+      let elem = doc.getElementById("importHTML").innerHTML;
+      // alert(elem.innerHTML);
+
+      let importHTML = elem
+
+      importIframe.innerHTML = importHTML
+
+    }
+  }
+}
+
+loadXMLDoc()
+
 //FORMULARIO PC
-$(document).ready(function(){
-  $("#btn_paso_01").click(function(){
-    $("#contactForm").submit();
-  });
-});
+// $(document).ready(function(){
+//   $("#btn_paso_01").click(function(){
+//     $("#contactForm").submit();
+//   });
+// });
 
 //AÑADIR CHECK VALIDO AL ABRIR POPUP
 $("#aceptar_terminos_popUp_web").on("click", function() {

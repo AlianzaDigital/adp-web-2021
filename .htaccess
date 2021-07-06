@@ -22,17 +22,57 @@ Redirect 301 /formulario-accion-mobile https://www.altosdelpalmar.com/formulario
 
 ErrorDocument 404 https://www.altosdelpalmar.com/error-404.html
 
-#Disables GZIP
-SetEnv no-gzip 1
-    
-#Turns off the expires headers for Apache
-<IfModule mod_expires.c>
-  ExpiresActive Off
-</IfModule>
+# GZIP compression for text files: HTML, CSS, JS, Text, XML, fonts
+# -----------------------------------------------------------------------
+# Defining MIME types to ensure the web server actually knows about them.
+# -----------------------------------------------------------------------
+<IfModule mod_mime.c>
+    AddType application/javascript          js
+    AddType application/vnd.ms-fontobject   eot
+    AddType application/x-font-ttf          ttf ttc
+    AddType font/opentype                   otf
+    AddType application/x-font-woff         woff
+    AddType image/svg+xml                   svg svgz 
+    AddEncoding gzip                        svgz
+</Ifmodule>
 
-# Disable Caching
-<IfModule mod_headers.c>
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
-    Header set Pragma "no-cache"
-    Header set Expires 0
-</IfModule>
+# -----------------------------------------------------------------------
+# Compressing output.
+# -----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+    AddOutputFilterByType DEFLATE application/xhtml+xml application/rss+xml application/atom+xml
+    AddOutputFilterByType DEFLATE image/x-icon image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
+</Ifmodule>
+
+# 1 YEAR
+ExpiresActive On
+<FilesMatch "\.(ttf|svg|woff|woff2|otf|ico|pdf|flv)$">
+Header set Cache-Control "max-age=29030400, public"
+ExpiresDefault "access plus 1 years"
+Header unset Last-Modified
+Header unset ETag
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+# 1 MONTHS
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|webp)$">
+Header set Cache-Control "max-age=29030400, public"
+ExpiresDefault "access plus 1 years"
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+<FilesMatch "\.(xml|txt|css|js)$">
+Header set Cache-Control "max-age=29030400, public"
+ExpiresDefault "access plus 1 years"
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+# 30 MIN
+<FilesMatch "\.(html|htm|php)$">
+Header set Cache-Control "max-age=29030400, public"
+ExpiresDefault "access plus 1 years"
+SetOutputFilter DEFLATE
+</FilesMatch>

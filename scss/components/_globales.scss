@@ -196,13 +196,13 @@ button:focus {
   img{
     width: inherit;
     @media screen and (max-width: $window-size-03) {
-      width: 180px;
+      width: 180px !important;
     }
     @media screen and (max-width: $window-size-04) {
-      width: 150px;
+      width: 150px !important;
     }
     @media screen and (max-width: $window-size-05) {
-      width: 120px;
+      width: 120px !important;
     }
   }
 }
@@ -340,4 +340,8 @@ button:focus {
     font-family: $Helvetica-Regular;
   }
 
+}
+
+img:not([src]):not([srcset]) {
+  visibility: hidden;
 }

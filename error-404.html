@@ -32,9 +32,18 @@
     <meta property="og:description" content="La página que busca en el Condominio Altos del Palmar no ha sido encontrada. La URL pudo ser cambiada, no existe o quizás la escribió de forma incorrecta." />
     <meta property="og:site_name" content="Altos del Palmar | Condominio Campestre" />
 
+    <!-- Preload fonts -->
+    <link rel="preload" as="font" href="./fonts/Arsenal-Bold.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/Arsenal-Italic.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/Arsenal-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/Helvetica-Neue-Bold.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/Helvetica-Neue-Light.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/icomoon.ttf?kd5vfr" type="font/ttf" crossorigin="anonymous">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    
     <link rel="shortcut icon" href="images/favicon-altos-del-palmar.webp" type="image/x-icon">
 
     <!-- Google Tag Manager -->
@@ -249,8 +258,10 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js" ></script>
+    <!-- Lazyload validation -->
+    <script src="js/lazyload.min.js"></script>
 
-    <script src="js/scripts-index.js"></script>
+    <script async src="js/scripts-index.min.js"></script>
     
   </body>
 </html>
